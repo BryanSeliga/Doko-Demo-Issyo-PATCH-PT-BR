@@ -1,71 +1,72 @@
 <p align="center"><img src="docs/img/logo.png" alt="Doko Demo Issyo" width="300"></p>
 
-# Doko Demo Issyo — Patch de tradução PT-BR (PSP)
+# Doko Demo Issyo — Brazilian Portuguese translation patch (PSP)
 
-Tradução de fã para português brasileiro de **Doko Demo Issyo** (どこでもいっしょ) para PSP, o bichinho virtual falante do Toro.
+Fan translation of **Doko Demo Issyo** (どこでもいっしょ) for PSP, Toro's talking virtual pet game, into Brazilian Portuguese (PT-BR).
 
-> Este repositório tem **só o patch** e as ferramentas usadas para fazê-lo. Nenhum arquivo do jogo é distribuído aqui. Você precisa ter a sua própria cópia do jogo.
+> This repository contains **only the patch** and the tools used to make it. No game files are distributed here. You need your own copy of the game.
 
-## O que está traduzido
+## What is translated
 
-- Menus, botões e telas (cadastro, opções, dados, diário, cartões, presentes e afins).
-- Mensagens do sistema (salvar, carregar, erros, signos, tipos sanguíneos).
-- **Todas as falas dos cinco Pokepi** (Toro, Pierre, Jun, Suzuki e Ricky), mais de 52 mil textos, e as palavras que eles já sabem.
-- Nomes e descrições dos itens.
-- Fonte com acentos do português (á à â ã é ê í ó ô õ ú ü ç).
+- Menus, buttons and screens (profile, options, data, diary, cards, gifts and so on).
+- System messages (saving, loading, errors, star signs, blood types).
+- **Every line of all five Pokepi** (Toro, Pierre, Jun, Suzuki and Ricky), more than 52,000 texts, plus the words they already know.
+- Item names and descriptions.
+- The staff roles in the ending credits.
+- The game font, extended with Portuguese accents (á à â ã é ê í ó ô õ ú ü ç).
 
-Ainda em japonês: as letras da página de kana do teclado (use a página de letras latinas para ensinar palavras), o minijogo de shiritori (que depende da língua japonesa), os nomes da equipe nos créditos e o logotipo da tela de título. Dá para escolher qualquer Pokepi ao começar um jogo novo: Toro (gato), Suzuki (robô), Jun (coelha), Pierre (cachorro) ou Ricky (sapo).
+Still in Japanese: the letters on the kana page of the keyboard (use the Latin page to teach words), the shiritori minigame (it depends on the Japanese language), the staff names in the credits and the title screen logo. Any Pokepi can be picked when starting a new game: Toro (cat), Suzuki (robot), Jun (rabbit), Pierre (dog) or Ricky (frog).
 
-## O que você precisa
+## What you need
 
-- A ISO japonesa do jogo: `Doko Demo Issho (Japan).iso`, código **UCJS-10002**.
+- The Japanese ISO of the game: `Doko Demo Issho (Japan).iso`, product code **UCJS-10002**.
   - SHA-1: `d5561bfb9362a47357aa070d8665ea22fdc83084`
-- O arquivo do patch (`.xdelta`), na página de **Releases** deste repositório.
-- Um programa que aplique patches xdelta, por exemplo:
+- The patch file (`.xdelta`) from the **Releases** page of this repository.
+- A program that applies xdelta patches, for example:
   - [Delta Patcher](https://github.com/marco-calautti/DeltaPatcher) (Windows, Linux, Mac)
-  - [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) (no navegador)
-  - ou o aplicador em Python deste repositório (veja abaixo)
+  - [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/) (in the browser)
+  - or the Python patcher in this repository (see below)
 
-## Como aplicar
+## How to apply
 
-1. Confira se a sua ISO é a certa (SHA-1 acima). Uma ISO diferente não vai funcionar.
-2. Abra o programa de patch, escolha a ISO original e o arquivo `.xdelta`.
-3. Gere a ISO nova, por exemplo `Doko Demo Issyo (PT-BR).iso`. A original não é alterada.
+1. Check that your ISO is the right one (SHA-1 above). A different ISO will not work.
+2. Open the patching program and pick the original ISO and the `.xdelta` file.
+3. Create the new ISO, for example `Doko Demo Issyo (PT-BR).iso`. The original is left untouched.
 
-Com Python 3 instalado, também dá para aplicar pelo terminal:
+With Python 3 installed, you can also apply it from the command line:
 
 ```
 python tools/vcdiff.py aplicar "Doko Demo Issho (Japan).iso" "Doko Demo Issyo PT-BR.xdelta" "Doko Demo Issyo (PT-BR).iso"
 ```
 
-## Onde jogar
+## Where to play
 
-- **PPSSPP** (PC, Android, iOS): testado e funcionando.
-- **PSP de verdade**: precisa de firmware customizado, porque o patch usa o executável sem criptografia. Ainda não foi testado em aparelho.
+- **PPSSPP** (PC, Android, iOS): tested and working.
+- **Real PSP**: needs custom firmware, because the patch uses the unencrypted executable. Not tested on hardware yet.
 
-## Dicas
+## Tips
 
-- Quando o Toro fala ", miau", o Pierre ", au", a Jun ", pyon", o Suzuki ", robô" e o Ricky ", croac" ou ", sô" no fim das frases, é o jeitinho deles (no original, "nya", "wan", "pyon", "robo", "kero" e "dasu").
-- O teclado abre na página de letras japonesas. Para escrever com letras latinas (ABC, DEF…), vá com o direcional até a borda direita do teclado e aperte → mais uma vez.
-- Se algo aparecer cortado ou estranho, abra uma *issue* com um print e, se puder, o que estava acontecendo no jogo.
+- The Pokepi end their sentences with their own verbal tic, just like in the original: Toro says ", miau", Pierre ", au", Jun ", pyon", Suzuki ", robô" and Ricky ", croac" or ", sô" (originally "nya", "wan", "pyon", "robo", "kero" and "dasu").
+- The keyboard opens on the Japanese page. To type with Latin letters (ABC, DEF…), move the cursor to the right edge of the keyboard and press → once more.
+- If something looks cut off or wrong, please open an *issue* with a screenshot and, if you can, what was happening in the game.
 
-## Para quem quer mexer
+## For contributors
 
-- `tools/`: ferramentas em Python para ler e remontar os arquivos do jogo (scripts KSC, pacotes BP/BPM, fonte XFT, imagens GIM) e gerar o patch.
-- `traducao/`: os textos traduzidos, um JSON por linha (`{"id", "pt"}`). O texto japonês não fica no repositório; ele é extraído da sua ISO com `tools/extract_text.py`.
-- `docs/FORMATOS.md`: como os formatos do jogo funcionam.
-- `docs/GUIA_TRADUCAO.md`: guia de estilo da tradução.
+- `tools/`: Python tools to read and rebuild the game files (KSC scripts, BP/BPM archives, XFT font, GIM images) and to build the patch.
+- `traducao/`: the translated texts, one JSON object per line (`{"id", "pt"}`). The Japanese text is not stored in the repository; it is extracted from your own ISO with `tools/extract_text.py`.
+- `docs/FORMATOS.md`: how the game's file formats work (in Portuguese).
+- `docs/GUIA_TRADUCAO.md`: the translation style guide (in Portuguese).
 
-Para montar a ISO traduzida a partir da sua cópia e gerar o patch:
+To build the translated ISO from your copy and create the patch:
 
 ```
 cd tools
-python make_iso.py "<iso original>" "<iso traduzida>"
-python make_patch.py "<iso original>" "<iso traduzida>" "Doko Demo Issyo PT-BR.xdelta"
+python make_iso.py "<original iso>" "<translated iso>"
+python make_patch.py "<original iso>" "<translated iso>" "Doko Demo Issyo PT-BR.xdelta"
 ```
 
-`make_patch.py` confere o resultado aplicando o patch de volta.
+`make_patch.py` checks the result by applying the patch back.
 
-## Aviso
+## Disclaimer
 
-Projeto de fã, sem fins lucrativos e sem ligação com a Sony. *Doko Demo Issyo* e seus personagens pertencem aos seus donos. Compre o jogo original.
+Non-commercial fan project, not affiliated with Sony. *Doko Demo Issyo* and its characters belong to their respective owners. Please buy the original game.

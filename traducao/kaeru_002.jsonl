@@ -1,0 +1,222 @@
+{"id": 485, "pt": "Vou perguntar: o que é mais {14:0006}, {14:0004} ou {14:0005}?"}
+{"id": 486, "pt": "Quem é {W}{14:0004}{W}"}
+{"id": 487, "pt": "{W}{14:0004}{W}?"}
+{"id": 488, "pt": "Ganhou {14:0004} pessoa(s) nova(s)?"}
+{"id": 489, "pt": "Já aprendi {1b:2c5c} palavra(s)"}
+{"id": 490, "pt": "Apresentação?"}
+{"id": 491, "pt": "Qual o nome da escola que {W}{14:0002}{W} frequenta?"}
+{"id": 492, "pt": "Trabalha em {14:0001}?"}
+{"id": 493, "pt": "Hmm, por acaso {W}{14:0000}{W}...\n"}
+{"id": 494, "pt": "Já se casou{17:0019}?"}
+{"id": 495, "pt": "Ahã...\nQue beleza{17:0019}...\n"}
+{"id": 496, "pt": "{W}{17:0017}{W} aqui, solteirão, fico com uma invejinha, sô♪\n"}
+{"id": 497, "pt": "Entendi{17:0019}...\n"}
+{"id": 498, "pt": "Ainda não{17:001a}...\n"}
+{"id": 499, "pt": "Com {W}{14:0001}{W} ano(s) é fase de querer brincar muito, né, sô...\n"}
+{"id": 500, "pt": "Tem mais interesse em {W}{14:0002}{W} do que em casar, né{17:0019}...\n"}
+{"id": 501, "pt": "A escola em que {W}{14:0000}{W} estuda,"}
+{"id": 502, "pt": "qual é o nome dela{17:0019}?\n"}
+{"id": 503, "pt": "Então {W}{14:0001}{W} tem {W}{14:0000}{W} ano(s){17:0019}...\n"}
+{"id": 504, "pt": "Ah, falando nisso!\n"}
+{"id": 505, "pt": "{W}{14:0001}{W}, você estuda em alguma escola{17:001a}?\n"}
+{"id": 506, "pt": "Que beleza{17:0019}~\n"}
+{"id": 507, "pt": "Vida de estudante é um sonho, sô♪\n"}
+{"id": 508, "pt": "Aliás...\nEm que fase da escola {W}{14:0001}{W} está{17:001a}?\n"}
+{"id": 509, "pt": "Uhum...\n{W}{14:0002}{W}...\n"}
+{"id": 510, "pt": "Então é {W}{14:0004}{W}~\n"}
+{"id": 511, "pt": "Será que a escola de {W}{14:0001}{W} num aceita matrícula de sapo{17:0019}...?\n"}
+{"id": 512, "pt": "{W}{17:0017}{W} podia virar professor de {W}{14:0001}{W}, que tal{17:0019}?\n"}
+{"id": 513, "pt": "Prof. {W}{14:0001}{W}...\n"}
+{"id": 514, "pt": "Até que soa bem{17:0019}~♪\n"}
+{"id": 515, "pt": "Em que tipo de lugar {W}{14:0000}{W} trabalha{17:0019}?\n"}
+{"id": 516, "pt": "Empresa? Loja?\n"}
+{"id": 517, "pt": "Trabalha em casa{17:0019}~\n"}
+{"id": 518, "pt": "Isso quer dizer que...\n"}
+{"id": 519, "pt": "Num precisa passar aperto na lotação de {W}{14:0000}{W}{17:0019}!\n"}
+{"id": 520, "pt": "Trabalha em {14:0000}{17:0019}?\n"}
+{"id": 521, "pt": "Os humanos...\n"}
+{"id": 522, "pt": "Se num trabalhar, num tem o que comer, né{17:0019}...\n"}
+{"id": 523, "pt": "{W}{14:0000}{W}, você tem algum trabalho{17:001a}?\n"}
+{"id": 524, "pt": "Comer sem precisar trabalhar...\n"}
+{"id": 525, "pt": "Será que... {W}{14:0000}{W}...\n"}
+{"id": 526, "pt": "...é mestre da caça?\n"}
+{"id": 527, "pt": "Um dia desses, me ensina a pegar {W}{14:0002}{W}{17:001a}~♪\n"}
+{"id": 528, "pt": "Então {W}{14:0000}{W} trabalha{17:0019}~\n"}
+{"id": 529, "pt": "Aliás...\n"}
+{"id": 530, "pt": "{W}{14:0004}{W} é puxado{17:0019}?"}
+{"id": 531, "pt": "De qualquer jeito, humano tem que trabalhar pra comer...\n"}
+{"id": 532, "pt": "Nisso, sapo talvez tenha uma vida mais feliz{17:0019}~\n"}
+{"id": 533, "pt": "O lugar onde {W}{14:0000}{W} mora...\n"}
+{"id": 534, "pt": "Qual é o nome desse lugar{17:001a}?"}
+{"id": 535, "pt": "Onde {W}{14:0000}{W} mora tem ar bom{17:0019}?"}
+{"id": 536, "pt": "Que bom{17:0019}♪\n"}
+{"id": 537, "pt": "{W}{17:0017}{W} ia gostar de um ar assim{17:001a}♪\n"}
+{"id": 538, "pt": "{W}{14:0002}{W} mora num lugar tão bom que {17:001b} é uma bênção, sô♪\n"}
+{"id": 539, "pt": "{W}{14:0000}{W} também virou cidade grande de vez, né{17:0019}...\n"}
+{"id": 540, "pt": "Dez anos atrás num era assim{17:0019}...\n"}
+{"id": 541, "pt": "Escola em que {W}{14:0001}{W} estuda"}
+{"id": 542, "pt": "Empresa em que {W}{14:0001}{W} trabalha"}
+{"id": 543, "pt": "Me conta o nome do lugar em que {W}{14:0002}{W} mora?"}
+{"id": 544, "pt": "Cheguei{17:001a}~\n"}
+{"id": 545, "pt": "É aqui que fica\n\"{14:0000}\"{17:0019}~?\n"}
+{"id": 546, "pt": "{W}{14:0000}{W}, é aqui{17:001a}~♪\n"}
+{"id": 547, "pt": "{W}{14:0000}{W} é bem do tipo {W}{14:0001}{W}{17:001a}~♪\n"}
+{"id": 548, "pt": "Ah, é verdade!\n"}
+{"id": 549, "pt": "Já que vim pra {W}{14:0000}{W}, tenho que estudar {W}{14:0001}{W}{17:0019}!\n"}
+{"id": 550, "pt": "Me ensina uma palavra ligada a {W}{14:0001}{W}{17:001a}~?\n"}
+{"id": 551, "pt": "I-isso aqui é...!\n"}
+{"id": 552, "pt": "Oh~\nGanhei um trem dos bons{17:001a}~♪\n"}
+{"id": 553, "pt": "Que desperdício, sô...\n"}
+{"id": 554, "pt": "Hm?\n"}
+{"id": 555, "pt": "Alguém chamou{17:001a}?"}
+{"id": 556, "pt": "Com licença, no meio da conversa...\n"}
+{"id": 557, "pt": "Olha só, é o Gato Preto{17:0019}~\n"}
+{"id": 558, "pt": "Sempre às ordens!\n"}
+{"id": 559, "pt": "Aqui é o Gato Preto das lembrancinhas, miau~\n"}
+{"id": 560, "pt": "Tenho uma coisa boa pra mostrar...\n"}
+{"id": 561, "pt": "Como lembrancinha da visita a {W}{14:0000}{W}...\n"}
+{"id": 562, "pt": "Que tal levar uma, miau?\n"}
+{"id": 563, "pt": "Uma lembrancinha de {W}{14:0000}{W}{17:0019}!\n"}
+{"id": 564, "pt": "Boa ideia{17:001a}~♪\n"}
+{"id": 565, "pt": "Hmm...\n"}
+{"id": 566, "pt": "Qual dos dois será que levo{17:0019}~?"}
+{"id": 567, "pt": "Agradecemos a preferência~\n"}
+{"id": 568, "pt": "Então vai esse aqui...\n"}
+{"id": 569, "pt": "Entrego no quarto, miau~"}
+{"id": 570, "pt": "Vou já pro quarto ver o que tem dentro{17:0019}~!\n"}
+{"id": 571, "pt": "Jogo de associação de um jogador só{17:0019}!\n"}
+{"id": 572, "pt": "Coisas que têm a ver com \"{14:0000}\"~\n"}
+{"id": 573, "pt": "{14:0001}!\n"}
+{"id": 574, "pt": "Era isso!\n"}
+{"id": 575, "pt": "Fim{17:0019}~!\n"}
+{"id": 576, "pt": "{W}{14:0001}{W}, tô entendendo cada vez mais de {W}{14:0000}{W}{17:001a}~\n"}
+{"id": 577, "pt": "Já que vim pra {W}{14:0000}{W}...\n"}
+{"id": 578, "pt": "Tem que estudar sobre {W}{14:0001}{W}{17:0019}!\n"}
+{"id": 579, "pt": "O que tem a ver com {W}{14:0000}{W} é {W}{14:0001}{W}?\n"}
+{"id": 580, "pt": "Pensando bem, é a mesma palavra{17:0019}...\n"}
+{"id": 581, "pt": "Então, vamos lá~\n"}
+{"id": 582, "pt": "É meio de repente{17:0019}, mas~\n"}
+{"id": 583, "pt": "Vou até {W}{14:0001}{W}{17:001a}~\n"}
+{"id": 584, "pt": "Vou dar uma saída{17:001a}~\n"}
+{"id": 585, "pt": "Ah, me ensina mais uma coisa, sô!\n"}
+{"id": 586, "pt": "Pensando bem...\n"}
+{"id": 587, "pt": "Tô com vontade de ganhar outra lembrancinha, sô...\n"}
+{"id": 588, "pt": "Mas minha bagagem já tá lotada...\n"}
+{"id": 589, "pt": "Num cabe mais nada no quarto, croac..."}
+{"id": 590, "pt": "Acho melhor jogar fora o que num serve mais, sô!\n"}
+{"id": 591, "pt": "Num dá pra botar mais nada no quarto, croac!"}
+{"id": 592, "pt": "Pra ganhar lembrancinha nova...\n"}
+{"id": 593, "pt": "Tem que jogar fora alguma que num queira mais, sô...\n"}
+{"id": 594, "pt": "Me ensina sobre {W}{14:0004}{W}{17:001a}~"}
+{"id": 595, "pt": "Me ensina uma palavra ligada a {W}{14:0002}{W}, sô!"}
+{"id": 596, "pt": "Ainda num aprendi muita palavra...\n"}
+{"id": 597, "pt": "Preciso estudar mais um pouco antes...\n"}
+{"id": 598, "pt": "Num posso sair pra passear{17:001a}~\n"}
+{"id": 599, "pt": "Foi mal{17:0019}...\n"}
+{"id": 600, "pt": "Aonde vai, sô?"}
+{"id": 601, "pt": "Vou {14:0001} em {W}{14:0000}{W}{17:001a}~\n"}
+{"id": 602, "pt": "Já sei!\nVou conhecer {W}{14:0000}{W}, sô!\n"}
+{"id": 603, "pt": "Empresa de {W}{14:000c}{W}"}
+{"id": 604, "pt": "Escola de {W}{14:000c}{W}"}
+{"id": 605, "pt": "Falando em {W}{14:0000}{W}, {17:001b}\n"}
+{"id": 606, "pt": "Tem algum lugar que você queira conhecer{17:0018}?"}
+{"id": 607, "pt": "Falando em {W}{14:0001}{W}, {17:001b}\n"}
+{"id": 608, "pt": "Você acha que é cidade grande{17:001a}?\n"}
+{"id": 609, "pt": "Ou então...\nacha que é roça{17:001a}?"}
+{"id": 610, "pt": "Acho que {W}{14:0001}{W} é a maior cidade do Japão"}
+{"id": 611, "pt": "Pois é{17:0019}~\n"}
+{"id": 612, "pt": "{W}{17:0017}{W} ainda era girino naquela época...\n"}
+{"id": 613, "pt": "Num tinha lugar chique que nem {W}{14:0001}{W}{17:001a}...\n"}
+{"id": 614, "pt": "Acho que {W}{14:0001}{W} é a maior roça do Japão"}
+{"id": 615, "pt": "{W}{14:0001}{W} é roça, sô?\n"}
+{"id": 616, "pt": "{W}{17:0017}{W} aqui acho que {W}{14:0001}{W} é mais do que suficiente"}
+{"id": 617, "pt": "pra ser uma metrópole{17:001a}...\n"}
+{"id": 618, "pt": "O aperto de {W}{14:0000}{W} na hora do rush é demais{17:001a}~!\n"}
+{"id": 619, "pt": "{W}{17:0017}{W} até sou paciente, mas {17:001b}\n"}
+{"id": 620, "pt": "Aquilo cansa demais{17:001a}~!\n"}
+{"id": 621, "pt": "Como é que os humanos aguentam andar de {W}{14:0000}{W} assim{17:001a}...\n"}
+{"id": 622, "pt": "Tem gente demais{17:001a}~!\n"}
+{"id": 623, "pt": "Muita gente quer dizer {17:001b} que tem todo tipo de gente...\n"}
+{"id": 624, "pt": "gente de outros países,"}
+{"id": 625, "pt": "gente linda de morrer,"}
+{"id": 626, "pt": "gente com cada visual maluco"}
+{"id": 627, "pt": "tem aos montes também{17:001a}~\n"}
+{"id": 628, "pt": "Aquilo {17:001b} é de cair o queixo, sô~!!\n"}
+{"id": 629, "pt": "Num tem natureza{17:001a}~!\n"}
+{"id": 630, "pt": "De noite num se vê estrela, o ar cheira a fumaça...\n"}
+{"id": 631, "pt": "A água também é ruim{17:001a}!\n"}
+{"id": 632, "pt": "Desse jeito {17:001b}\n{W}{14:0000}{W} perde metade do sabor{17:0019}~!\n"}
+{"id": 633, "pt": "Mas se fizer miojo com água limpa... no fim dá no mesmo...\n"}
+{"id": 634, "pt": "Aliás, junk food até que eu gosto{17:001a}, mas...\n"}
+{"id": 635, "pt": "Num tem {W}{14:0000}{W} de rua{17:0019}~!\n"}
+{"id": 636, "pt": "Os 7 mistérios da cidade grande...\nNúmero 1, sô...\n"}
+{"id": 637, "pt": "Será que...\n{W}{14:0000}{W} de cidade grande...\n"}
+{"id": 638, "pt": "viraram tudo bicho de estimação{17:0019}~\n"}
+{"id": 639, "pt": "Se for numa loja grande,"}
+{"id": 640, "pt": "seja {W}{14:0000}{W} ou {W}{14:0001}{W},"}
+{"id": 641, "pt": "tem quase de tudo, né...\n"}
+{"id": 642, "pt": "Na roça...\nÔ lôco...\n"}
+{"id": 643, "pt": "A num ser que peça de longe, quase nunca se consegue, né{17:001a}?\n"}
+{"id": 644, "pt": "Em frente às estações, tem uma quantidade absurda de"}
+{"id": 645, "pt": "{W}{14:0000}{W} por lá{17:0019}~\n"}
+{"id": 646, "pt": "Aquilo {W}{14:0001}{W} dá um susto{17:001a}~\n"}
+{"id": 647, "pt": "Esse é...\no mistério número 3 dos 7 da cidade grande{17:0019}...\n"}
+{"id": 648, "pt": "Na roça...\n"}
+{"id": 649, "pt": "O dia é mais comprido~!\n"}
+{"id": 650, "pt": "O povo da cidade grande, seja {W}{14:0000}{W} ou {W}{14:0001}{W},\n"}
+{"id": 651, "pt": "anda todo mundo correndo...\n"}
+{"id": 652, "pt": "É a sensação que dá, sô...\n"}
+{"id": 653, "pt": "Mesmo assim...\n"}
+{"id": 654, "pt": "Quem mora na cidade grande...\n"}
+{"id": 655, "pt": "Por que será que caminha tão rápido{17:0019}...\n"}
+{"id": 656, "pt": "Mistério número 4 dos 7 da cidade grande{17:0019}...\n"}
+{"id": 657, "pt": "{W}{14:0000}{W} dá medo~!\n"}
+{"id": 658, "pt": "Por que {W}{14:0000}{W} que mora na cidade grande vira uma fera{17:0019}...\n"}
+{"id": 659, "pt": "Mistério número 5 dos 7 da cidade grande{17:0019}~\n"}
+{"id": 660, "pt": "Em {W}{14:0001}{W}, {W}{14:0000}{W} {17:001b} leva a vida com mais calma, sô...\n"}
+{"id": 661, "pt": "O corpo de {W}{14:0000}{W} é bem robusto mesmo{17:0019}~\n"}
+{"id": 662, "pt": "{W}{14:0000}{W} de {W}{14:0001}{W}...\n"}
+{"id": 663, "pt": "Parecia um tiquinho menor{17:0019}...\n"}
+{"id": 664, "pt": "Isso também...\n"}
+{"id": 665, "pt": "Mistério número 6 dos 7 da cidade grande{17:0019}...\n"}
+{"id": 666, "pt": "Quem um dia decidiu sair de {W}{14:0000}{W} e tal"}
+{"id": 667, "pt": "Esse tipo de gente...\n"}
+{"id": 668, "pt": "Na hora de se mudar, num pensa duas vezes, né...\n"}
+{"id": 669, "pt": "Já quem nasceu e cresceu em {W}{14:0001}{W}...\n"}
+{"id": 670, "pt": "Ao contrário, custa a querer sair de lá{17:001a}...\n"}
+{"id": 671, "pt": "{W}{17:0017}{W} tô só imaginando coisas, num é?\n"}
+{"id": 672, "pt": "Qual lugar faz {W}{14:0002}{W} pensar \"Que cidade grande~!\"{17:0019}?"}
+{"id": 673, "pt": "Qual lugar faz {W}{14:0002}{W} pensar \"Ah~, que roça...\"{17:0019}?"}
+{"id": 674, "pt": "As casas de {W}{14:0001}{W} {17:001b} são demais{17:001a}~!\n"}
+{"id": 675, "pt": "Cada casa fica trancada a chave que nem baú de tesouro{17:0019}~!\n"}
+{"id": 676, "pt": "Já em {W}{14:0004}{W}, {W}{14:0005}{W} da casa do lado,\n"}
+{"id": 677, "pt": "chega gritando \"Ô, {W}{14:0002}{W}-chan, tá aí?\"\n"}
+{"id": 678, "pt": "e já vai abrindo a porta e entrando{17:001a}...\n"}
+{"id": 679, "pt": "Esse tipo de {W}{14:0005}{W} também num tem em {W}{14:0001}{W}{17:0019}...\n"}
+{"id": 680, "pt": "Fica meio triste{17:001a}~\n"}
+{"id": 681, "pt": "Será que em {W}{14:0001}{W} tem pouca festança{17:0019}?\n"}
+{"id": 682, "pt": "Em {W}{14:0004}{W}, a gente chamava os vizinhos, o povo de {W}{14:0005}{W} e quem mais estivesse por perto e fazia festança{17:001a}...\n"}
+{"id": 683, "pt": "No maior agito e animação, "}
+{"id": 684, "pt": "comendo {W}{14:0006}{W} e bebendo {W}{14:0007}{W}...\n"}
+{"id": 685, "pt": "Passar a noite toda fazendo {W}{14:0008}{W} é muito divertido{17:0019}~♪\n"}
+{"id": 686, "pt": "{W}{14:0002}{W}, experimenta uma vez, vale a pena{17:001a}~♪\n"}
+{"id": 687, "pt": "Recomendo{17:0019}!"}
+{"id": 688, "pt": "Qual lugar faz {W}{14:0002}{W} pensar \"Aqui é uma cidade enorme!\"{17:0019}?"}
+{"id": 689, "pt": "Mesmo em {W}{14:0001}{W},"}
+{"id": 690, "pt": "Quando pesca peixe pra caramba, vai vender no mercado mesmo{17:0019}?\n"}
+{"id": 691, "pt": "Hã!?\n"}
+{"id": 692, "pt": "E-então...\n"}
+{"id": 693, "pt": "Se pescar dois peixes, pode comer os dois{17:0019}!?\n"}
+{"id": 694, "pt": "Era o que eu pensava{17:0019}~♪\n"}
+{"id": 695, "pt": "Normalmente, se pescar 2, tem que vender 1...\n"}
+{"id": 696, "pt": "Senão, num dá pra comprar {W}{14:0004}{W}{17:001a}~\n"}
+{"id": 697, "pt": "Quanto a {W}{14:0001}{W}, como dizer {17:001b}\n"}
+{"id": 698, "pt": "É úmido e abafado{17:001a}~\n"}
+{"id": 699, "pt": "Será que no verão também fica úmido assim{17:0019}...?"}
+{"id": 700, "pt": "Ai ai ai~!\n"}
+{"id": 701, "pt": "Então,"}
+{"id": 702, "pt": "tem que ligar o ventilador bastante,"}
+{"id": 703, "pt": "senão, depois de lavar {W}{14:0003}{W} e {W}{14:0004}{W}, num seca nada{17:001a}~!\n"}
+{"id": 704, "pt": "Uhum, é isso mesmo{17:0019}♪\n"}
+{"id": 705, "pt": "Verão tem que ser sequinho, né~!\n"}
+{"id": 706, "pt": "A roupa lavada, tipo {W}{14:0003}{W} e {W}{14:0004}{W}, seca num instante{17:001a}~\n"}

@@ -4,7 +4,7 @@ Traduza do japonês para **português brasileiro natural**, como se o jogo tives
 
 ## O jogo
 
-*Doko Demo Issho* é um bichinho virtual falante. Pokepi são bichinhos que sonham em virar humanos; quem joga ensina palavras, e eles usam essas palavras nas conversas.
+*Doko Demo Issyo* é um bichinho virtual falante. Pokepi são bichinhos que sonham em virar humanos; quem joga ensina palavras, e eles usam essas palavras nas conversas.
 
 Texto leve, fofo e engraçado, com público de todas as idades. Humor e carinho importam mais que a literalidade: adapte piadas e trocadilhos para funcionarem em português.
 
@@ -14,7 +14,7 @@ Texto leve, fofo e engraçado, com público de todas as idades. Humor e carinho 
 |---|---|---|
 | トロ | Toro | Gatinho branco, personagem principal. Doce, curioso e ingênuo, um pouco criança. Fala informal e carinhosa. Quer muito virar humano. |
 | ピエール | Pierre | Cachorro vaidoso e dramático, de fala afetada e cheia de charme (no japonês usa かしら, よね, やぁねェ). Adora culinária, moda e tudo que é francês, e solta um "Bonsoir" de vez em quando. Fala de si no masculino. Expressões: "Ai, que chique!", "Credo!", "Nossa~", "meu bem", "Imagina!". |
-| リッキー | Ricky | Sapo |
+| リッキー | Ricky | Sapo caipira, simples e animado, que sonha em ser "o mais forte do mundo": vive treinando, fala de lutas e de desafios. Fala do interior, que no japonês aparece como オラ, ダス, ッス e ハァ～: em português use um caipira leve e carinhoso ("uai", "sô", "trem" no sentido de coisa, "num é?", "ô lôco"), sem exagerar na grafia. Fala de si no masculino. |
 | スズキ | Suzuki | Robô que se acha um "robô ultra-avançado": orgulhoso, meio professoral e ingênuo ao mesmo tempo. Fala com ar de sabichão, que no japonês aparece como のだ/なのだ: "Pois é!", "Ora essa~", "Eis a questão!", "Entendi tudo!", "Calculando~". Adora ciência, cálculos e assuntos de robô. Fala de si no masculino e às vezes pelo próprio nome. |
 | ジュン | Jun | Coelha alegre, moderninha e espevitada, com jeito de adolescente: fala rápido, usa gíria leve e atual ("Valeu!", "Que mão de vaca~", "Aff", "Tipo assim"), faz birra fofa e se empolga fácil. Fala de si no feminino. |
 | クロ | Kuro | Gato preto de boina vermelha, amigo do Toro |
@@ -33,6 +33,7 @@ Fale com quem joga usando **você**, sem gíria datada ou palavrão. Prefira fra
 - `$_YOU`, `$_WORD`, `$_W1`, `$_OPP` e outros começados por `$_`: nome de quem joga, palavras e afins. Mantenha sem alteração.
 - `{17:0017}`: **tique verbal do personagem**, por padrão ", miau". Coloque-o no final da frase, antes da pontuação, como em `Que legal{17:0017}!`. Isso aparece como "Que legal, miau!". Não escreva "miau" à mão quando houver esse marcador.
   - Jun: `{17:0017}` vira ", pyon" (o pulinho da coelha) e `{17:0018}` vira ", usa" (usado nas falas tristes ou sem graça). Mesma regra de posição. Quando `ピョン` aparecer escrito no texto, use ", pyon" no fim da frase.
+  - Ricky: `{17:001a}` vira ", croac" (o coaxar do sapo) e `{17:0019}` vira ", sô". Mesma regra: no fim da frase, antes da pontuação. `{17:001b}` é a interjeição "ah~", usada no meio da frase como pausa: escreva a frase para ela caber ali ("Aquilo {17:001b} num é coisa de sapo, sô!"). `{17:0017}` é a palavra "Eu" (com maiúscula) que o Ricky usa para falar de si: aparece sozinho ou como `{W}{17:0017}{W}`; deixe-o no começo da frase, como sujeito ("{W}{17:0017}{W} também ando aprendendo..."), e nunca coloque "eu" escrito ao lado dele. O verbo concorda com "Eu", na primeira pessoa: "{W}{17:0017}{W} sofro muito no verão", nunca "sofre". `{17:0018}` não aparece na tela: mantenha onde estiver, no fim da frase. Quando `ケロ`, `ダス`, `ッス` ou `ハァ～` aparecerem escritos no texto (sem marcador), escreva ", croac", ", sô" ou "ah~" por extenso, sem criar marcador `{17:...}`: a quantidade de marcadores tem de ser igual à do japonês.
   - Suzuki: `{17:0017}` vira ", robô". Mesma regra de posição. Quando `ロボ` aparecer escrito no fim de uma frase (ex.: `用意したロボ！`), use ", robô" no fim da frase. `ロボット` no meio da frase é só a palavra "robô".
   - Pierre: `{17:0017}` vira ", au" e `{17:0018}` vira ", au~". Mesma regra: no fim da frase, antes da pontuação. Quando `わン` ou `ワン` aparecer escrito no texto, use ", au" no fim da frase.
 

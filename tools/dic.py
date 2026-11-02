@@ -87,7 +87,26 @@ ROBO = [
     "Calculadora", "Chave", "Grifo", "Chave fenda", "Ábaco", "Panela", "Chaleira", "Frigideira", "Despertador", "Papelão",
     "Tanquinho", "Furoshiki",
 ]
-WORDS = {"NEKO.DIC": NEKO, "INU.DIC": INU, "USAGI.DIC": USAGI, "ROBO.DIC": ROBO}
+KAERU = [
+    "Sapo", "Apostador", "Casada", "Amazona", "Atirador", "Comando", "Samurai", "Palhaço", "Megera", "Otaku",
+    "Cobra", "Colegial", "Yeti", "Kappa", "Tsuchinoko", "Nessie", "ET", "Besouro", "Cabrito", "Lagartixa",
+    "Escorpião", "Barata", "Jararaca", "Urso", "Tigre", "Javali", "Churrasco", "Lámen", "Curry", "Peixe de rio",
+    "Gafanhoto", "Víbora", "Larva", "Bolacha", "Enlatado", "Ração", "Biscoito", "Siri", "Salsão", "Pimentão",
+    "Chá de erva", "Chá torrado", "Pingado", "Saquê", "Pinga cobra", "Pinga habu", "Chope", "Ônibus", "Balanço", "Trem",
+    "Caçamba", "Metrô", "Táxi", "Bíceps", "Olho", "Boca", "Mão", "Pé", "Umbigo", "Clavícula",
+    "Costas", "Cotovelo", "Cintura", "Frieira", "Dor barriga", "Rinite", "Ressaca", "Talento salva", "Sapo do poço", "Quem vence",
+    "Jeito vence", "Saia limpo", "Nin!", "Só um pouco", "Dafunda", "Banzai!", "Acordar cedo", "Passeio", "Acampar", "Sentadinho",
+    "Agito", "Saltitar", "Telefone", "Karaokê", "Romance", "Diário a dois", "Encontro", "Amor secreto", "Paixão", "Esforço",
+    "Trabalho", "Estudo", "Virar a noite", "Carona", "Queimada", "Agachamento", "Flexão", "Barra", "Rabisco", "Camping",
+    "Paintball", "Tiro ao prato", "Sumô", "Luta livre", "Briga", "Acordo", "Desistir", "Paciência", "Sufoco", "Massagem",
+    "Declaração", "Beijo", "Amor", "Presente", "Traição", "Revanche", "Ciúme", "Powerbomb", "Calcanhar", "Cotovelada",
+    "Chute", "Voadora", "Chute baixo", "Chave", "Cabeçada", "Tapão", "Agarrão", "Chave 4", "Lariat", "Giratório",
+    "Dotonbori", "Ueno", "Sugamo", "Mercadinho", "Parque", "Caixa areia", "Tsutenkaku", "Guam", "China", "Tailândia",
+    "Arena", "Dojo", "Enka", "Rap", "Soul", "Boia", "Lápis", "Gaita", "Fogos cobra", "Espiral",
+    "Aquecedor", "Luva", "Massinha", "Almofada", "Capuz", "Capacete", "Suéter", "Tanquinho", "Papel-toalha", "Computador",
+    "Fogareiro", "Faca",
+]
+WORDS = {"NEKO.DIC": NEKO, "INU.DIC": INU, "USAGI.DIC": USAGI, "ROBO.DIC": ROBO, "KAERU.DIC": KAERU}
 
 
 def records(d):

@@ -1,4 +1,4 @@
-# Formatos do Doko Demo Issho (PSP, UCJS10002)
+# Formatos do Doko Demo Issyo (PSP, UCJS10002)
 
 Notas de engenharia reversa usadas pelas ferramentas em `tools/`.
 

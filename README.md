@@ -1,6 +1,6 @@
-# Doko Demo Issho — Patch de tradução PT-BR (PSP)
+# Doko Demo Issyo — Patch de tradução PT-BR (PSP)
 
-Tradução de fã para português brasileiro de **Doko Demo Issho** (どこでもいっしょ) para PSP, o bichinho virtual falante do Toro.
+Tradução de fã para português brasileiro de **Doko Demo Issyo** (どこでもいっしょ) para PSP, o bichinho virtual falante do Toro.
 
 > Este repositório tem **só o patch** e as ferramentas usadas para fazê-lo. Nenhum arquivo do jogo é distribuído aqui. Você precisa ter a sua própria cópia do jogo.
 
@@ -8,11 +8,11 @@ Tradução de fã para português brasileiro de **Doko Demo Issho** (どこで�
 
 - Menus, botões e telas (cadastro, opções, dados, diário, cartões, presentes e afins).
 - Mensagens do sistema (salvar, carregar, erros, signos, tipos sanguíneos).
-- **Todas as falas do Toro, do Pierre, da Jun e do Suzuki**, mais de 42 mil textos, e as palavras que eles já sabem.
+- **Todas as falas dos cinco Pokepi** (Toro, Pierre, Jun, Suzuki e Ricky), mais de 52 mil textos, e as palavras que eles já sabem.
 - Nomes e descrições dos itens.
 - Fonte com acentos do português (á à â ã é ê í ó ô õ ú ü ç).
 
-Ainda em japonês: as falas do Ricky (sapo), as letras do teclado na página de kana, o minijogo de shiritori (que depende da língua japonesa), os créditos e o logotipo. **Escolha o Toro (gato), o Suzuki (robô), a Jun (coelha) ou o Pierre (cachorro)** ao começar um jogo novo.
+Ainda em japonês: as letras do teclado na página de kana, o minijogo de shiritori (que depende da língua japonesa), os créditos e o logotipo. Dá para escolher qualquer Pokepi ao começar um jogo novo: Toro (gato), Suzuki (robô), Jun (coelha), Pierre (cachorro) ou Ricky (sapo).
 
 ## O que você precisa
 
@@ -28,12 +28,12 @@ Ainda em japonês: as falas do Ricky (sapo), as letras do teclado na página de 
 
 1. Confira se a sua ISO é a certa (SHA-1 acima). Uma ISO diferente não vai funcionar.
 2. Abra o programa de patch, escolha a ISO original e o arquivo `.xdelta`.
-3. Gere a ISO nova, por exemplo `Doko Demo Issho (PT-BR).iso`. A original não é alterada.
+3. Gere a ISO nova, por exemplo `Doko Demo Issyo (PT-BR).iso`. A original não é alterada.
 
 Com Python 3 instalado, também dá para aplicar pelo terminal:
 
 ```
-python tools/vcdiff.py aplicar "Doko Demo Issho (Japan).iso" "Doko Demo Issho PT-BR.xdelta" "Doko Demo Issho (PT-BR).iso"
+python tools/vcdiff.py aplicar "Doko Demo Issho (Japan).iso" "Doko Demo Issyo PT-BR.xdelta" "Doko Demo Issyo (PT-BR).iso"
 ```
 
 ## Onde jogar
@@ -43,7 +43,7 @@ python tools/vcdiff.py aplicar "Doko Demo Issho (Japan).iso" "Doko Demo Issho PT
 
 ## Dicas
 
-- Quando o Toro fala ", miau", o Pierre ", au", a Jun ", pyon" e o Suzuki ", robô" no fim das frases, é o jeitinho deles (no original, "nya", "wan", "pyon" e "robo").
+- Quando o Toro fala ", miau", o Pierre ", au", a Jun ", pyon", o Suzuki ", robô" e o Ricky ", croac" ou ", sô" no fim das frases, é o jeitinho deles (no original, "nya", "wan", "pyon", "robo", "kero" e "dasu").
 - O teclado abre na página de letras japonesas. Para escrever com letras latinas (ABC, DEF…), vá com o direcional até a borda direita do teclado e aperte → mais uma vez.
 - Se algo aparecer cortado ou estranho, abra uma *issue* com um print e, se puder, o que estava acontecendo no jogo.
 
@@ -59,11 +59,11 @@ Para montar a ISO traduzida a partir da sua cópia e gerar o patch:
 ```
 cd tools
 python make_iso.py "<iso original>" "<iso traduzida>"
-python make_patch.py "<iso original>" "<iso traduzida>" "Doko Demo Issho PT-BR.xdelta"
+python make_patch.py "<iso original>" "<iso traduzida>" "Doko Demo Issyo PT-BR.xdelta"
 ```
 
 `make_patch.py` confere o resultado aplicando o patch de volta.
 
 ## Aviso
 
-Projeto de fã, sem fins lucrativos e sem ligação com a Sony. *Doko Demo Issho* e seus personagens pertencem aos seus donos. Compre o jogo original.
+Projeto de fã, sem fins lucrativos e sem ligação com a Sony. *Doko Demo Issyo* e seus personagens pertencem aos seus donos. Compre o jogo original.

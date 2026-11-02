@@ -20,7 +20,7 @@ SJIS = {
     0xDA0D0: '"Memory Stick" sem espaço livre.',
     0xDA104: "Para salvar são precisos 800 KB livres.",
     0xDA13C: "                                O: OK",
-    0xDA168: 'Achamos um save de "Doko Demo Issho".',
+    0xDA168: 'Achamos um save de "Doko Demo Issyo".',
     0xDA19C: "Substituir este save apaga o Pokepi atual, mas as palavras e os amigos passam para o novo.",
     0xDA218: "Deseja continuar?",
     0xDA230: "A hora do save difere da hora do PSP.",
@@ -40,7 +40,7 @@ SJIS = {
 
 # Textos em UTF-8 mostrados pelas janelas do sistema do PSP.
 UTF8 = {
-    0xDD33C: "Doko Demo Issho",
+    0xDD33C: "Doko Demo Issyo",
     0xDD358: "Toro (gato), Jun (coelho), Ricky (sapo), Pierre (cachorro) e Suzuki (robô): cinco Pokepis cheios de personalidade. Leve-os com você e converse em qualquer hora e lugar.",
     0xDDBA0: "A conexão com o anfitrião caiu.",
     0xDDBD8: "Não restou nenhum jogador.",

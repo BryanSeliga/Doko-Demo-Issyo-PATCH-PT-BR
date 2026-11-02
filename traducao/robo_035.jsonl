@@ -1,0 +1,574 @@
+{"id": 6986, "pt": "Desagradável"}
+{"id": 6987, "pt": "Indelicado"}
+{"id": 6988, "pt": "Blasfemo"}
+{"id": 6989, "pt": "Insultuoso"}
+{"id": 6990, "pt": "Muito"}
+{"id": 6991, "pt": "Extremamente"}
+{"id": 6992, "pt": "Bastante"}
+{"id": 6993, "pt": "Demais"}
+{"id": 6994, "pt": "Excelentemente"}
+{"id": 6995, "pt": "Além da imaginação"}
+{"id": 6996, "pt": "Mais que o esperado"}
+{"id": 6997, "pt": "Imensamente"}
+{"id": 6998, "pt": "Bem"}
+{"id": 6999, "pt": "Vida"}
+{"id": 7000, "pt": "Mundo"}
+{"id": 7001, "pt": "Universo"}
+{"id": 7002, "pt": "Este mundo"}
+{"id": 7003, "pt": "Realidade"}
+{"id": 7004, "pt": "Senso"}
+{"id": 7005, "pt": "Talento"}
+{"id": 7006, "pt": "Aptidão"}
+{"id": 7007, "pt": "Capacidade"}
+{"id": 7008, "pt": "Cultura"}
+{"id": 7009, "pt": "Conhecimento"}
+{"id": 7010, "pt": "Sabedoria"}
+{"id": 7011, "pt": "Recursos"}
+{"id": 7012, "pt": "Patrimônio"}
+{"id": 7013, "pt": "Ciência"}
+{"id": 7014, "pt": "Química"}
+{"id": 7015, "pt": "Eletrônica"}
+{"id": 7016, "pt": "Informática"}
+{"id": 7017, "pt": "Engenharia mecânica"}
+{"id": 7018, "pt": "Bioengenharia"}
+{"id": 7019, "pt": "Matemática"}
+{"id": 7020, "pt": "Filosofia"}
+{"id": 7021, "pt": "Economia"}
+{"id": 7022, "pt": "Psicologia"}
+{"id": 7023, "pt": "Lógica"}
+{"id": 7024, "pt": "Astronomia"}
+{"id": 7025, "pt": "Biologia"}
+{"id": 7026, "pt": "História natural"}
+{"id": 7027, "pt": "Falsificação"}
+{"id": 7028, "pt": "Maluquice"}
+{"id": 7029, "pt": "Trapaça"}
+{"id": 7030, "pt": "Cenário de papelão"}
+{"id": 7031, "pt": "Homem"}
+{"id": 7032, "pt": "Mulher"}
+{"id": 7033, "pt": "Ídolo"}
+{"id": 7034, "pt": "Cantor(a)"}
+{"id": 7035, "pt": "Humorista"}
+{"id": 7036, "pt": "Ator ou atriz"}
+{"id": 7037, "pt": "Esportista"}
+{"id": 7038, "pt": "Pessoa famosa"}
+{"id": 7039, "pt": "Robô homem"}
+{"id": 7040, "pt": "Robô mulher"}
+{"id": 7041, "pt": "Nome de quem trocou cartão"}
+{"id": 7042, "pt": "Nome de quem foi apresentado"}
+{"id": 7043, "pt": "Cônjuge"}
+{"id": 7044, "pt": "Família"}
+{"id": 7045, "pt": "Namorado(a)"}
+{"id": 7046, "pt": "Amigo(a)"}
+{"id": 7047, "pt": "Nome de pessoa"}
+{"id": 7048, "pt": "Palavra para pessoa"}
+{"id": 7049, "pt": "Profissão de homem"}
+{"id": 7050, "pt": "Profissão de mulher"}
+{"id": 7051, "pt": "Profissão"}
+{"id": 7052, "pt": "Elogio para homem"}
+{"id": 7053, "pt": "Elogio para mulher"}
+{"id": 7054, "pt": "Elogio"}
+{"id": 7055, "pt": "Xingamento para homem"}
+{"id": 7056, "pt": "Xingamento para mulher"}
+{"id": 7057, "pt": "Xingamento"}
+{"id": 7058, "pt": "Coisa que se faz"}
+{"id": 7059, "pt": "Coisa para fazer sozinho"}
+{"id": 7060, "pt": "Coisa para fazer a dois"}
+{"id": 7061, "pt": "Coisa para fazer em grupo"}
+{"id": 7062, "pt": "Esporte"}
+{"id": 7063, "pt": "Coisa que se deve fazer"}
+{"id": 7064, "pt": "Coisa proibida"}
+{"id": 7065, "pt": "Coisa que se faz com alguém"}
+{"id": 7066, "pt": "Técnica"}
+{"id": 7067, "pt": "Coisa que se faz e se recebe"}
+{"id": 7068, "pt": "Coisa que se recebe de alguém"}
+{"id": 7069, "pt": "Coisa que se deve fazer com alguém"}
+{"id": 7070, "pt": "Coisa proibida de fazer com alguém"}
+{"id": 7071, "pt": "Lugar para ir"}
+{"id": 7072, "pt": "Onde mora"}
+{"id": 7073, "pt": "Restaurante"}
+{"id": 7074, "pt": "Loja de grife"}
+{"id": 7075, "pt": "Nome de lugar"}
+{"id": 7076, "pt": "Exterior"}
+{"id": 7077, "pt": "Evento"}
+{"id": 7078, "pt": "Time esportivo"}
+{"id": 7079, "pt": "Grupo"}
+{"id": 7080, "pt": "Comida"}
+{"id": 7081, "pt": "Ingrediente"}
+{"id": 7082, "pt": "Ser vivo"}
+{"id": 7083, "pt": "Animal"}
+{"id": 7084, "pt": "Planta"}
+{"id": 7085, "pt": "Música"}
+{"id": 7086, "pt": "Gênero musical"}
+{"id": 7087, "pt": "Nome de música"}
+{"id": 7088, "pt": "Coisa para ver"}
+{"id": 7089, "pt": "Filme"}
+{"id": 7090, "pt": "Anime"}
+{"id": 7091, "pt": "Série"}
+{"id": 7092, "pt": "Programa de variedades"}
+{"id": 7093, "pt": "Coisa para ler"}
+{"id": 7094, "pt": "Mangá"}
+{"id": 7095, "pt": "Revista"}
+{"id": 7096, "pt": "Livro"}
+{"id": 7097, "pt": "Coisa de usar"}
+{"id": 7098, "pt": "Coisa de vestir"}
+{"id": 7099, "pt": "Coisa elétrica"}
+{"id": 7100, "pt": "Palavra"}
+{"id": 7101, "pt": "Saudação de início"}
+{"id": 7102, "pt": "Saudação de despedida"}
+{"id": 7103, "pt": "Saudação de bom dia"}
+{"id": 7104, "pt": "Saudação de boa noite"}
+{"id": 7105, "pt": "Saudação"}
+{"id": 7106, "pt": "Piada"}
+{"id": 7107, "pt": "Lema"}
+{"id": 7108, "pt": "Bebida"}
+{"id": 7109, "pt": "Veículo"}
+{"id": 7110, "pt": "Parte do corpo"}
+{"id": 7111, "pt": "Doença"}
+{"id": 7112, "pt": "N"}
+{"id": 7113, "pt": "Olá"}
+{"id": 7114, "pt": "E aí!"}
+{"id": 7115, "pt": "Opa, opa"}
+{"id": 7116, "pt": "Como vai?"}
+{"id": 7117, "pt": "A Terra é uma só!"}
+{"id": 7118, "pt": "Inverno"}
+{"id": 7119, "pt": "Primavera"}
+{"id": 7120, "pt": "Verão"}
+{"id": 7121, "pt": "Outono"}
+{"id": 7122, "pt": "Segunda"}
+{"id": 7123, "pt": "Terça"}
+{"id": 7124, "pt": "Quarta"}
+{"id": 7125, "pt": "Quinta"}
+{"id": 7126, "pt": "Sexta"}
+{"id": 7127, "pt": "Sábado"}
+{"id": 7128, "pt": "Domingo"}
+{"id": 7129, "pt": "Homem"}
+{"id": 7130, "pt": "Mulher"}
+{"id": 7131, "pt": "O"}
+{"id": 7132, "pt": "A"}
+{"id": 7133, "pt": "B"}
+{"id": 7134, "pt": "AB"}
+{"id": 7135, "pt": "Boa noite"}
+{"id": 7136, "pt": "Bom dia"}
+{"id": 7137, "pt": "Pokepi"}
+{"id": 7138, "pt": "Gato"}
+{"id": 7139, "pt": "Coelho"}
+{"id": 7140, "pt": "Cachorro"}
+{"id": 7141, "pt": "Sapo"}
+{"id": 7142, "pt": "Peteleco"}
+{"id": 7143, "pt": "Cafuné"}
+{"id": 7144, "pt": "Nome de pessoa"}
+{"id": 7145, "pt": "Profissão"}
+{"id": 7146, "pt": "Palavra para pessoa"}
+{"id": 7147, "pt": "Comida e bebida"}
+{"id": 7148, "pt": "Coisa de usar"}
+{"id": 7149, "pt": "Coisa de vestir"}
+{"id": 7150, "pt": "Veículo"}
+{"id": 7151, "pt": "Doença"}
+{"id": 7152, "pt": "Refazer"}
+{"id": 7153, "pt": "Caderno de palavras?"}
+{"id": 7154, "pt": "O que é isso?"}
+{"id": 7155, "pt": "Tipo, como se fala?"}
+{"id": 7156, "pt": "É só corrigir?"}
+{"id": 7157, "pt": "Herdou?"}
+{"id": 7158, "pt": "Ah, entendi..."}
+{"id": 7159, "pt": "Deixou para trás"}
+{"id": 7160, "pt": "Pode chamar só pelo nome"}
+{"id": 7161, "pt": "Outros"}
+{"id": 7162, "pt": "-san"}
+{"id": 7163, "pt": "-chan"}
+{"id": 7164, "pt": "-kun"}
+{"id": 7165, "pt": "-sama"}
+{"id": 7166, "pt": "Prof."}
+{"id": 7167, "pt": "Isso"}
+{"id": 7168, "pt": "Erro"}
+{"id": 7169, "pt": "Pessoa importante"}
+{"id": 7170, "pt": "Superior"}
+{"id": 7171, "pt": "Mesmo nível"}
+{"id": 7172, "pt": "Subordinado"}
+{"id": 7173, "pt": "Exatamente"}
+{"id": 7174, "pt": "É isso mesmo"}
+{"id": 7175, "pt": "Não se fala assim..."}
+{"id": 7176, "pt": "Corrigir agora"}
+{"id": 7177, "pt": "Corrigir depois"}
+{"id": 7178, "pt": "Robô"}
+{"id": 7179, "pt": "Comédia"}
+{"id": 7180, "pt": "Personagem"}
+{"id": 7181, "pt": "Solo"}
+{"id": 7182, "pt": "Dupla"}
+{"id": 7183, "pt": "Grupo"}
+{"id": 7184, "pt": "Conhecido(a)"}
+{"id": 7185, "pt": "Profissão"}
+{"id": 7186, "pt": "Pessoa comum"}
+{"id": 7187, "pt": "Para pessoas"}
+{"id": 7188, "pt": "Fazer normalmente"}
+{"id": 7189, "pt": "Obrigatório"}
+{"id": 7190, "pt": "Proibido"}
+{"id": 7191, "pt": "Fazer sozinho"}
+{"id": 7192, "pt": "Fazer a dois"}
+{"id": 7193, "pt": "Fazer em grupo"}
+{"id": 7194, "pt": "Quem faz"}
+{"id": 7195, "pt": "Quem recebe"}
+{"id": 7196, "pt": "Os dois"}
+{"id": 7197, "pt": "Obrigatório receber"}
+{"id": 7198, "pt": "Proibido receber"}
+{"id": 7199, "pt": "Nenhum"}
+{"id": 7200, "pt": "Fazer e receber"}
+{"id": 7201, "pt": "Não se faz com os outros"}
+{"id": 7202, "pt": "Nome de empresa"}
+{"id": 7203, "pt": "Outro grupo"}
+{"id": 7204, "pt": "Restaurante"}
+{"id": 7205, "pt": "Loja de grife"}
+{"id": 7206, "pt": "Outra loja"}
+{"id": 7207, "pt": "Nome do grupo"}
+{"id": 7208, "pt": "Comida"}
+{"id": 7209, "pt": "Bebida"}
+{"id": 7210, "pt": "Outros livros"}
+{"id": 7211, "pt": "Uso comum"}
+{"id": 7212, "pt": "Elétrico"}
+{"id": 7213, "pt": "Coisa de vestir"}
+{"id": 7214, "pt": "De início"}
+{"id": 7215, "pt": "De despedida"}
+{"id": 7216, "pt": "Da manhã"}
+{"id": 7217, "pt": "Da noite"}
+{"id": 7218, "pt": "Trabalho de homem"}
+{"id": 7219, "pt": "Trabalho de mulher"}
+{"id": 7220, "pt": "Os dois"}
+{"id": 7221, "pt": "Coisa de homem"}
+{"id": 7222, "pt": "Coisa de mulher"}
+{"id": 7223, "pt": "Robô homem"}
+{"id": 7224, "pt": "Robô mulher"}
+{"id": 7225, "pt": "Robô não tem gênero, ora!"}
+{"id": 7226, "pt": "Adoro"}
+{"id": 7227, "pt": "Gosto"}
+{"id": 7228, "pt": "Normal"}
+{"id": 7229, "pt": "Não gosto"}
+{"id": 7230, "pt": "Detesto"}
+{"id": 7231, "pt": "Aham"}
+{"id": 7232, "pt": "Recomeçar do início"}
+{"id": 7233, "pt": "Tem relação"}
+{"id": 7234, "pt": "Não tem relação"}
+{"id": 7235, "pt": "Nem gosto nem desgosto"}
+{"id": 7236, "pt": "Então, é assim..."}
+{"id": 7237, "pt": "Não vou contar"}
+{"id": 7238, "pt": "Hã? O quê?"}
+{"id": 7239, "pt": "Então, outro..."}
+{"id": 7240, "pt": "Então, deixa pra lá"}
+{"id": 7241, "pt": "Rejeitar"}
+{"id": 7242, "pt": "Recusar"}
+{"id": 7243, "pt": "Repelir"}
+{"id": 7244, "pt": "Não aceitar"}
+{"id": 7245, "pt": "Exatamente"}
+{"id": 7246, "pt": "Com certeza"}
+{"id": 7247, "pt": "É mesmo"}
+{"id": 7248, "pt": "Isso, isso"}
+{"id": 7249, "pt": "É mesmo?"}
+{"id": 7250, "pt": "Será que é?"}
+{"id": 7251, "pt": "Hmm~"}
+{"id": 7252, "pt": "Foi só um pequeno\nengano...\n"}
+{"id": 7253, "pt": "Ué?\nEstava errado~\n"}
+{"id": 7254, "pt": "Ah é~"}
+{"id": 7255, "pt": "Nem pensar~"}
+{"id": 7256, "pt": "Impossível"}
+{"id": 7257, "pt": "Isso não existe"}
+{"id": 7258, "pt": "Hmm~?"}
+{"id": 7259, "pt": "Nossa, que situação"}
+{"id": 7260, "pt": "O que houve?"}
+{"id": 7261, "pt": "Nossa~ Que horror!"}
+{"id": 7262, "pt": "Hmm..."}
+{"id": 7263, "pt": "Coração aos pulos"}
+{"id": 7264, "pt": "Me emociona"}
+{"id": 7265, "pt": "Angustiante"}
+{"id": 7266, "pt": "Incômodo"}
+{"id": 7267, "pt": "Sofrido"}
+{"id": 7268, "pt": "Irritante"}
+{"id": 7269, "pt": "Estiloso"}
+{"id": 7270, "pt": "Gostoso"}
+{"id": 7271, "pt": "Faz bem ao corpo"}
+{"id": 7272, "pt": "Útil ao mundo"}
+{"id": 7273, "pt": "Adulto"}
+{"id": 7274, "pt": "Forte"}
+{"id": 7275, "pt": "Grande"}
+{"id": 7276, "pt": "Importante"}
+{"id": 7277, "pt": "Ligado ao amor"}
+{"id": 7278, "pt": "Ligado à diversão"}
+{"id": 7279, "pt": "Ligado ao trabalho"}
+{"id": 7280, "pt": "Picante"}
+{"id": 7281, "pt": "Vicia"}
+{"id": 7282, "pt": "Bonito"}
+{"id": 7283, "pt": "Fofo"}
+{"id": 7284, "pt": "Luxuoso"}
+{"id": 7285, "pt": "Coração aos pulos"}
+{"id": 7286, "pt": "Emocionante"}
+{"id": 7287, "pt": "Angustiante"}
+{"id": 7288, "pt": "Incômodo"}
+{"id": 7289, "pt": "Sofrido"}
+{"id": 7290, "pt": "Irritante"}
+{"id": 7291, "pt": "Estiloso"}
+{"id": 7292, "pt": "Gostoso"}
+{"id": 7293, "pt": "Bom ao corpo"}
+{"id": 7294, "pt": "Útil"}
+{"id": 7295, "pt": "Adulto"}
+{"id": 7296, "pt": "Forte"}
+{"id": 7297, "pt": "Grande"}
+{"id": 7298, "pt": "Importante"}
+{"id": 7299, "pt": "Coisa de amor"}
+{"id": 7300, "pt": "Coisa de diversão"}
+{"id": 7301, "pt": "Coisa de trabalho"}
+{"id": 7302, "pt": "Picante"}
+{"id": 7303, "pt": "Vicia"}
+{"id": 7304, "pt": "Bonito"}
+{"id": 7305, "pt": "Fofo"}
+{"id": 7306, "pt": "Luxuoso"}
+{"id": 7307, "pt": "Brega"}
+{"id": 7308, "pt": "Desagradável"}
+{"id": 7309, "pt": "Faz mal ao corpo"}
+{"id": 7310, "pt": "Inútil"}
+{"id": 7311, "pt": "Infantil"}
+{"id": 7312, "pt": "Fraco"}
+{"id": 7313, "pt": "Pequeno"}
+{"id": 7314, "pt": "Gosto muito"}
+{"id": 7315, "pt": "Gosto um pouco"}
+{"id": 7316, "pt": "Gosto só um pouquinho"}
+{"id": 7317, "pt": "Na verdade é rival!"}
+{"id": 7318, "pt": "Marido"}
+{"id": 7319, "pt": "Esposa"}
+{"id": 7320, "pt": "Primeira vez"}
+{"id": 7321, "pt": "Já conheço"}
+{"id": 7322, "pt": "Pode perguntar"}
+{"id": 7323, "pt": "Não pergunte mais..."}
+{"id": 7324, "pt": "Pergunta"}
+{"id": 7325, "pt": "O que quer saber"}
+{"id": 7326, "pt": "O que será?"}
+{"id": 7327, "pt": "Hã"}
+{"id": 7328, "pt": "Telefone?"}
+{"id": 7329, "pt": "Agora há pouco"}
+{"id": 7330, "pt": "Me conta?"}
+{"id": 7331, "pt": "Entendi"}
+{"id": 7332, "pt": "É segredo, né"}
+{"id": 7333, "pt": "O que é?"}
+{"id": 7334, "pt": "O que houve?"}
+{"id": 7335, "pt": "Eu sei"}
+{"id": 7336, "pt": "Não sei"}
+{"id": 7337, "pt": "Não é de apertar o coração"}
+{"id": 7338, "pt": "Não quero"}
+{"id": 7339, "pt": "Que tal"}
+{"id": 7340, "pt": "Nem pensar"}
+{"id": 7341, "pt": "Deixo com você"}
+{"id": 7342, "pt": "Digitar à vontade"}
+{"id": 7343, "pt": "Com XX"}
+{"id": 7344, "pt": "Blá-blá-blá"}
+{"id": 7345, "pt": "Já ensinei"}
+{"id": 7346, "pt": "Pessoa famosa"}
+{"id": 7347, "pt": "Coisa picante"}
+{"id": 7348, "pt": "Quiz Pokepi"}
+{"id": 7349, "pt": "Janeiro"}
+{"id": 7350, "pt": "Fevereiro"}
+{"id": 7351, "pt": "Março"}
+{"id": 7352, "pt": "Abril"}
+{"id": 7353, "pt": "Maio"}
+{"id": 7354, "pt": "Junho"}
+{"id": 7355, "pt": "Julho"}
+{"id": 7356, "pt": "Agosto"}
+{"id": 7357, "pt": "Setembro"}
+{"id": 7358, "pt": "Outubro"}
+{"id": 7359, "pt": "Novembro"}
+{"id": 7360, "pt": "Dezembro"}
+{"id": 7361, "pt": "Aniversário"}
+{"id": 7362, "pt": "Pode ser"}
+{"id": 7363, "pt": "Telefone"}
+{"id": 7364, "pt": "Tipo sanguíneo"}
+{"id": 7365, "pt": "Tipo A"}
+{"id": 7366, "pt": "Tipo B"}
+{"id": 7367, "pt": "Tipo O"}
+{"id": 7368, "pt": "Tipo AB"}
+{"id": 7369, "pt": "Outra relação, nem amizade nem conhecimento"}
+{"id": 7370, "pt": "Posição superior"}
+{"id": 7371, "pt": "Mesmo nível"}
+{"id": 7372, "pt": "Posição inferior"}
+{"id": 7373, "pt": "Tenho"}
+{"id": 7374, "pt": "Não tenho"}
+{"id": 7375, "pt": "Tenho"}
+{"id": 7376, "pt": "Não tenho"}
+{"id": 7377, "pt": "Procurando"}
+{"id": 7378, "pt": "Com prazer"}
+{"id": 7379, "pt": "Prefiro não"}
+{"id": 7380, "pt": "Tchau"}
+{"id": 7381, "pt": "Deixo com você"}
+{"id": 7382, "pt": "Ensinar palavra"}
+{"id": 7383, "pt": "Se tem namorado(a) ou não"}
+{"id": 7384, "pt": "Então deixa pra lá"}
+{"id": 7385, "pt": "Mais uma vez"}
+{"id": 7386, "pt": "Vamos perguntar o aniversário!"}
+{"id": 7387, "pt": "Melhor não perguntar"}
+{"id": 7388, "pt": "Vamos perguntar o telefone!"}
+{"id": 7389, "pt": "Vamos perguntar se tem namorado(a)!"}
+{"id": 7390, "pt": "Perguntas prontas"}
+{"id": 7391, "pt": "Ter namorado(a) ou não"}
+{"id": 7392, "pt": "XX é YY?"}
+{"id": 7393, "pt": "XX ou YY, qual...?"}
+{"id": 7394, "pt": "Primeira vez"}
+{"id": 7395, "pt": "Para quem é a primeira vez"}
+{"id": 7396, "pt": "Do caderno de amigos"}
+{"id": 7397, "pt": "É a primeira vez, né"}
+{"id": 7398, "pt": "Como foi?"}
+{"id": 7399, "pt": "Entendi"}
+{"id": 7400, "pt": "Pode ser"}
+{"id": 7401, "pt": "Cancelar apresentação"}
+{"id": 7402, "pt": "Começar apresentação"}
+{"id": 7403, "pt": "Preparar perguntas"}
+{"id": 7404, "pt": "Fundamental 1"}
+{"id": 7405, "pt": "Fundamental 2"}
+{"id": 7406, "pt": "Ensino médio"}
+{"id": 7407, "pt": "Faculdade"}
+{"id": 7408, "pt": "Outro tipo de estudo"}
+{"id": 7409, "pt": "Em casa"}
+{"id": 7410, "pt": "Outro lugar"}
+{"id": 7411, "pt": "Que empresa"}
+{"id": 7412, "pt": "Que loja"}
+{"id": 7413, "pt": "Que lugar"}
+{"id": 7414, "pt": "Já casei"}
+{"id": 7415, "pt": "Ainda não"}
+{"id": 7416, "pt": "Estudo"}
+{"id": 7417, "pt": "Não estudo"}
+{"id": 7418, "pt": "Trabalho"}
+{"id": 7419, "pt": "Só bico"}
+{"id": 7420, "pt": "Nada em especial"}
+{"id": 7421, "pt": "Não cabe mais..."}
+{"id": 7422, "pt": "Bolsa cheia?"}
+{"id": 7423, "pt": "Utilidades"}
+{"id": 7424, "pt": "Liquidação de fechamento"}
+{"id": 7425, "pt": "Preço baixo todo dia"}
+{"id": 7426, "pt": "Utilidades de $_WORD"}
+{"id": 7427, "pt": "Pechincha de $_WORD"}
+{"id": 7428, "pt": "Sorvete simples"}
+{"id": 7429, "pt": "Marca Raio"}
+{"id": 7430, "pt": "Sorvete de $_WORD"}
+{"id": 7431, "pt": "Chegada de $_WORD"}
+{"id": 7432, "pt": "Entrega expressa"}
+{"id": 7433, "pt": "Entrega Orca Vermelha"}
+{"id": 7434, "pt": "Entrega postal"}
+{"id": 7435, "pt": "Entrega de $_WORD"}
+{"id": 7436, "pt": "Correio de Minami-Okutama"}
+{"id": 7437, "pt": "Correio de Hayami"}
+{"id": 7438, "pt": "Correio do Interior"}
+{"id": 7439, "pt": "Correio de $_WORD"}
+{"id": 7440, "pt": "Agência $_WORD"}
+{"id": 7441, "pt": "Autoescola de Duas Rodas Especial"}
+{"id": 7442, "pt": "Hospital Geral Paraíso"}
+{"id": 7443, "pt": "Restaurante Kunegi"}
+{"id": 7444, "pt": "Casa sempre cheia"}
+{"id": 7445, "pt": "Esperto de carteirinha"}
+{"id": 7446, "pt": "Lei do mais forte"}
+{"id": 7447, "pt": "$_WORD de montão"}
+{"id": 7448, "pt": "Ensopado de pato"}
+{"id": 7449, "pt": "Tigela de veado grandona"}
+{"id": 7450, "pt": "Churrasco Genghis Khan"}
+{"id": 7451, "pt": "Sopa de pato"}
+{"id": 7452, "pt": "Espresso"}
+{"id": 7453, "pt": "Dakgalbi"}
+{"id": 7454, "pt": "$_WORD porção grande"}
+{"id": 7455, "pt": "$_WORD superpicante"}
+{"id": 7456, "pt": "Macarrão de pato"}
+{"id": 7457, "pt": "Macarrão supremo ultra definitivo"}
+{"id": 7458, "pt": "Goya champuru"}
+{"id": 7459, "pt": "Udon de $_WORD"}
+{"id": 7460, "pt": "Parfait de pato"}
+{"id": 7461, "pt": "Parfait yokozuna gigante"}
+{"id": 7462, "pt": "Sukiyaki"}
+{"id": 7463, "pt": "Carne de ave com $_WORD"}
+{"id": 7464, "pt": "Carne de boi com $_WORD"}
+{"id": 7465, "pt": "Sorvete de pato"}
+{"id": 7466, "pt": "Pato com cebolinha"}
+{"id": 7467, "pt": "Ensopado de miúdos"}
+{"id": 7468, "pt": "Prato feito de $_WORD"}
+{"id": 7469, "pt": "Ensopado de pato gelado"}
+{"id": 7470, "pt": "Estilo menininha"}
+{"id": 7471, "pt": "Panela secreta do chefe"}
+{"id": 7472, "pt": "Torcendo por $_WORD"}
+{"id": 7473, "pt": "Feito à mão: $_WORD"}
+{"id": 7474, "pt": "Em cartaz: $_WORD"}
+{"id": 7475, "pt": "Marmita caseira"}
+{"id": 7476, "pt": "Surpresa do chef"}
+{"id": 7477, "pt": "Combo feminino"}
+{"id": 7478, "pt": "Aberto todo dia"}
+{"id": 7479, "pt": "Rumo ao milhão!"}
+{"id": 7480, "pt": "Prazo é sagrado"}
+{"id": 7481, "pt": "Setor de $_WORD"}
+{"id": 7482, "pt": "Gestão de clientes"}
+{"id": 7483, "pt": "Vendas"}
+{"id": 7484, "pt": "Lançamento adiado?"}
+{"id": 7485, "pt": "Meta de $_WORD"}
+{"id": 7486, "pt": "Gestão de $_WORD"}
+{"id": 7487, "pt": "Material de escritório"}
+{"id": 7488, "pt": "Não vire de cabeça para baixo"}
+{"id": 7489, "pt": "Transporte de cães e gatos"}
+{"id": 7490, "pt": "$_WORD no local"}
+{"id": 7491, "pt": "$_WORD de emergência"}
+{"id": 7492, "pt": "Caixa de ideias descartadas"}
+{"id": 7493, "pt": "Documentos de reclamação"}
+{"id": 7494, "pt": "Artigos de $_WORD"}
+{"id": 7495, "pt": "Perigo: $_WORD"}
+{"id": 7496, "pt": "Cuidado com o fogo"}
+{"id": 7497, "pt": "Espíritos, fora!"}
+{"id": 7498, "pt": "Restrição de água"}
+{"id": 7499, "pt": "Cuidado com $_WORD"}
+{"id": 7500, "pt": "Atenção: $_WORD"}
+{"id": 7501, "pt": "Arrumação"}
+{"id": 7502, "pt": "Tampinha de garrafa"}
+{"id": 7503, "pt": "Separe o lixo"}
+{"id": 7504, "pt": "Colabore com $_WORD"}
+{"id": 7505, "pt": "Separe: $_WORD!"}
+{"id": 7506, "pt": "Fuchikami"}
+{"id": 7507, "pt": "Akiko"}
+{"id": 7508, "pt": "Clínica de Acupuntura Midorigaoka"}
+{"id": 7509, "pt": "Dentista Kamo"}
+{"id": 7510, "pt": "Loja Minamiji"}
+{"id": 7511, "pt": "Clínica de $_WORD"}
+{"id": 7512, "pt": "Dentista de $_WORD"}
+{"id": 7513, "pt": "Relógios Oikawa"}
+{"id": 7514, "pt": "Yambaru kuina"}
+{"id": 7515, "pt": "Eletro Horiguchi"}
+{"id": 7516, "pt": "Relógio de $_WORD"}
+{"id": 7517, "pt": "Óculos de $_WORD"}
+{"id": 7518, "pt": "Ortopedia Ogasawara"}
+{"id": 7519, "pt": "Ortopedia do Osso"}
+{"id": 7520, "pt": "Clínica Tasaka"}
+{"id": 7521, "pt": "Ortopedia de $_WORD"}
+{"id": 7522, "pt": "Penhores de $_WORD"}
+{"id": 7523, "pt": "Eletro Oyama"}
+{"id": 7524, "pt": "Dentista Yara"}
+{"id": 7525, "pt": "Barbearia Nagoshi"}
+{"id": 7526, "pt": "Eletrodomésticos $_WORD"}
+{"id": 7527, "pt": "Compra de $_WORD"}
+{"id": 7528, "pt": "Toalha na banheira"}
+{"id": 7529, "pt": "Sais de banho na banheira"}
+{"id": 7530, "pt": "Condicionador na banheira"}
+{"id": 7531, "pt": "$_WORD na banheira"}
+{"id": 7532, "pt": "Por favor, não coloque"}
+{"id": 7533, "pt": "Parque Marinho de Odaiba"}
+{"id": 7534, "pt": "Fábula do Salão da Fama"}
+{"id": 7535, "pt": "Venha, Sonho, Venha"}
+{"id": 7536, "pt": "Desastrado"}
+{"id": 7537, "pt": "Sabano Babicchi"}
+{"id": 7538, "pt": "Eremita"}
+{"id": 7539, "pt": "Look econômico"}
+{"id": 7540, "pt": "Gaivota Lírio Heisei"}
+{"id": 7541, "pt": "Penhores Sakamoto"}
+{"id": 7542, "pt": "Furão"}
+{"id": 7543, "pt": "Peças de sucata"}
+{"id": 7544, "pt": "Caçador"}
+{"id": 7545, "pt": "Olha pra lá"}
+{"id": 7546, "pt": "Colégio Masculino Lírio Branco"}
+{"id": 7547, "pt": "Buoé~"}
+{"id": 7548, "pt": "Hospital Barrigão"}
+{"id": 7549, "pt": "Oftalmologia Idachi Masamune"}
+{"id": 7550, "pt": "Hotel Aoyama Zona Nobre"}
+{"id": 7551, "pt": "Cirurgia plástica de $_WORD"}
+{"id": 7552, "pt": "Estética de $_WORD"}
+{"id": 7553, "pt": "Fígado de tamboril com ponzu"}
+{"id": 7554, "pt": "Já à venda: livro Chuva Forte!"}
+{"id": 7555, "pt": "Doce famoso Piyo-piyo"}
+{"id": 7556, "pt": "$_WORD direto da fazenda"}
+{"id": 7557, "pt": "Pachinko Lucky"}
+{"id": 7558, "pt": "Empréstimos Yaen"}
+{"id": 7559, "pt": "Izakaya Minha Juventude"}

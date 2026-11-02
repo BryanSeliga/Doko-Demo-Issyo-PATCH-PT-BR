@@ -28,7 +28,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 PT_DIR = os.path.join(HERE, "..", "traducao")
 # O tique verbal e inserido no fim das frases: "Que legal" + ", miau" + "!".
 TIC = {"neko": {"ニャ": ", miau"}, "inu": {"わン": ", au", "わ～ン": ", au~"},
-       "usagi": {"ピョン": ", pyon", "ウサ": ", usa"}}
+       "usagi": {"ピョン": ", pyon", "ウサ": ", usa"}, "robo": {"ロボ": ", robô"}}
 
 
 def load_translations(who, d):

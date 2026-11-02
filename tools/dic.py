@@ -68,7 +68,26 @@ USAGI = [
     "Gorro", "Capuz", "Escova", "Papel-toalha", "Pelúcia", "Lanterna", "Tábua", "Amarelo", "Lava-roupa", "Detergente",
     "Esponja", "Geladeira",
 ]
-WORDS = {"NEKO.DIC": NEKO, "INU.DIC": INU, "USAGI.DIC": USAGI}
+ROBO = [
+    "Robô", "Mecânico", "Programador", "Inventor", "Cientista", "Gênio", "Filósofo", "Homo sapiens", "Intelectual", "Rebelde",
+    "Perdedor", "Vilão", "Palhaço", "Colegial", "Antenado", "Salamandra", "Peixe-boi", "Tamanduá", "ET", "Besouro",
+    "Rato", "Barata", "Tatuzinho", "Água-viva", "Lesma", "Hambúrguer", "Curry", "Umeboshi", "Imagawayaki", "Natto",
+    "Tiramisu", "Picles", "Peixe seco", "Oshizushi", "Chazuke", "Tekkamaki", "Minestrone", "Pot-au-feu", "Sopa abóbora", "Fricassê",
+    "Óleo", "Vodca", "Tequila", "Licor de ume", "Álcool", "Chá", "Leite", "Suco laranja", "Cola", "Trem-bala",
+    "Foguete", "Carro voador", "Maria-fumaça", "Ônibus duplo", "Moto", "Bombeiros", "Viatura", "Carrão", "Jumbo", "Olho",
+    "Cabeça", "Braço", "Tornozelo", "Antena", "Motor", "Fratura", "Calorão", "Falta de ar", "Defeito", "Pane térmica",
+    "Sem energia", "Olá", "Tchau", "Cálculo", "Navegar", "Cruzadinha", "Acordar cedo", "Passeio", "Faxina", "Lavar roupa",
+    "Recarga", "E-mail", "Encontro", "Trocar dados", "Telefone", "Romance", "Paixão", "Pachinko", "Mahjong", "Shogi",
+    "Cartomancia", "Futebol", "Sumô", "Luta livre", "Esforço", "Trabalho", "Estudo", "Virar a noite", "Noitada", "Soneca",
+    "Briga", "Banho de sol", "Praia", "Karaokê", "Amor secreto", "Promessa", "Atraso", "Amor", "Declaração", "Presente",
+    "Beijo", "Manutenção", "Massagem", "Shiatsu", "Hackear", "Traição", "Fofoca", "Maldade", "Ciúme", "Mandinga",
+    "Mercadinho", "Locadora", "Eletrônicos", "Ferragens", "Brinquedos", "Quermesse", "Tokusatsu", "Autoshow", "Shinjuku", "Akihabara",
+    "Asakusa", "EUA", "Rússia", "China", "Escola", "Delegacia", "Tribunal", "Pop", "Techno", "Clássica",
+    "Ópera", "Kotatsu", "Computador", "Escovinha", "Barbeador", "Ferro", "Secador", "Geladeira", "Micro-ondas", "Ar-cond.",
+    "Calculadora", "Chave", "Grifo", "Chave fenda", "Ábaco", "Panela", "Chaleira", "Frigideira", "Despertador", "Papelão",
+    "Tanquinho", "Furoshiki",
+]
+WORDS = {"NEKO.DIC": NEKO, "INU.DIC": INU, "USAGI.DIC": USAGI, "ROBO.DIC": ROBO}
 
 
 def records(d):

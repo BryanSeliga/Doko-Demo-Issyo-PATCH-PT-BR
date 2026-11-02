@@ -15,7 +15,7 @@ Texto leve, fofo e engraçado, com público de todas as idades. Humor e carinho 
 | トロ | Toro | Gatinho branco, personagem principal. Doce, curioso e ingênuo, um pouco criança. Fala informal e carinhosa. Quer muito virar humano. |
 | ピエール | Pierre | Cachorro vaidoso e dramático, de fala afetada e cheia de charme (no japonês usa かしら, よね, やぁねェ). Adora culinária, moda e tudo que é francês, e solta um "Bonsoir" de vez em quando. Fala de si no masculino. Expressões: "Ai, que chique!", "Credo!", "Nossa~", "meu bem", "Imagina!". |
 | リッキー | Ricky | Sapo |
-| スズキ | Suzuki | Robô |
+| スズキ | Suzuki | Robô que se acha um "robô ultra-avançado": orgulhoso, meio professoral e ingênuo ao mesmo tempo. Fala com ar de sabichão, que no japonês aparece como のだ/なのだ: "Pois é!", "Ora essa~", "Eis a questão!", "Entendi tudo!", "Calculando~". Adora ciência, cálculos e assuntos de robô. Fala de si no masculino e às vezes pelo próprio nome. |
 | ジュン | Jun | Coelha alegre, moderninha e espevitada, com jeito de adolescente: fala rápido, usa gíria leve e atual ("Valeu!", "Que mão de vaca~", "Aff", "Tipo assim"), faz birra fofa e se empolga fácil. Fala de si no feminino. |
 | クロ | Kuro | Gato preto de boina vermelha, amigo do Toro |
 | ポケピ | Pokepi | |
@@ -33,6 +33,7 @@ Fale com quem joga usando **você**, sem gíria datada ou palavrão. Prefira fra
 - `$_YOU`, `$_WORD`, `$_W1`, `$_OPP` e outros começados por `$_`: nome de quem joga, palavras e afins. Mantenha sem alteração.
 - `{17:0017}`: **tique verbal do personagem**, por padrão ", miau". Coloque-o no final da frase, antes da pontuação, como em `Que legal{17:0017}!`. Isso aparece como "Que legal, miau!". Não escreva "miau" à mão quando houver esse marcador.
   - Jun: `{17:0017}` vira ", pyon" (o pulinho da coelha) e `{17:0018}` vira ", usa" (usado nas falas tristes ou sem graça). Mesma regra de posição. Quando `ピョン` aparecer escrito no texto, use ", pyon" no fim da frase.
+  - Suzuki: `{17:0017}` vira ", robô". Mesma regra de posição. Quando `ロボ` aparecer escrito no fim de uma frase (ex.: `用意したロボ！`), use ", robô" no fim da frase. `ロボット` no meio da frase é só a palavra "robô".
   - Pierre: `{17:0017}` vira ", au" e `{17:0018}` vira ", au~". Mesma regra: no fim da frase, antes da pontuação. Quando `わン` ou `ワン` aparecer escrito no texto, use ", au" no fim da frase.
 
 **2. As variáveis podem ser qualquer palavra.** Não se sabe o gênero nem o número. Não coloque artigo antes delas (`o {W}…`) nem concorde com elas. Reescreva a frase para ficar neutra: "Gosto de {W}…{W}", "Isso de {W}…{W} é legal".

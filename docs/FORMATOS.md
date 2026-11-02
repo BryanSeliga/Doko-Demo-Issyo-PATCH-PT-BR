@@ -58,3 +58,16 @@ Ao mudar o tamanho do código, só código e tag 7 precisam ser refeitos: string
 ## Balão de fala
 
 Largura útil de cerca de 119 unidades da tabela de larguras, com 4 linhas visíveis. O texto rola sozinho e quebra por caractere, então as quebras antes de cada palavra precisam ser inseridas pela ferramenta.
+
+O código `0x8540` não existe no Shift-JIS padrão: na fonte do jogo é um coração. As ferramentas o representam como `♥`.
+
+## Itens
+
+Nome e descrição de cada item ficam na tabela de valores do KSC, logo depois de um marcador de array `9:0xa`: o primeiro valor de tag 5 é o nome, e o segundo é a descrição. A tela de itens mostra o nome numa linha e a descrição em até duas linhas, de cerca de 222 unidades cada. `tools/items.py` lista o que não cabe.
+
+## Vocabulário inicial (*.DIC, nos KS*.BPM)
+
+- `u32 0x9000_0000 | n`, seguido de `n` valores `0xB000_0000 | offset` com a posição de cada registro.
+- Cada registro tem `0x9000_0013` e 19 valores de 4 bytes, seguidos de duas strings terminadas em NUL: a palavra e a leitura em kana.
+- Os valores 1 e 2 (tag 6) são os offsets absolutos dessas strings. O valor 3 é o tamanho da palavra em caracteres.
+- A leitura em kana agrupa as palavras na lista e serve ao shiritori; o patch só troca a palavra (`tools/dic.py`).

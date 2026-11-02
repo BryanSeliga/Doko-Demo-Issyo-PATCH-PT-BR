@@ -4,7 +4,10 @@ import re
 from textfmt import TOKEN
 
 BALLOON_WIDTH = 119
-VAR_WIDTH = 52
+# Palavras inseridas pelo jogo (vocabulario, palavras ensinadas): a maioria cabe em 90 unidades.
+VAR_WIDTH = 90
+# Largura do tique verbal ({17:...}); make_iso troca pela largura real do texto (", miau" = 48).
+TIC_WIDTH = 48
 PIECE = re.compile(r"\{W\}|\{[0-9a-f]{2}:[0-9a-f]{4}\}|\$_[A-Z0-9]+|.", re.S)
 
 
@@ -24,7 +27,7 @@ def text_width(text, widths, amap):
         if p == "{W}":
             continue
         if len(p) > 1:
-            total += 10 if p.startswith("{17") else VAR_WIDTH
+            total += TIC_WIDTH if p.startswith("{17") else VAR_WIDTH
         else:
             total += char_width(p, widths, amap)
     return total

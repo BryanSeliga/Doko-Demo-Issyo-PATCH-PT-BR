@@ -12,7 +12,7 @@ from fontpatch import ACCENTS
 
 sys.stdout.reconfigure(encoding="utf-8")
 TOKEN = re.compile(r"\{W\}|\{[0-9a-f]{2}:[0-9a-f]{4}\}|\$_[A-Z0-9]+")
-ALLOWED = set(chr(c) for c in range(0x20, 0x7F)) - {"\\"} | set(ACCENTS) | {"\n", "♪"}
+ALLOWED = set(chr(c) for c in range(0x20, 0x7F)) - {"\\"} | set(ACCENTS) | {"\n", "♪", "♥"}
 
 
 def tokens(s):

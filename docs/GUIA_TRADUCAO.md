@@ -45,7 +45,7 @@ Fale com quem joga usando **você**, sem gíria datada ou palavrão. Prefira fra
 - Textos seguidos no arquivo costumam ser a mesma conversa, e um pensamento pode continuar no próximo. Leia os vizinhos antes de traduzir.
 - Textos do tipo `pool` curtos são opções de resposta, palavras ou nomes de itens: traduza de forma enxuta.
 
-**5. Só estes caracteres existem na fonte:** ASCII comum e `á à â ã é ê í ó ô õ ú ü ç` (e maiúsculas), mais `♪`.
+**5. Só estes caracteres existem na fonte:** ASCII comum e `á à â ã é ê í ó ô õ ú ü ç` (e maiúsculas), mais `♪` e `♥`.
 
 - Use `...` em vez de `…`, `!` em vez de `！`, `?` em vez de `？`, `~` em vez de `～`.
 - Use aspas retas `"` em vez de `「」`. Nunca use barra invertida, travessão longo ou emoji.
@@ -57,7 +57,7 @@ Fale com quem joga usando **você**, sem gíria datada ou palavrão. Prefira fra
 **7. Detalhes recorrentes.**
 
 - Quando `ニャ` ou `にゃ` aparecer escrito no texto, sem ser o marcador, use ", miau" no fim da frase.
-- `♪` aparece no jogo como um coraçãozinho: mantenha onde o japonês tiver esse símbolo.
+- `♪` e `♥` aparecem no jogo como coraçãozinhos: mantenha onde o japonês tiver esses símbolos.
 - Mantenha honoríficos em letras latinas quando forem parte do nome (-san, -chan). Sem nome, adapte: 先生 = "Prof."
 - Número variável pode ser 1 ou mais: use uma forma que sirva aos dois, como "palavra(s) nova(s)".
 - `{14:0000}` dentro de datas e períodos pode ser estação do ano ou mês. Escreva de um jeito que sirva aos dois: "na época de {14:0000}".

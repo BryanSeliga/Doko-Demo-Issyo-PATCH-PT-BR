@@ -30,7 +30,7 @@ SJIS = {
     0xDA42C: "Carregando",
     0xDA56C: "Testando...\n",
     0xDA580: "Aplicar as opções?",
-    0xDA638: "Oferecer", 0xDA644: "Cancelar", 0xDA650: "Usar de presente", 0xDA668: "Jogar fora",
+    0xDA638: "Oferecer", 0xDA644: "Cancelar", 0xDA650: "Presentear", 0xDA668: "Jogar fora",
     0xDA674: "Pôr no quarto", 0xDA684: "Guardar", 0xDA694: "Oferecer mesmo?", 0xDA6AC: "Jogar fora mesmo?",
     0xDA6D8: "%2d", 0xDA6E0: "%2d", 0xDBA68: "%2d/%2d",
     0xDBCB0: "Substituir?", 0xDBCCC: "Sem dados", 0xDBCD8: "%d/%d", 0xDBCE8: "%2d/%2d",

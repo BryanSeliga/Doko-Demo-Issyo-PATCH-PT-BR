@@ -9,21 +9,22 @@ import re
 import sys
 
 from kscbuild import extract_inline, extract_pool
-from textfmt import to_text
+from textfmt import HEART, to_text
 
 JP = re.compile(r"[぀-ヿ一-鿿＀-￯]")
 
 
 def collect(d):
+    """Os textos com coracao (HEART) vao para o fim da lista, para nao mudar os ids dos demais."""
     seen = {}
     order = []
 
-    def add(raw, tipo):
+    def add(raw, tipo, hearts):
         try:
             text = to_text(raw)
         except UnicodeDecodeError:
             return
-        if not JP.search(text):
+        if not JP.search(text) or (HEART in text) != hearts:
             return
         key = text
         if key in seen:
@@ -33,10 +34,11 @@ def collect(d):
         seen[key] = item
         order.append(item)
 
-    for n, op, raw in extract_inline(d):
-        add(raw, "fala" if op == 0x48 else "pergunta")
-    for off, raw in extract_pool(d).items():
-        add(raw, "pool")
+    for hearts in (False, True):
+        for n, op, raw in extract_inline(d):
+            add(raw, "fala" if op == 0x48 else "pergunta", hearts)
+        for off, raw in extract_pool(d).items():
+            add(raw, "pool", hearts)
     return order
 
 

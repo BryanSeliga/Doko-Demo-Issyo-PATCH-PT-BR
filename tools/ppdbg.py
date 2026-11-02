@@ -81,7 +81,15 @@ class Debugger:
 
     def shot(self, path):
         here = os.path.dirname(os.path.abspath(__file__))
-        subprocess.run(["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", os.path.join(here, "winshot.ps1"), "-Out", os.path.abspath(path)], check=True, capture_output=True)
+        out = os.path.abspath(path)
+        if os.path.exists(out):
+            os.remove(out)
+        for _ in range(3):
+            r = subprocess.run(["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", os.path.join(here, "winshot.ps1"), "-Out", out], capture_output=True)
+            if os.path.exists(out):
+                return
+            time.sleep(1)
+        raise RuntimeError(f"print falhou: {r.stdout[-300:]!r} {r.stderr[-600:]!r}")
 
 
 def main(argv):

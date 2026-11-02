@@ -6,6 +6,9 @@ import re
 
 TMPL_VAR = (0x14, 0x15, 0x17, 0x18, 0x19, 0x1A, 0x1B, 0x1C)
 TOKEN = re.compile(r"\{W\}|\{([0-9a-f]{2}):([0-9a-f]{4})\}")
+# 0x8540 nao existe no Shift-JIS padrao: a fonte do jogo tem um coracao nesse codigo.
+HEART = "♥"
+HEART_CODE = b"\x85\x40"
 
 
 def to_text(raw):
@@ -21,7 +24,7 @@ def to_text(raw):
             out.append("{W}")
             i += 1
         elif c >= 0x80:
-            out.append(raw[i:i + 2].decode("cp932"))
+            out.append(HEART if raw[i:i + 2] == HEART_CODE else raw[i:i + 2].decode("cp932"))
             i += 2
         else:
             out.append(chr(c))
@@ -44,7 +47,9 @@ def to_bytes(text, amap):
             i = m.end()
             continue
         ch = text[i]
-        if ch in amap:
+        if ch == HEART:
+            out += HEART_CODE
+        elif ch in amap:
             out += amap[ch].to_bytes(2, "big")
         else:
             out += ch.encode("cp932")

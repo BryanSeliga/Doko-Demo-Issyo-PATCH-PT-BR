@@ -48,6 +48,8 @@ BY_PACK = {
         "BUTTOM_SYS2": "Apagar",
         "BUTTOM_SYS3": "OK",
         "BUTTOM_SYS4": "Lista",
+        "YES": "Sim",
+        "NO": "Não",
         "MENU1": "Ensinar palavra",
         "MENU1_2": "Salvar diário",
         "MENU2_1": "Sair",

@@ -49,7 +49,26 @@ INU = [
     "Vestido", "Collant", "Arrastão", "Lenço", "Barbeador", "Geladeira", "Esponja", "Brilhantina", "Isqueiro", "Vassoura",
     "Faca", "Tábua",
 ]
-WORDS = {"NEKO.DIC": NEKO, "INU.DIC": INU}
+USAGI = [
+    "Coelho", "Mandão", "Apostador", "Filhinho rico", "Filho de dr.", "Musa", "Grid girl", "Casada", "Valentão", "Otaku",
+    "Palhaço", "Sem coração", "Colegial", "Cobra", "Megera", "Bêbado", "Paparazzo", "Yeti", "Nessie", "Chupa-cabra",
+    "ET", "Pulga-d'água", "Barata", "Tatuzinho", "Grilo", "Churrasco", "Missô", "Cenoura", "Lámen", "Curry",
+    "Atum", "Ouriço", "Ovas", "Foie gras", "Caviar", "Sundae", "Torta", "Natto", "Salsão", "Pimentão",
+    "Chá jasmim", "Chá preto", "Café", "Drinque", "Saquê", "Chope", "Suco verde", "Suco", "Trem-bala", "Balanço",
+    "Táxi", "Moto", "Metrô", "Rosto", "Olho", "Boca", "Mão", "Tornozelo", "Orelha", "Clavícula",
+    "Umbigo", "Frieira", "Cólica", "Rinite", "Ressaca", "Dor de amor", "Amor é cego", "Persistência", "Vida é assim", "Berço",
+    "Dois coelhos", "Que azar", "Devagar", "Prevenir", "Não briga", "Ai, ai, ai!", "Só um pouco", "Futebol", "Vôlei", "Badminton",
+    "Sumô", "Luta livre", "Elástico", "Balada", "Karaokê", "Pelúcias", "Agito", "Saltitar", "Banho de sol", "Casinha",
+    "E-mail", "Soneca", "Passeio", "Encontro", "Internet", "Diário a dois", "Viagem", "Amor secreto", "Simpatia", "Navegar",
+    "Encolhida", "Vida à toa", "Acordar cedo", "Maratona", "Noitada", "Briga", "Bungee jump", "Parcelas", "Romance", "Paixão",
+    "Paciência", "Esforço", "Trabalho", "Estudo", "Telefonema", "Atraso", "Traição", "Mandinga", "Fofoca", "Maldade",
+    "Ciúme", "Beijo", "Presente", "Amor", "Declaração", "Massagem", "Shiatsu", "Moxabustão", "Mercadinho", "Parque",
+    "Praça", "Armário", "Termas", "Takeshita", "Asagaya", "Sugamo", "Havaí", "China", "Phuket", "Tailândia",
+    "Gravação", "Feira", "Videokê", "Discoteca", "Bossa nova", "Samba", "Kotatsu", "Celular", "Computador", "Calcinha de lã",
+    "Gorro", "Capuz", "Escova", "Papel-toalha", "Pelúcia", "Lanterna", "Tábua", "Amarelo", "Lava-roupa", "Detergente",
+    "Esponja", "Geladeira",
+]
+WORDS = {"NEKO.DIC": NEKO, "INU.DIC": INU, "USAGI.DIC": USAGI}
 
 
 def records(d):

@@ -27,7 +27,8 @@ CHARS = {"neko": ("KSNEKO.BPM", "NEKO.KSC"), "inu": ("KSINU.BPM", "INU.KSC"), "r
 HERE = os.path.dirname(os.path.abspath(__file__))
 PT_DIR = os.path.join(HERE, "..", "traducao")
 # O tique verbal e inserido no fim das frases: "Que legal" + ", miau" + "!".
-TIC = {"neko": {"ニャ": ", miau"}, "inu": {"わン": ", au", "わ～ン": ", au~"}}
+TIC = {"neko": {"ニャ": ", miau"}, "inu": {"わン": ", au", "わ～ン": ", au~"},
+       "usagi": {"ピョン": ", pyon", "ウサ": ", usa"}}
 
 
 def load_translations(who, d):
@@ -45,6 +46,8 @@ def load_translations(who, d):
             text = pt[it["id"]]
             # Codigo de controle \x04 no fim (telas de comunicacao) precisa continuar no texto.
             if it["jp"].endswith("\x04") and not text.endswith("\x04"):
+                if it["jp"].endswith("\n\x04") and not text.endswith("\n"):
+                    text += "\n"
                 text += "\x04"
             # Pedaco que termina em virgula e emendado no seguinte: em portugues precisa de espaco.
             if text.endswith(","):

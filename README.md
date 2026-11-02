@@ -8,11 +8,11 @@ Tradução de fã para português brasileiro de **Doko Demo Issho** (どこで�
 
 - Menus, botões e telas (cadastro, opções, dados, diário, cartões, presentes e afins).
 - Mensagens do sistema (salvar, carregar, erros, signos, tipos sanguíneos).
-- **Todas as falas do Toro e do Pierre**, mais de 23 mil textos, e as palavras que eles já sabem.
+- **Todas as falas do Toro, do Pierre e da Jun**, mais de 33 mil textos, e as palavras que eles já sabem.
 - Nomes e descrições dos itens.
 - Fonte com acentos do português (á à â ã é ê í ó ô õ ú ü ç).
 
-Ainda em japonês: as falas dos outros três Pokepi (Ricky, Suzuki e Jun), as letras do teclado na página de kana, o minijogo de shiritori (que depende da língua japonesa), os créditos e o logotipo. **Escolha o Toro (gato) ou o Pierre (cachorro)** ao começar um jogo novo.
+Ainda em japonês: as falas dos outros dois Pokepi (Ricky e Suzuki), as letras do teclado na página de kana, o minijogo de shiritori (que depende da língua japonesa), os créditos e o logotipo. **Escolha o Toro (gato), o Pierre (cachorro) ou a Jun (coelha)** ao começar um jogo novo.
 
 ## O que você precisa
 
@@ -43,7 +43,7 @@ python tools/vcdiff.py aplicar "Doko Demo Issho (Japan).iso" "Doko Demo Issho PT
 
 ## Dicas
 
-- Quando o Toro fala ", miau" e o Pierre fala ", au" no fim das frases, é o jeitinho deles (no original, "nya" e "wan").
+- Quando o Toro fala ", miau", o Pierre ", au" e a Jun ", pyon" no fim das frases, é o jeitinho deles (no original, "nya", "wan" e "pyon").
 - O teclado abre na página de letras japonesas. Para escrever com letras latinas (ABC, DEF…), vá com o direcional até a borda direita do teclado e aperte → mais uma vez.
 - Se algo aparecer cortado ou estranho, abra uma *issue* com um print e, se puder, o que estava acontecendo no jogo.
 

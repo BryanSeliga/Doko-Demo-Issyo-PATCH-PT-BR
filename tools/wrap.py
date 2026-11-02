@@ -1,9 +1,9 @@
-"""Quebra de linha por palavra para o balao de fala (largura util de 119 unidades da fonte)."""
+"""Quebra de linha por palavra para o balao de fala (largura util de cerca de 119 unidades; usamos 112 de margem da fonte)."""
 import re
 
 from textfmt import TOKEN, WAVE_CODE, glyph_index
 
-BALLOON_WIDTH = 119
+BALLOON_WIDTH = 112
 # Palavras inseridas pelo jogo (vocabulario, palavras ensinadas): a maioria cabe em 90 unidades.
 VAR_WIDTH = 90
 # Largura do tique verbal ({17:...}); make_iso troca pela largura real do texto (", miau" = 48).

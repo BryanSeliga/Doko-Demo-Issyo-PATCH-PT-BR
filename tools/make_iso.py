@@ -27,7 +27,7 @@ CHARS = {"neko": ("KSNEKO.BPM", "NEKO.KSC"), "inu": ("KSINU.BPM", "INU.KSC"), "r
 HERE = os.path.dirname(os.path.abspath(__file__))
 PT_DIR = os.path.join(HERE, "..", "traducao")
 # O tique verbal e inserido no fim das frases: "Que legal" + ", miau" + "!".
-TIC = {"neko": {"ニャ": ", miau"}}
+TIC = {"neko": {"ニャ": ", miau"}, "inu": {"わン": ", au", "わ～ン": ", au~"}}
 
 
 def load_translations(who, d):
@@ -46,14 +46,16 @@ def load_translations(who, d):
             # Codigo de controle \x04 no fim (telas de comunicacao) precisa continuar no texto.
             if it["jp"].endswith("\x04") and not text.endswith("\x04"):
                 text += "\x04"
+            # Pedaco que termina em virgula e emendado no seguinte: em portugues precisa de espaco.
+            if text.endswith(","):
+                text += " "
             out[it["jp"]] = (text, it["tipo"])
     return out, len(src)
 
 
 def apply_ksc(who, d, widths, amap):
     tr, total = load_translations(who, d)
-    for tic in TIC.get(who, {}).values():
-        wrap_mod.TIC_WIDTH = text_width(tic, widths, amap)
+    wrap_mod.TIC_WIDTH = max(text_width(t, widths, amap) for t in TIC[who].values())
     inline = {}
     for n, op, raw in extract_inline(d):
         try:

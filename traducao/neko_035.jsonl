@@ -131,7 +131,7 @@
 {"id": 9173, "pt": "$_OYOU, tudo bem com você?\n$_OME estou muuuito bem!\nChegou um cartão-postal\ndo antigo dono...\nSerá que gosta mais\ndele que de $_ME,\nmiau...\n\nNão quero mostrar,\nvou guardar\nescondido..."}
 {"id": 9174, "pt": "$_OYOU! Tá se esforçando?\nEu me esforço\ntodo dia, quá!\nChegou um cartão-postal\ndo antigo dono...\nSerá que gosta mais\ndele que de $_ME,\nmiau...\n\nNão quero mostrar,\nvou guardar\nescondido..."}
 {"id": 9175, "pt": "$_OYOU, tudo bem?\n$_OME estou bem♪\nChegou um cartão-postal\ndo antigo dono...\nSerá que gosta mais\ndele que de $_ME,\nmiau...\n\nNão quero mostrar,\nvou guardar\nescondido..."}
-{"id": 9176, "pt": "Papel de parede de $_WORD"}
+{"id": 9176, "pt": "Parede de $_WORD"}
 {"id": 9177, "pt": "Papel de parede dino que $_WORD usa"}
 {"id": 9178, "pt": "Uma celebridade qualquer"}
 {"id": 9179, "pt": "Papel de parede discreto que $_WORD também usa"}
@@ -139,7 +139,7 @@
 {"id": 9181, "pt": "Papel de parede florido que $_WORD também usa"}
 {"id": 9182, "pt": "Papel de bolinhas pastel que $_WORD usa"}
 {"id": 9183, "pt": "Papel de parede clássico que $_WORD usa"}
-{"id": 9184, "pt": "Tapete favorito de $_WORD"}
+{"id": 9184, "pt": "Tapete de $_WORD"}
 {"id": 9185, "pt": "Tapete refrescante que $_WORD usa"}
 {"id": 9186, "pt": "Tapete de esteira que $_WORD também usa"}
 {"id": 9187, "pt": "Tapete discreto que $_WORD também usa"}
@@ -148,7 +148,7 @@
 {"id": 9190, "pt": "Tapete nostálgico que $_WORD também usa"}
 {"id": 9191, "pt": "Tapete de estampa esquisita de $_WORD"}
 {"id": 9192, "pt": "Tapete de casa chique que $_WORD também usa"}
-{"id": 9193, "pt": "Cortina favorita de $_WORD"}
+{"id": 9193, "pt": "Cortina de $_WORD"}
 {"id": 9194, "pt": "Cortina xadrez que $_WORD também usa"}
 {"id": 9195, "pt": "Cortina elegante que $_WORD também usa"}
 {"id": 9196, "pt": "Cortina verde que $_WORD também usa"}
@@ -165,7 +165,7 @@
 {"id": 9207, "pt": "Máquina de cápsulas"}
 {"id": 9208, "pt": "Cápsula com borracha de $_WORD e outros"}
 {"id": 9209, "pt": "Celebridade de mangá ou anime"}
-{"id": 9210, "pt": "Ferro de passar de $_WORD"}
+{"id": 9210, "pt": "Ferro de $_WORD"}
 {"id": 9211, "pt": "Ferro que $_WORD usou 10 anos em casa"}
 {"id": 9212, "pt": "Abajur de $_WORD"}
 {"id": 9213, "pt": "Abajur que $_WORD usava no quarto"}
@@ -184,7 +184,7 @@
 {"id": 9226, "pt": "Bichinho que bombou em $_WORD nos anos 80"}
 {"id": 9227, "pt": "Happi de $_WORD"}
 {"id": 9228, "pt": "Roupa de festival que $_WORD sempre veste"}
-{"id": 9229, "pt": "Lanterna típica de $_WORD"}
+{"id": 9229, "pt": "Lanterna de $_WORD"}
 {"id": 9230, "pt": "Lanterna artesanal do festival de $_WORD"}
 {"id": 9231, "pt": "Item raríssimo de $_WORD"}
 {"id": 9232, "pt": "Raridade cobiçada pelos fãs de $_WORD"}

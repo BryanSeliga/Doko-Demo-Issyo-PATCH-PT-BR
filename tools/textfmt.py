@@ -9,6 +9,7 @@ TOKEN = re.compile(r"\{W\}|\{([0-9a-f]{2}):([0-9a-f]{4})\}")
 # 0x8540 nao existe no Shift-JIS padrao: a fonte do jogo tem um coracao nesse codigo.
 HEART = "♥"
 HEART_CODE = b"\x85\x40"
+WAVE_CODE = b"\x81\x60"
 
 
 def to_text(raw):
@@ -49,6 +50,9 @@ def to_bytes(text, amap):
         ch = text[i]
         if ch == HEART:
             out += HEART_CODE
+        elif ch == "~":
+            # O "~" ASCII da fonte fica no alto da celula e invade a linha de cima; usa o til largo japones.
+            out += WAVE_CODE
         elif ch in amap:
             out += amap[ch].to_bytes(2, "big")
         else:

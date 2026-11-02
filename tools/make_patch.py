@@ -10,7 +10,7 @@ from iso_common import BOOT_LBA, BOOT_SIZE, DATA_BP_LBA, SECTOR, Iso, bpm_files
 from vcdiff import apply, create
 
 # Pacotes reescritos no fim do DATA.BP: o codificador procura trechos deles no original.
-MOVED = ("KSNEKO.BPM",)
+MOVED = ("KSNEKO.BPM", "KSINU.BPM", "KSROBO.BPM", "KSKAERU.BPM", "KSUSAGI.BPM")
 
 
 def sha1(path):

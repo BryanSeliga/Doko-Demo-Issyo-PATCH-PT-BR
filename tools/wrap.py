@@ -1,7 +1,7 @@
 """Quebra de linha por palavra para o balao de fala (largura util de 119 unidades da fonte)."""
 import re
 
-from textfmt import TOKEN
+from textfmt import TOKEN, WAVE_CODE, glyph_index
 
 BALLOON_WIDTH = 119
 # Palavras inseridas pelo jogo (vocabulario, palavras ensinadas): a maioria cabe em 90 unidades.
@@ -15,25 +15,28 @@ def char_width(ch, widths, amap):
     if ch in amap:
         lead, trail = amap[ch] >> 8, amap[ch] & 0xFF
         return widths[2 * 96 + trail - 0x9E] if lead == 0x81 else 16
+    if ch == "~":
+        return widths[glyph_index(int.from_bytes(WAVE_CODE, "big"))]
     code = ord(ch)
     if 0x20 <= code < 0x7F:
         return widths[code - 0x20]
     return 16
 
 
-def text_width(text, widths, amap):
+def text_width(text, widths, amap, var_width=None):
+    var_width = VAR_WIDTH if var_width is None else var_width
     total = 0
     for p in PIECE.findall(text):
         if p == "{W}":
             continue
         if len(p) > 1:
-            total += TIC_WIDTH if p.startswith("{17") else VAR_WIDTH
+            total += TIC_WIDTH if p.startswith("{17") else var_width
         else:
             total += char_width(p, widths, amap)
     return total
 
 
-def wrap(text, widths, amap, limit=BALLOON_WIDTH):
+def wrap(text, widths, amap, limit=BALLOON_WIDTH, var_width=None):
     """Troca espacos por quebras para nenhuma linha passar do limite. Mantem o \\n final."""
     tail = "\n" if text.endswith("\n") else ""
     body = text[:-1] if tail else text
@@ -45,7 +48,7 @@ def wrap(text, widths, amap, limit=BALLOON_WIDTH):
     for w in words:
         if not cur:
             cur = w
-        elif text_width(cur, widths, amap) + space + text_width(w, widths, amap) <= limit:
+        elif text_width(cur, widths, amap, var_width) + space + text_width(w, widths, amap, var_width) <= limit:
             cur += " " + w
         else:
             lines.append(cur)

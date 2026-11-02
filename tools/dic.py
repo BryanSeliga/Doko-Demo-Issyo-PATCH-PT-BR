@@ -30,7 +30,26 @@ NEKO = [
     "Chinelo", "Vestido", "Vídeo", "Micro-ondas", "Escova", "Touca", "Batom", "Papelão", "Computador", "Despertador",
     "Prendedor", "Ábaco",
 ]
-WORDS = {"NEKO.DIC": NEKO}
+INU = [
+    "Cachorro", "Estilista", "Vendedora", "Modelo", "Musa", "Fotógrafo", "Príncipe", "Filhinho rico", "Bêbado", "Megera",
+    "Madrasta", "Paparazzo", "Otaku", "Flamingo", "Cisne", "Pinguim", "Lesma", "Cascavel", "Vespa", "Grilo",
+    "Foie gras", "Caviar", "Matsutake", "Baiacu", "Tom yum", "Abalone", "Peixe seco", "Escargot", "Lagosta", "Torta",
+    "Mil-folhas", "Fígado", "Tomatinho", "Salsinha", "Shiitake", "Gafanhoto", "Chá de alga", "Cassis", "Café", "Salty dog",
+    "Batida", "Cachaça", "Saquê", "Ônibus", "Lancha", "Pedalinho", "Trailer", "Lambreta", "Bicicleta", "Trator",
+    "Rosto", "Olho", "Pinta", "Nuca", "Orelha", "Costas", "Bumbum", "Cintura", "Coxa", "Tornozelo",
+    "Caxumba", "Constipação", "Apendicite", "Unha", "Calo", "Raiva", "Uivo", "Tres bien", "Viagem", "Que será",
+    "Revolução", "Je t'aime", "Bonjour", "Ginástica", "Corrida", "Hidratação", "Dieta", "Tarô", "Sinuca", "Boliche",
+    "Fliperama", "Xadrez", "Festa", "Bolero", "Sapateado", "Dança lenta", "Encontro", "Trilha", "Carona", "Discurso",
+    "Namoro", "Beliscar", "Bungee jump", "Briga de casal", "Arrufo", "Comilança", "Bico", "Lavar louça", "Faxina", "Lavar WC",
+    "Lavar roupa", "Parcelas", "Confissão", "Dormir junto", "Beijão", "Simpatia", "Rosto colado", "Telefone", "Cotonete", "Acupuntura",
+    "Colo", "Declaração", "Presente", "Magia negra", "Trapaça", "Maldade", "Ciúme", "Fofoca", "Detetive", "Tapa",
+    "Infantilizar", "Assédio", "Vacina", "Mercadinho", "Locadora", "Churrascaria", "Videokê", "Pachinko", "Lanchonete", "Burger",
+    "Sauna", "Azabu", "Daikanyama", "Torre Tóquio", "França", "Paris", "Versalhes", "Bistrô", "Agência", "Casamento",
+    "Ikebana", "Anisong", "Hula", "Ópera", "Orquestra", "Esteira", "Bobes", "Tiara", "Tintura", "Batom",
+    "Vestido", "Collant", "Arrastão", "Lenço", "Barbeador", "Geladeira", "Esponja", "Brilhantina", "Isqueiro", "Vassoura",
+    "Faca", "Tábua",
+]
+WORDS = {"NEKO.DIC": NEKO, "INU.DIC": INU}
 
 
 def records(d):

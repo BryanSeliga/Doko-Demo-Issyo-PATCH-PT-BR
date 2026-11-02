@@ -8,11 +8,11 @@ Tradução de fã para português brasileiro de **Doko Demo Issho** (どこで�
 
 - Menus, botões e telas (cadastro, opções, dados, diário, cartões, presentes e afins).
 - Mensagens do sistema (salvar, carregar, erros, signos, tipos sanguíneos).
-- **Todas as falas do Toro**, mais de 13 mil textos, e as palavras que ele já sabe.
-- Nomes e descrições dos itens do Toro.
+- **Todas as falas do Toro e do Pierre**, mais de 23 mil textos, e as palavras que eles já sabem.
+- Nomes e descrições dos itens.
 - Fonte com acentos do português (á à â ã é ê í ó ô õ ú ü ç).
 
-Ainda em japonês: as falas dos outros quatro Pokepi (Pierre, Ricky, Suzuki e Jun), as letras do teclado na página de kana, o minijogo de shiritori (que depende da língua japonesa), os créditos e o logotipo. **Escolha o Toro** ao começar um jogo novo.
+Ainda em japonês: as falas dos outros três Pokepi (Ricky, Suzuki e Jun), as letras do teclado na página de kana, o minijogo de shiritori (que depende da língua japonesa), os créditos e o logotipo. **Escolha o Toro (gato) ou o Pierre (cachorro)** ao começar um jogo novo.
 
 ## O que você precisa
 
@@ -43,7 +43,7 @@ python tools/vcdiff.py aplicar "Doko Demo Issho (Japan).iso" "Doko Demo Issho PT
 
 ## Dicas
 
-- Quando o Toro fala ", miau" no fim das frases, é o jeitinho dele (o original usa "nya").
+- Quando o Toro fala ", miau" e o Pierre fala ", au" no fim das frases, é o jeitinho deles (no original, "nya" e "wan").
 - O teclado abre na página de letras japonesas. Para escrever com letras latinas (ABC, DEF…), vá com o direcional até a borda direita do teclado e aperte → mais uma vez.
 - Se algo aparecer cortado ou estranho, abra uma *issue* com um print e, se puder, o que estava acontecendo no jogo.
 
@@ -58,7 +58,7 @@ Para montar a ISO traduzida a partir da sua cópia e gerar o patch:
 
 ```
 cd tools
-python make_iso.py "<iso original>" "<iso traduzida>" neko
+python make_iso.py "<iso original>" "<iso traduzida>"
 python make_patch.py "<iso original>" "<iso traduzida>" "Doko Demo Issho PT-BR.xdelta"
 ```
 

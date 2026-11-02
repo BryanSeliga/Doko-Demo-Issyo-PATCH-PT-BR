@@ -27,8 +27,9 @@ def set_record_size(f, rec, size):
     f.write(struct.pack("<I", size) + struct.pack(">I", size))
 
 
-def build(src, dst, ksc=None, font=None, boot=None):
-    """ksc: {nome_bpm: {nome_arquivo: bytes}} com novos arquivos; font/boot: bytes de mesmo tamanho."""
+def build(src, dst, ksc=None, font=None, boot=None, inplace=None):
+    """ksc: {nome_bpm: {nome_arquivo: bytes}} com novos arquivos; font/boot: bytes de mesmo tamanho.
+    inplace: {(nome_bpm, nome_arquivo): bytes} de mesmo tamanho, gravados no lugar."""
     iso = Iso(src)
     shutil.copyfile(src, dst)
     bp_base = DATA_BP_LBA * SECTOR
@@ -62,6 +63,14 @@ def build(src, dst, ksc=None, font=None, boot=None):
             assert len(font) == x[1]
             f.seek(bp_base + x[0])
             f.write(font)
+        cache = {}
+        for (pack, name), data in (inplace or {}).items():
+            if pack not in cache:
+                cache[pack] = {n: (o, s) for n, o, s in inner_files(iso, bpms[pack][0])}
+            o, s = cache[pack][name]
+            assert len(data) == s, (pack, name)
+            f.seek(bp_base + o)
+            f.write(data)
         boot_bytes = boot if boot is not None else iso.read(BOOT_LBA, BOOT_SIZE)
         assert len(boot_bytes) == BOOT_SIZE
         f.seek(BOOT_LBA * SECTOR)

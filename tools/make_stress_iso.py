@@ -7,10 +7,11 @@ import re
 import sys
 
 from build_iso import build
-from fontpatch import patch
+from fontpatch import WIDTHS_OFF, patch
 from iso_common import Iso, bpm_files, inner_files
 from kscbuild import extract_inline, rebuild
 from textfmt import TOKEN, to_bytes, to_text
+from wrap import wrap
 
 CHARS = {"KSNEKO.BPM": "NEKO.KSC", "KSINU.BPM": "INU.KSC", "KSROBO.BPM": "ROBO.KSC", "KSKAERU.BPM": "KAERU.KSC", "KSUSAGI.BPM": "USAGI.KSC"}
 LINE = "Olá! Esta é uma frase de teste com acentuação: coração, não, você, três, avó, Água. Será que cabe na caixa de texto?\n"
@@ -39,7 +40,7 @@ def main(src, dst):
             except UnicodeDecodeError:
                 continue
             if re.search(r"[぀-鿿]", text):
-                repl[n] = to_bytes(stress_text(text, op), amap)
+                repl[n] = to_bytes(wrap(stress_text(text, op), font[WIDTHS_OFF:WIDTHS_OFF + 8192], amap), amap)
         out = rebuild(d, repl)
         print(name, "linhas", len(repl), "tamanho", len(d), "->", len(out))
         ksc[bpm] = {name: out}

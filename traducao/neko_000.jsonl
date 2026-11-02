@@ -1,0 +1,306 @@
+{"id": 0, "pt": "Idol: {W}{14:0001}{W}"}
+{"id": 1, "pt": "Cantor(a): {W}{14:0001}{W}"}
+{"id": 2, "pt": "Comediante: {W}{14:0001}{W}"}
+{"id": 3, "pt": "Ator/atriz: {W}{14:0001}{W}"}
+{"id": 4, "pt": "Esporte: {W}{14:0001}{W}"}
+{"id": 5, "pt": "Pessoa famosa: {W}{14:0001}{W}"}
+{"id": 6, "pt": "Troca de cartões: {W}{14:0001}{W}"}
+{"id": 7, "pt": "Conheci por apresentação: {W}{14:0001}{W}"}
+{"id": 8, "pt": "Cônjuge: {W}{14:0001}{W}"}
+{"id": 9, "pt": "Família: {W}{14:0001}{W}"}
+{"id": 10, "pt": "Namorado(a): {W}{14:0001}{W}"}
+{"id": 11, "pt": "Amigo(a): {W}{14:0001}{W}"}
+{"id": 12, "pt": "Nome de {W}{14:0001}{W}"}
+{"id": 13, "pt": "Sobre {W}{14:0001}{W}"}
+{"id": 14, "pt": "Mas deixa isso pra lá...\n"}
+{"id": 15, "pt": "Sabe, sabe...\n"}
+{"id": 16, "pt": "É que, é que...\n"}
+{"id": 17, "pt": "Ah, ei, ei...\n"}
+{"id": 18, "pt": "Ééé, ééé...\n"}
+{"id": 19, "pt": "Ééé~ ééé~\n"}
+{"id": 20, "pt": "Uaaa!?\n"}
+{"id": 21, "pt": "O que você vai me ensinar{17:0017}?\n"}
+{"id": 22, "pt": "O quê? O quê? O que você vai me ensinar{17:0017}~\n"}
+{"id": 23, "pt": "O que será que você vai me ensinar{17:0017}~\n"}
+{"id": 24, "pt": "Ei, ei?\n"}
+{"id": 25, "pt": "Olha, olha...\n"}
+{"id": 26, "pt": "Que curiosidade{17:0017}~\n"}
+{"id": 27, "pt": "Quero que você me ensine{17:0017}~\n"}
+{"id": 28, "pt": "Poxa~\n"}
+{"id": 29, "pt": "Nhaaa~\n"}
+{"id": 30, "pt": "Eu já conheço {W}{14:0001}{W}{17:0017}!\n"}
+{"id": 31, "pt": "É {W}{14:0002}{W}{17:0017}!\n"}
+{"id": 32, "pt": "Fiquei mais esperto de novo, miau!\n"}
+{"id": 33, "pt": "Agora estou um pouquinho\n"}
+{"id": 34, "pt": "mais perto de ser humano, miau~!\n"}
+{"id": 35, "pt": "Preciso decorar direitinho{17:0017}...\n"}
+{"id": 36, "pt": "Aprendi{17:0017}! Muito obrigado{17:0017}!\n"}
+{"id": 37, "pt": "Tenho que me esforçar pra aprender{17:0017}~\n"}
+{"id": 38, "pt": "Com isso... fiquei mais perto de virar humano{17:0017}!\n"}
+{"id": 39, "pt": "Quero saber de outras coisas{17:0017}~\n"}
+{"id": 40, "pt": "Agora me ensina uma diferente{17:0017}~\n"}
+{"id": 41, "pt": "Poxa~ Escuta direito, vai~\n"}
+{"id": 42, "pt": "Escreve-se \"{14:0000}\"~\n"}
+{"id": 43, "pt": "E se fala \"{14:0001}\"?\n"}
+{"id": 44, "pt": "Hã? Então como se fala{17:0017}?\n"}
+{"id": 45, "pt": "Entendi~ Depois me ensina{17:0017}~\n"}
+{"id": 46, "pt": "Escreve-se \"{14:0000}\"...\n"}
+{"id": 47, "pt": "E se fala \"{14:0001}\"~\n"}
+{"id": 48, "pt": "Nhaaa~ Depois me ensina{17:0017}...\n"}
+{"id": 49, "pt": "É {14:0000}-san{17:0017}?\n"}
+{"id": 50, "pt": "Então... como devo chamar essa pessoa{17:0017}?\n"}
+{"id": 51, "pt": "Nhaa... Não sei como chamar essa pessoa...\n"}
+{"id": 52, "pt": "Tenho um pouco de medo... Vou chamar de {14:0000}-san{17:0017}...\n"}
+{"id": 53, "pt": "É {14:0000}{14:0001}{17:0017}?"}
+{"id": 54, "pt": "Então é {14:0000}~\n"}
+{"id": 55, "pt": "Como é {14:0000} comparado com {W}{14:0001}{W}?"}
+{"id": 56, "pt": "Não é isso~\n"}
+{"id": 57, "pt": "{W}{14:0003}{W} é {W}{14:0002}{W}{17:0017}~\n"}
+{"id": 58, "pt": "Não é isso...\n"}
+{"id": 59, "pt": "{W}{14:0000}{W}... Tem a ver com {W}{14:0001}{W}? ({14:0002})"}
+{"id": 60, "pt": "Hmm, hmm...\n"}
+{"id": 61, "pt": "{W}{14:0000}{W} e {W}{14:0001}{W}... têm a ver{17:0017}...\n"}
+{"id": 62, "pt": "Ah, entendi...\n"}
+{"id": 63, "pt": "Não têm nada a ver, então{17:0017}...\n"}
+{"id": 64, "pt": "Ah!\n"}
+{"id": 65, "pt": "As palavras que você me ensinou...\n"}
+{"id": 66, "pt": "ficam anotadas no caderninho de palavras{17:0017}!"}
+{"id": 67, "pt": "Se eu tiver errado a pronúncia ou algo assim~\n"}
+{"id": 68, "pt": "Se eu não souber falar direito...\n"}
+{"id": 69, "pt": "não dá pra usar no jogo das palavras{17:0017}~\n"}
+{"id": 70, "pt": "Por isso, Prof. {W}{14:0000}{W}!\n"}
+{"id": 71, "pt": "Conto com você{17:0017}~\n"}
+{"id": 72, "pt": "Ah, falando nisso...\n"}
+{"id": 73, "pt": "Do bichinho de antes, {W}{14:0000}{W}...\n"}
+{"id": 74, "pt": "Herdei o caderninho de palavras{17:0017}!"}
+{"id": 75, "pt": "As palavras importantes que {W}{14:0000}{W} deixou pra mim...\n"}
+{"id": 76, "pt": "Com ele, {W}{14:0001}{W} também vai aprender{17:0017}!"}
+{"id": 77, "pt": "Pra não perder pra {W}{14:0000}{W}~\n"}
+{"id": 78, "pt": "{W}{14:0001}{W} também vai aprender um monte de palavras{17:0017}!\n"}
+{"id": 79, "pt": "Amigo(a) de {W}{14:0001}{W}"}
+{"id": 80, "pt": "É uma palavra que {W}{14:0000}{W} me ensinou{17:0017}~\n"}
+{"id": 81, "pt": "{W}{14:0000}{W} disse {W}{14:0001}{W}, mas...\n"}
+{"id": 82, "pt": "E {W}{14:0002}{W}, que tal?\n"}
+{"id": 83, "pt": "Ah, é mesmo... Não sei se você gosta de {W}{14:0000}{W}{17:0017}...\n"}
+{"id": 84, "pt": "Nem gosta, nem desgosta{17:0017}...\n"}
+{"id": 85, "pt": "Ah, entendi~\n"}
+{"id": 86, "pt": "É {W}{14:0000}{W}{17:0017}!\n"}
+{"id": 87, "pt": "É {W}{14:0000}{W}{17:0017}...\n"}
+{"id": 88, "pt": "{14:0001}-san"}
+{"id": 89, "pt": "{14:0006}-san"}
+{"id": 90, "pt": "{14:0006}-chan"}
+{"id": 91, "pt": "{14:0006}-kun"}
+{"id": 92, "pt": "{14:0006}-sama"}
+{"id": 93, "pt": "Prof. {14:0006}"}
+{"id": 94, "pt": "Que tipo de pessoa é {W}{14:0002}{W}?"}
+{"id": 95, "pt": "{W}{14:0002}{W}... É uma só? Ou são várias?"}
+{"id": 96, "pt": "{W}{14:0002}{W}... Qual dos dois?"}
+{"id": 97, "pt": "{W}{14:0002}{W}... É sobre que tipo de pessoa?"}
+{"id": 98, "pt": "Que tipo de pessoa é {W}{14:0001}{W}?"}
+{"id": 99, "pt": "{W}{14:0001}{W} é uma pessoa famosa?"}
+{"id": 100, "pt": "Como é isso de {W}{14:0002}{W}?"}
+{"id": 101, "pt": "Isso de {W}{14:0002}{W}... dá pra fazer com uma pessoa só?"}
+{"id": 102, "pt": "Isso de {W}{14:0002}{W}... é algo que se faz com outras pessoas?"}
+{"id": 103, "pt": "Que tipo de grupo é {W}{14:0002}{W}?"}
+{"id": 104, "pt": "Que tipo de loja é {W}{14:0002}{W}?"}
+{"id": 105, "pt": "Que tipo de lugar é {W}{14:0002}{W}?"}
+{"id": 106, "pt": "Que tipo de comida é {W}{14:0002}{W}?"}
+{"id": 107, "pt": "Que tipo de programa é {W}{14:0002}{W}?"}
+{"id": 108, "pt": "{W}{14:0002}{W}... Qual deles é?"}
+{"id": 109, "pt": "Como se usa {W}{14:0002}{W}?"}
+{"id": 110, "pt": "Que tipo de cumprimento é {W}{14:0002}{W}?"}
+{"id": 111, "pt": "Que tipo de palavra é {W}{14:0002}{W}?"}
+{"id": 112, "pt": "{W}{14:0002}{W}... É um veículo? Ou um robô?"}
+{"id": 113, "pt": "Que tipo de coisa é {W}{14:0001}{W}?"}
+{"id": 114, "pt": "{W}{14:0001}{W}... Qual dos dois?"}
+{"id": 115, "pt": "{W}{14:0002}{W}... É trabalho de homem ou de mulher?"}
+{"id": 116, "pt": "{W}{14:0002}{W}... É coisa de homem ou de mulher?"}
+{"id": 117, "pt": "{W}{14:0002}{W}... É um robô menino ou um robô menina?"}
+{"id": 118, "pt": "{W}{14:0002}{W}... É homem ou mulher?\n"}
+{"id": 119, "pt": "Você gosta de {W}{14:0002}{W}?"}
+{"id": 120, "pt": "O que é {W}{14:0002}{W}?"}
+{"id": 121, "pt": "Isso de {W}{14:0004}{W}, a gente faz e também recebe{17:0017}?\n"}
+{"id": 122, "pt": "Então é algo que se recebe: {W}{14:0004}{W}~\n"}
+{"id": 123, "pt": "A gente faz {W}{14:0004}{W}, então~\n"}
+{"id": 124, "pt": "Então é {W}{14:0004}{W}~\n"}
+{"id": 125, "pt": "Fazer e receber {W}{14:0004}{W} é {W}{14:0003}{W}?\n"}
+{"id": 126, "pt": "Receber {W}{14:0004}{W} é {W}{14:0003}{W}?\n"}
+{"id": 127, "pt": "Fazer {W}{14:0004}{W} é {W}{14:0003}{W}?\n"}
+{"id": 128, "pt": "{W}{14:0004}{W} é {W}{14:0003}{W}?\n"}
+{"id": 129, "pt": "Que choque!\n"}
+{"id": 130, "pt": "Eba! Eba!\n"}
+{"id": 131, "pt": "Sabe, sabe...\n"}
+{"id": 132, "pt": "É-é que...\n"}
+{"id": 133, "pt": "Ééé, ééé!\n"}
+{"id": 134, "pt": "É sério, é um problemão{17:0017}!\n"}
+{"id": 135, "pt": "{W}{14:0000}{W}, é um problemão{17:0017}!\n"}
+{"id": 136, "pt": "Não é pra dizer \"ah, tá\"{17:0017}~\n"}
+{"id": 137, "pt": "Eu ainda nem falei nada{17:0017}!\n"}
+{"id": 138, "pt": "Nhaaa~, é um problemão{17:0017}~\n"}
+{"id": 139, "pt": "{W}{14:0000}{W}, você também acha?\n"}
+{"id": 140, "pt": "Poxa! Escuta direito~!\n"}
+{"id": 141, "pt": "Não é pra responder \"ahã\"{17:0017}~\n"}
+{"id": 142, "pt": "É um problemão de verdade, viu~\n"}
+{"id": 143, "pt": "Problemão! Problemão!"}
+{"id": 144, "pt": "Nhaa~ Que medo{17:0017}~"}
+{"id": 145, "pt": "Que medo{17:0017}~ Que medo{17:0017}~"}
+{"id": 146, "pt": "{W}{14:0000}{W}, que medo{17:0017}~"}
+{"id": 147, "pt": "Nhaa...\n"}
+{"id": 148, "pt": "Agora é {W}{14:0001}{W} que dá medo...\n"}
+{"id": 149, "pt": "{W}{14:0001}{W}, que cruel! Que cruel!\n"}
+{"id": 150, "pt": "{W}{14:0000}{W}, você também tem medo, né?"}
+{"id": 151, "pt": "Uiii~\n"}
+{"id": 152, "pt": "Hã? Hã? Mas é tão assustador~\n"}
+{"id": 153, "pt": "Dá medo, né? Dá medo, né?"}
+{"id": 154, "pt": "Nossa, e agora~\n"}
+{"id": 155, "pt": "Hã? Hã? {W}{14:0000}{W}, você é forte{17:0017}~\n"}
+{"id": 156, "pt": "Nhaaa~ Caí na pegadinha de novo...\n"}
+{"id": 157, "pt": "É mesmo, né!\n"}
+{"id": 158, "pt": "{W}{14:0000}{W}, eu confio em você!\n"}
+{"id": 159, "pt": "Buáaa... Não precisa rir~\n"}
+{"id": 160, "pt": "Que bom!\n"}
+{"id": 161, "pt": "É mesmo, não é mentira, né!\n"}
+{"id": 162, "pt": "Nhaaa~\n"}
+{"id": 163, "pt": "Fiz besteira de novo{17:0017}...\n"}
+{"id": 164, "pt": "Tem algo estranho{17:0017}...\n"}
+{"id": 165, "pt": "É estranho{17:0017}? É estranho{17:0017}?\n"}
+{"id": 166, "pt": "Ué? Tá estranho{17:0017}...\n"}
+{"id": 167, "pt": "Será que...\n"}
+{"id": 168, "pt": "Era pegadinha!?"}
+{"id": 169, "pt": "Já perguntei isso antes, mas...\n"}
+{"id": 170, "pt": "Vou perguntar mais uma vez{17:0017}...\n"}
+{"id": 171, "pt": "Acho que já perguntei a mesma coisa, mas...\n"}
+{"id": 172, "pt": "Ah, é mesmo...?\n"}
+{"id": 173, "pt": "Hã~ {W}{14:0001}{W} é tão importante assim?\n"}
+{"id": 174, "pt": "Fico feliz, mas~\n"}
+{"id": 175, "pt": "Não é isso que eu queria dizer~\n"}
+{"id": 176, "pt": "Hã? Hã...?\n"}
+{"id": 177, "pt": "{W}{14:0001}{W} não pensa coisa feia...\n"}
+{"id": 178, "pt": "{W}{14:0001}{W} está atrapalhando? Não pode ficar aqui~\n"}
+{"id": 179, "pt": "Vai comer {W}{14:0001}{W}...?\n"}
+{"id": 180, "pt": "Buáaa! Buáaa! Que maldade{17:0017}~\n"}
+{"id": 181, "pt": "{W}{14:0001}{W} não é lixo...\n"}
+{"id": 182, "pt": "Hã~ {W}{14:0001}{W}?\n"}
+{"id": 183, "pt": "{W}{14:0001}{W} ainda não é gente, sabe~\n"}
+{"id": 184, "pt": "{W}{14:0001}{W} não está à venda...\n"}
+{"id": 185, "pt": "Então você não gosta de {W}{14:0001}{W}...\n"}
+{"id": 186, "pt": "Ah, entendi~ {W}{14:0000}{W}...\n"}
+{"id": 187, "pt": "Nhaaa~ {W}{14:0000}{W}...\n"}
+{"id": 188, "pt": "Não é {14:0009}"}
+{"id": 189, "pt": "{W}{14:0002}{W} é {W}{14:0005}{W}?"}
+{"id": 190, "pt": "Já perguntei antes, mas...\n"}
+{"id": 191, "pt": "Sem comentários"}
+{"id": 192, "pt": "Pessoa de quem gosto muito"}
+{"id": 193, "pt": "Pessoa que adoro"}
+{"id": 194, "pt": "Pessoa de quem gosto um pouco"}
+{"id": 195, "pt": "Pessoa de quem gosto um tiquinho"}
+{"id": 196, "pt": "Pessoa que amo"}
+{"id": 197, "pt": "Amor platônico"}
+{"id": 198, "pt": "Rival"}
+{"id": 199, "pt": "É {W}{14:0004}{W}\n(Fim da apresentação)"}
+{"id": 200, "pt": "Na frase \"{14:0000} é XX?\"...\n"}
+{"id": 201, "pt": "Pode escolher o que vai no lugar de XX{17:0017}?"}
+{"id": 202, "pt": "Entendi~ Da próxima vez que eu encontrar {W}{14:0002}{W}...\n"}
+{"id": 203, "pt": "Entendi~ Depois, pra {W}{14:0002}{W}...\n"}
+{"id": 204, "pt": "{14:0000} é {14:0001}?\n"}
+{"id": 205, "pt": "Vou lá perguntar isso!\n"}
+{"id": 206, "pt": "Ah, já sei!\n"}
+{"id": 207, "pt": "Já que estamos aqui...\n"}
+{"id": 208, "pt": "Vamos fazer uma pergunta sobre {W}{14:0000}{W} para {W}{14:0001}{W}?"}
+{"id": 209, "pt": "\"XX é YY?\"\n"}
+{"id": 210, "pt": "Tipo uma pergunta assim{17:0017}!"}
+{"id": 211, "pt": "Ééé~ Posso fazer mais perguntas?"}
+{"id": 212, "pt": "Ah, é verdade\n"}
+{"id": 213, "pt": "Tenho uma pergunta de {W}{14:0000}{W} pra {W}{14:0001}{W}{17:0017}!"}
+{"id": 214, "pt": "Uma pergunta de {W}{14:0000}{W} pra {W}{14:0001}{W}{17:0017}!"}
+{"id": 215, "pt": "{W}{14:0000}{W} quer perguntar uma coisa pra {W}{14:0001}{W}!"}
+{"id": 216, "pt": "{W}{14:0002}{W}?"}
+{"id": 217, "pt": "Pergunta pra {W}{14:0000}{W}{17:0017}!"}
+{"id": 218, "pt": "Então...\n"}
+{"id": 219, "pt": "Tenho uma pergunta pra {W}{14:0000}{W}{17:0017}!"}
+{"id": 220, "pt": "Quero perguntar uma coisa pra {W}{14:0000}{W}{17:0017}~"}
+{"id": 221, "pt": "{W}{14:0001}{W}?"}
+{"id": 222, "pt": "{14:0000} é {14:0001}?"}
+{"id": 223, "pt": "Entendi{17:0017}\n"}
+{"id": 224, "pt": "Da próxima vez que encontrar {W}{14:0001}{W}~\n"}
+{"id": 225, "pt": "Depois, pra {W}{14:0003}{W}~\n"}
+{"id": 226, "pt": "Vou passar o recado: {W}{14:0002}{W}!\n"}
+{"id": 227, "pt": "Pra {W}{14:0000}{W}\n"}
+{"id": 228, "pt": "{14:0001} é {14:0002}?\n"}
+{"id": 229, "pt": "Quando perguntei isso~\n"}
+{"id": 230, "pt": "Ah... Então um peteleco na testa é a resposta de {W}{14:0000}{W}{17:0017}...\n"}
+{"id": 231, "pt": "Levei um peteleco na testa...\n"}
+{"id": 232, "pt": "Por quê{17:0017}...\n"}
+{"id": 233, "pt": "Disse que é \"{14:0000}\"!\n"}
+{"id": 234, "pt": "Isso é bem a cara de {W}{14:0001}{W}, né!\n"}
+{"id": 235, "pt": "Entendi~ Então...\n"}
+{"id": 236, "pt": "Entre {14:0001} e\n"}
+{"id": 237, "pt": "qual é mais\n"}
+{"id": 238, "pt": "{14:0003}?\n"}
+{"id": 239, "pt": "É isso que vou perguntar pra {W}{14:0000}{W}~"}
+{"id": 240, "pt": "Entre \"{14:0000}\" e \"{14:0001}\", qual é mais {14:0002}?"}
+{"id": 241, "pt": "{W}{14:0000}{W} é...\n"}
+{"id": 242, "pt": "do time {14:0001}{17:0017}~\n"}
+{"id": 243, "pt": "{W}{14:0000}{W} é do time {W}{14:0001}{W}{17:0017}!\n"}
+{"id": 244, "pt": "Entre \"{14:0001}\" e \"{14:0002}\", qual é mais {W}{14:0003}{W}?\n"}
+{"id": 245, "pt": "Quando perguntei isso~\n"}
+{"id": 246, "pt": "A resposta foi \"{14:0004}\"~"}
+{"id": 247, "pt": "Ah,\n"}
+{"id": 248, "pt": "Perguntei pra {W}{14:0000}{W}, sabe~\n"}
+{"id": 249, "pt": "sobre {W}{14:0001}{W}...\n"}
+{"id": 250, "pt": "e a resposta foi {14:0002}!\n"}
+{"id": 251, "pt": "Por quê~?\n"}
+{"id": 252, "pt": "E eu que fui perguntar...\n"}
+{"id": 253, "pt": "Sabe...\n"}
+{"id": 254, "pt": "É que {W}{14:0000}{W}...\n"}
+{"id": 255, "pt": "queria saber o telefone de {W}{14:0002}{W}{17:0017}~\n"}
+{"id": 256, "pt": "Que bom que deu pra contar, né!\n"}
+{"id": 257, "pt": "Mas eu guardei segredo{17:0017}~\n"}
+{"id": 258, "pt": "Ah, é verdade!\n"}
+{"id": 259, "pt": "Fui falar com {W}{14:0000}{W}...\n"}
+{"id": 260, "pt": "Pedi pra me passar o telefone{17:0017}!\n"}
+{"id": 261, "pt": "No cartão de {W}{14:0000}{W}...\n"}
+{"id": 262, "pt": "será que tem o número de telefone{17:0017}~\n"}
+{"id": 263, "pt": "Dá um friozinho na barriga~\n"}
+{"id": 264, "pt": "Olha, olha!\n"}
+{"id": 265, "pt": "Eu encontrei {W}{14:0000}{W}{17:0017}!\n"}
+{"id": 266, "pt": "Ah... Mas seria legal se ficassem amigos, né...\n"}
+{"id": 267, "pt": "{W}{14:0000}{W}, sabe...\n"}
+{"id": 268, "pt": "Será que é melhor usar o -san mesmo{17:0017}?\n"}
+{"id": 269, "pt": "Parecia estar bem{17:0017}\n"}
+{"id": 270, "pt": "Eba! {W}{14:0000}{W}, que bom que voltou~\n"}
+{"id": 271, "pt": "Fiquei de olho na casa direitinho{17:0017}!\n"}
+{"id": 272, "pt": "Mas sabe... enquanto {W}{14:0000}{W} esteve fora, ninguém veio, viu?\n"}
+{"id": 273, "pt": "Eba! Vou esperar as apresentações{17:0017}!\n"}
+{"id": 274, "pt": "Qual é o seu nome...? Você me conta?\n"}
+{"id": 275, "pt": "Ué? Quem era mesmo{17:0017}?\n"}
+{"id": 276, "pt": "{W}{14:0000}{W} eu já conheço, então...\n"}
+{"id": 277, "pt": "Fala outro nome pra mim{17:0017}\n"}
+{"id": 278, "pt": "Quem é você{17:0017}?\n"}
+{"id": 279, "pt": "Ah, mais que isso não dá...\n"}
+{"id": 280, "pt": "Alguém que acabei de conhecer não cabe no caderno de amigos{17:0017}~\n"}
+{"id": 281, "pt": "Peça pra {W}{14:0000}{W}...\n"}
+{"id": 282, "pt": "dar um jeito no caderno de amigos{17:0017}...\n"}
+{"id": 283, "pt": "Me desculpa...\n"}
+{"id": 284, "pt": "O caderno de amigos já está lotado, lotado~\n"}
+{"id": 285, "pt": "Não dá pra apresentar gente nova{17:0017}...\n"}
+{"id": 286, "pt": "Mesmo assim, tudo bem?"}
+{"id": 287, "pt": "Nessa apresentação~\n"}
+{"id": 288, "pt": "Agora tenho mais {14:0000} amigo(s) novo(s){17:0017}!"}
+{"id": 289, "pt": "E tem mais~\n"}
+{"id": 290, "pt": "Aprendi {14:0000} palavra(s) nova(s){17:0017}!"}
+{"id": 291, "pt": "Chamar de {W}{14:0000}{W} do \"{14:0001}\"...\n"}
+{"id": 292, "pt": "ou chamar de {W}{14:0000}{W} do \"{14:0002}\"...\n"}
+{"id": 293, "pt": "Qual é melhor?"}
+{"id": 294, "pt": "Entendi~ Daqui pra frente vou chamar assim{17:0017}!\n"}
+{"id": 295, "pt": "Entendi~ Vou chamar como sempre{17:0017}!\n"}
+{"id": 296, "pt": "Fiquei sabendo de um segredo de {W}{14:0000}{W}~"}
+{"id": 297, "pt": "Segredo de {14:0000}?"}
+{"id": 298, "pt": "Dizem que {14:0001}!\n"}
+{"id": 299, "pt": "Como {W}{14:0000}{W} anda ultimamente~"}
+{"id": 300, "pt": "Como {14:0000} anda?"}
+{"id": 301, "pt": "{14:0001}, mais ou menos{17:0017}!\n"}
+{"id": 302, "pt": "Ah, é segredo que {W}{14:0000}{W} contou, viu!"}
+{"id": 303, "pt": "Me conta sobre {W}{14:0001}{W} de {W}{14:0000}{W}~\n"}
+{"id": 304, "pt": "Entendi... Então é segredo{17:0017}...\n"}
+{"id": 305, "pt": "Então é {W}{14:0000}{W}~"}

@@ -76,7 +76,7 @@ class Debugger:
             if m.get("ticket") == ticket or m.get("event") in ("error", event):
                 return m
 
-    def press(self, button, duration=2):
+    def press(self, button, duration=6):
         return self.call("input.buttons.press", button=button, duration=duration)
 
     def shot(self, path):

@@ -1,0 +1,60 @@
+# Formatos do Doko Demo Issho (PSP, UCJS10002)
+
+Notas de engenharia reversa usadas pelas ferramentas em `tools/`.
+
+## ISO
+
+- `PSP_GAME/SYSDIR/EBOOT.BIN` é criptografado; `BOOT.BIN` é o mesmo executável em ELF/PRX sem criptografia.
+  O patch grava o `BOOT.BIN` traduzido no lugar do `EBOOT.BIN`.
+- `PSP_GAME/USRDIR/data/DATA.BP` (LBA 7760) é o último arquivo do disco e guarda todo o conteúdo do jogo.
+
+## DATA.BP e BPM
+
+Os dois usam a mesma tabela hash:
+
+| Campo | Tipo | Significado |
+|---|---|---|
+| buckets, total, tam_nomes, tam_tabela | 4 × u32 | cabeçalho |
+| nome, offset, tamanho, próximo | 4 × u32 × `total` | `nome = 0xFFFFFFFF` indica bucket vazio |
+| nomes | bytes | strings terminadas em NUL |
+
+Offsets são relativos ao fim da tabela. Um arquivo novo pode ir para o fim do pacote: basta atualizar offset e tamanho.
+
+## KSC (scripts de diálogo)
+
+```
+0x00 "KSC\0", versão, u32 entrada, u32 início_pool, u32 tam_pool, u16, u16, u16, u16
+0x1C código | stub de entrada | pool de strings | tabela de valores marcados
+```
+
+VM de pilha com despacho em `0x6B9A4` no BOOT (tabela de opcodes em `0xE01B8`).
+Endereços de código são relativos a `0x1C`. A lista de operandos fica em `tools/kscdis.py`.
+
+| Opcode | Operandos | Função |
+|---|---|---|
+| `48` | string terminada em NUL | fala em balão |
+| `8e` | string terminada em NUL | empilha string (perguntas) |
+| `88` | u24 | empilha string do pool |
+| `10 11 12 21` | u24 | saltos |
+| `20 28` | u8, u24 | chamadas |
+| `24 25` | u8 (só 24), chamada nativa | u16, u8, u16 se o u8 for diferente de 0 |
+| `13` | cabeçalhos de `case` no meio do código | `switch`: u32 valor, u24 próximo cabeçalho; termina com tag 0 |
+| `8a 15 18` | u24 | ponteiros de código |
+| `f6 f7` | u8, u16 se o u8 for diferente de 0 | |
+
+Dentro das strings, os bytes `14 15 17 18 19 1a 1b 1c` são seguidos de um u16 e inserem variáveis. O byte `16` delimita palavras variáveis.
+
+Valores marcados têm o tipo nos 4 bits altos: `2` inteiro, `5` string, `7` código, `9` array, `b` referência.
+Ao mudar o tamanho do código, só código e tag 7 precisam ser refeitos: strings são relativas ao pool, e as novas vão para o fim do arquivo.
+
+## Fonte (FONT.XFT, em DATA.BPM)
+
+- 8192 glifos 16×16, 4 bpp, em 32 texturas lineares de 256×256 (nibble baixo = pixel à esquerda).
+- Tabela de largura por glifo em `0x3C`; bitmaps em `0x2040`; paleta de 16 cores em `0x102040`.
+- ASCII usa 1 byte. Códigos de 2 bytes viram `glifo = linha × 96 + célula` (ver `0x4078` no BOOT).
+- Bytes `0xA1–0xDF` isolados não funcionam: o decodificador sempre consome 2 bytes quando o bit alto está ligado.
+- Os acentos usam códigos livres do Shift-JIS em `0x81AD–0x81D6`, definidos em `tools/fontpatch.py`.
+
+## Balão de fala
+
+Largura útil de cerca de 119 unidades da tabela de larguras, com 4 linhas visíveis. O texto rola sozinho e quebra por caractere, então as quebras antes de cada palavra precisam ser inseridas pela ferramenta.

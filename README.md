@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/img/logo.png" alt="Doko Demo Issyo" width="300"></p>
+<p align="center"><img src="docs/img/logo.png" alt="Doko Demo Issyo" width="340"></p>
 
 # Doko Demo Issyo — Brazilian Portuguese translation patch (PSP)
 

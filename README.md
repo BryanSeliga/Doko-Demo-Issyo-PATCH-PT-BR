@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/img/logo.png" alt="Doko Demo Issyo" width="300"></p>
+
 # Doko Demo Issyo — Patch de tradução PT-BR (PSP)
 
 Tradução de fã para português brasileiro de **Doko Demo Issyo** (どこでもいっしょ) para PSP, o bichinho virtual falante do Toro.
@@ -12,7 +14,7 @@ Tradução de fã para português brasileiro de **Doko Demo Issyo** (どこで�
 - Nomes e descrições dos itens.
 - Fonte com acentos do português (á à â ã é ê í ó ô õ ú ü ç).
 
-Ainda em japonês: as letras do teclado na página de kana, o minijogo de shiritori (que depende da língua japonesa), os créditos e o logotipo. Dá para escolher qualquer Pokepi ao começar um jogo novo: Toro (gato), Suzuki (robô), Jun (coelha), Pierre (cachorro) ou Ricky (sapo).
+Ainda em japonês: as letras da página de kana do teclado (use a página de letras latinas para ensinar palavras), o minijogo de shiritori (que depende da língua japonesa), os nomes da equipe nos créditos e o logotipo da tela de título. Dá para escolher qualquer Pokepi ao começar um jogo novo: Toro (gato), Suzuki (robô), Jun (coelha), Pierre (cachorro) ou Ricky (sapo).
 
 ## O que você precisa
 

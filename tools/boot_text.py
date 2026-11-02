@@ -36,6 +36,16 @@ SJIS = {
     0xDBCB0: "Substituir?", 0xDBCCC: "Sem dados", 0xDBCD8: "%d/%d", 0xDBCE8: "%2d/%2d",
     0xDBF8C: "%d", 0xDC064: "%2d/%2d", 0xDC2A0: "Jogad.", 0xDC2A8: "%d", 0xDC2B0: "Rodada", 0xDC2B8: "%dx",
     0xDD9D0: "Conectando...\nAguarde um pouco.",
+    # Creditos finais: so os cargos; nomes de pessoas e lojas ficam como no original.
+    0xDDE34: "Doko Demo Issyo: equipe", 0xDDE50: "Criação", 0xDDE68: "Game design",
+    0xDDE90: "Design de personagens", 0xDDEB0: "Programação", 0xDDF2C: "Diálogos",
+    0xDDF5C: "Programação script", 0xDDF80: "Gráficos", 0xDDFBC: "Animação", 0xDDFD8: "Design de fonte",
+    0xDDFEC: "Diário", 0xDE000: "Assistente", 0xDE01C: "Gerente de projeto", 0xDE038: "Apoio às fotos",
+    0xDE15C: "Música", 0xDE188: "Efeitos sonoros", 0xDE19C: "Sistema de som", 0xDE1C0: "& suporte",
+    0xDE1EC: "Gestão de som", 0xDE210: "Coordenação da caixa", 0xDE260: "Design caixa e manual",
+    0xDE284: "Manual", 0xDE2A0: "Gestão de QA", 0xDE2C0: "Equipe QA", 0xDE370: "Promoção",
+    0xDE3A4: "Marketing", 0xDE3D8: "Agradecimentos", 0xDE46C: "Direção", 0xDE488: "Produção",
+    0xDE4B0: "Produção executiva", 0xDE4E8: "Supervisão",
 }
 
 # Textos em UTF-8 mostrados pelas janelas do sistema do PSP.

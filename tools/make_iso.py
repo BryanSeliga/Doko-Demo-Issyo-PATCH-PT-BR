@@ -26,10 +26,21 @@ CHARS = {"neko": ("KSNEKO.BPM", "NEKO.KSC"), "inu": ("KSINU.BPM", "INU.KSC"), "r
          "kaeru": ("KSKAERU.BPM", "KAERU.KSC"), "usagi": ("KSUSAGI.BPM", "USAGI.KSC")}
 HERE = os.path.dirname(os.path.abspath(__file__))
 PT_DIR = os.path.join(HERE, "..", "traducao")
-# O tique verbal e inserido no fim das frases: "Que legal" + ", miau" + "!".
-TIC = {"neko": {"ニャ": ", miau"}, "inu": {"わン": ", au", "わ～ン": ", au~"},
-       "usagi": {"ピョン": ", pyon", "ウサ": ", usa"}, "robo": {"ロボ": ", robô"},
-       "kaeru": {"オラ": "Eu", "ケロ": ", croac", "ダス": ", sô", "ハァ～": "ah~"}}
+# O tique verbal e inserido no fim das frases: "Que legal" + ", " + "miau" + "!".
+TIC = {"neko": {"ニャ": "miau"}, "inu": {"わン": "au", "わ～ン": "au~"},
+       "usagi": {"ピョン": "pyon", "ウサ": "usa"}, "robo": {"ロボ": "robô"},
+       "kaeru": {"オラ": "Eu", "ケロ": "croac", "ダス": "sô", "ハァ～": "ah~"}}
+# Marcadores de tique que vem depois de virgula. A ", " fica no texto, e nao no tique, para o balao
+# poder quebrar a linha antes dele: palavra + tique colados nao cabem numa linha ("lugares, mia|u~").
+TIC_COMMA = {"neko": ("0017",), "inu": ("0017", "0018"), "usagi": ("0017", "0018"), "robo": ("0017",),
+             "kaeru": ("0019", "001a")}
+
+
+def comma_tics(who, text):
+    codes = "|".join(TIC_COMMA.get(who, ()))
+    if not codes:
+        return text
+    return re.sub(r"(?<=[^\s])\{17:(%s)\}" % codes, r", {17:\1}", text)
 
 
 def load_translations(who, d):
@@ -44,7 +55,7 @@ def load_translations(who, d):
     out = {}
     for it in src:
         if it["id"] in pt:
-            text = pt[it["id"]]
+            text = comma_tics(who, pt[it["id"]])
             # Codigo de controle \x04 no fim (telas de comunicacao) precisa continuar no texto.
             if it["jp"].endswith("\x04") and not text.endswith("\x04"):
                 if it["jp"].endswith("\n\x04") and not text.endswith("\n"):

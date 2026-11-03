@@ -7,7 +7,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 from gim import image_info, parse, to_rgba
-from gui_text import BY_PACK, COMMON
+from gui_text import BY_PACK, COMMON, VERTICAL
 from iso_common import inner_files
 
 # M PLUS Rounded 1c (SIL OFL, ver fonts/OFL.txt): o mesmo desenho arredondado do patch em ingles.
@@ -81,6 +81,25 @@ def render_hi(text, w, h, fill, outline, bg, max_w=None, area=None):
     y = (H - (box[3] - box[1])) // 2 - box[1]
     draw_tracked(d, (x, y), text, font, track, fill=(*fill, 255), stroke_width=stroke, stroke_fill=(*(outline or fill), 255))
     return im
+
+
+def render_vertical(data, text):
+    """Texto girado 90 graus na faixa onde ficava o texto vertical japones."""
+    w, h, _, _ = to_rgba(data)
+    area = ink_area(data, None) or (0, w)
+    band = (area[1] - area[0]) * SCALE
+    im = Image.new("RGBA", (h * SCALE, w * SCALE), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+    size = band
+    while True:
+        font = ImageFont.truetype(FONT_PATH, size)
+        box = d.textbbox((0, 0), text, font=font)
+        if (box[2] - box[0] <= (h - 2) * SCALE and box[3] - box[1] <= band) or size <= 6 * SCALE:
+            break
+        size -= SCALE // 2
+    d.text(((h * SCALE - (box[2] - box[0])) / 2 - box[0], area[0] * SCALE + (band - (box[3] - box[1])) / 2 - box[1]),
+           text, font=font, fill=(255, 255, 255, 255))
+    return write_gim(data, im.rotate(90, expand=True).resize((w, h), Image.LANCZOS))
 
 
 def write_gim(data, im):
@@ -222,6 +241,9 @@ def build_all(iso, bpms):
         if pack.startswith(("F", "W", "E", "D", "S", "BG", "KS")) and pack not in BY_PACK and pack != "SBOARD.BPM":
             continue
         files = {n.split(chr(92))[-1][:-4]: (n, o, s) for n, o, s in inner_files(iso, off) if n.endswith(".GIM")}
+        for key, text in VERTICAL.get(pack, {}).items():
+            name, o, s = files[key]
+            out[(pack, name)] = render_vertical(iso.bp(o, s), text)
         for key, (name, o, s) in files.items():
             text = table.get(key) or COMMON.get(key)
             if not text:

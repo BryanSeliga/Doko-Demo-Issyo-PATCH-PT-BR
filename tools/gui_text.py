@@ -140,3 +140,6 @@ BY_PACK = {
         "W_SHIRI": "Procurando para jogar Shiritori!",
     },
 }
+
+# Selo vertical da lista de itens ("展示中", em exposicao): texto girado, lido de baixo para cima.
+VERTICAL = {"MOCHI.BPM": {"TENJI": "EM USO"}}

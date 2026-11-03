@@ -86,6 +86,11 @@ def rebuild(d, inline=None, pool=None):
     assert stub[5] == 0x20 and stub[10] == 0x21, stub.hex()
     stub[7:10] = reloc(u24(stub, 7)).to_bytes(3, "little")
     stub[11:14] = reloc(u24(stub, 11)).to_bytes(3, "little")
+    # O pool e a tabela sao lidos em palavras de 4 bytes: no PSP real, endereco desalinhado trava o jogo
+    # (o PPSSPP nao reclama). O original completa o stub com zeros ate alinhar; aqui tambem.
+    assert stub[14] == 0x38 and not any(stub[15:]), stub.hex()
+    stub = stub[:16]
+    stub += b"\0" * ((-(CODE_BASE + len(code) + len(stub))) % 4)
     # 4) tabela de valores: enderecos de codigo (tag 7) e strings trocadas (tag 5)
     n = (len(d) - lay["table"]) // 4
     table = list(struct.unpack_from(f"<{n}I", d, lay["table"]))

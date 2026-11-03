@@ -89,6 +89,11 @@ def apply_ksc(who, d, widths, amap):
             if op == 0x48 or not (pt.startswith(" ") or pt.endswith(" ")):
                 pt = wrap(pt, widths, amap)
             inline[n] = to_bytes(pt, amap)
+        elif "{17:" in jp or "、" in jp:
+            # Linha so de codigos (palavra + tique), fora da traducao: "Tchau" + "miau" vira "Tchau, miau".
+            pt = comma_tics(who, jp.replace(" {17:", "{17:").replace("、", ", "))
+            if pt != jp:
+                inline[n] = to_bytes(wrap(pt, widths, amap), amap)
     pool = {}
     _, descs = item_offsets(d)
     for off, raw in extract_pool(d).items():

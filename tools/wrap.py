@@ -36,6 +36,39 @@ def text_width(text, widths, amap, var_width=None):
     return total
 
 
+VOWELS = set("aeiouáàâãéêíóôõúü")
+# grupos que nao se separam: ch, lh, nh e consoante + r/l (pr, bl, tr...)
+JOINED = {"ch", "lh", "nh"} | {a + b for a in "pbtdcgfv" for b in "rl"}
+
+
+def syllable_cut(word, i):
+    """True se da para hifenizar antes de word[i] (divisao silabica simplificada do portugues)."""
+    w = word.lower()
+    if i < 2 or len(w) - i < 2 or not any(c in VOWELS for c in w[:i]) or not any(c in VOWELS for c in w[i:]):
+        return False
+    a, b = w[i - 1], w[i]
+    nxt = w[i + 1] if i + 1 < len(w) else ""
+    if a in VOWELS and b not in VOWELS:  # a-mi, a-pre
+        return nxt in VOWELS or b + nxt in JOINED
+    if a not in VOWELS and b not in VOWELS:  # car-ro, cum-pri, men-tam
+        return a + b not in JOINED and a.isalpha() and b.isalpha()
+    return False
+
+
+def hyphenate(word, widths, amap, limit):
+    """Parte uma palavra maior que a linha, com hifen, de preferencia entre silabas."""
+    hy = char_width("-", widths, amap)
+    pieces = []
+    while text_width(word, widths, amap) > limit:
+        fit = 1
+        while fit < len(word) and text_width(word[:fit + 1], widths, amap) + hy <= limit:
+            fit += 1
+        cut = next((i for i in range(fit, 1, -1) if syllable_cut(word, i)), fit)
+        pieces.append(word[:cut] + "-")
+        word = word[cut:]
+    return pieces + [word]
+
+
 def wrap(text, widths, amap, limit=BALLOON_WIDTH, var_width=None):
     """Troca espacos por quebras para nenhuma linha passar do limite. Mantem o \\n final."""
     tail = "\n" if text.endswith("\n") else ""
@@ -46,6 +79,13 @@ def wrap(text, widths, amap, limit=BALLOON_WIDTH, var_width=None):
     lines, cur = [], ""
     space = widths[0]
     for w in words:
+        if "{" not in w and text_width(w, widths, amap, var_width) > limit:
+            # palavra maior que o balao: o jogo cortaria em qualquer letra; aqui vai com hifen
+            if cur:
+                lines.append(cur)
+            *full, cur = hyphenate(w, widths, amap, limit)
+            lines.extend(full)
+            continue
         if not cur:
             cur = w
         elif text_width(cur, widths, amap, var_width) + space + text_width(w, widths, amap, var_width) <= limit:

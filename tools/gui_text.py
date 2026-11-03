@@ -45,6 +45,7 @@ BY_PACK = {
         "BUTTOM_ENGB11": "Espaço",
         "BUTTOM_KANA10": "Símb",
         "BUTTOM_KANA12": "Núm",
+        "BUTTOM_SYS1": "Cancelar",
         "BUTTOM_SYS2": "Apagar",
         "BUTTOM_SYS3": "OK",
         "BUTTOM_SYS4": "Lista",

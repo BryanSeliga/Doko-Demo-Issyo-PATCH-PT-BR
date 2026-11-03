@@ -1,14 +1,18 @@
 """Redesenha rotulos GIM em portugues, no mesmo tamanho e com as cores da imagem original."""
 import collections
+import os
 import struct
 
-from PIL import Image, ImageDraw, ImageFont
+import numpy as np
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 from gim import image_info, parse, to_rgba
 from gui_text import BY_PACK, COMMON
 from iso_common import inner_files
 
-FONT_PATH = r"C:\Windows\Fonts\ARLRDBD.TTF"
+# M PLUS Rounded 1c (SIL OFL, ver fonts/OFL.txt): o mesmo desenho arredondado do patch em ingles.
+FONT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts", "MPLUSRounded1c-ExtraBold.ttf")
+TRACKING = 0.06  # espaco extra entre letras, em fracao do tamanho da fonte
 SCALE = 4
 
 
@@ -35,15 +39,36 @@ def analyse(w, h, rgba):
     return fill, outline, bg
 
 
+def text_box(text, font, track, stroke):
+    """Caixa (x0, y0, x1, y1) do texto desenhado letra a letra com espaco extra."""
+    box = font.getbbox(text, stroke_width=stroke)
+    return box[0], box[1], box[2] + track * (len(text) - 1), box[3]
+
+
+def draw_tracked(d, xy, text, font, track, **kw):
+    x, y = xy
+    for ch in text:
+        d.text((x, y), ch, font=font, **kw)
+        x += font.getlength(ch) + track
+
+
 def render(text, w, h, fill, outline, bg):
     """Texto centralizado que cabe em w x h. Reduz a fonte ate caber."""
+    return render_hi(text, w, h, fill, outline, bg).resize((w, h), Image.LANCZOS)
+
+
+def render_hi(text, w, h, fill, outline, bg, max_w=None):
+    """Como render, mas devolve a imagem em SCALE vezes o tamanho final. max_w limita a largura do texto."""
     W, H = w * SCALE, h * SCALE
     limit = W * 9 // 10 if w > 120 else W - SCALE
+    if max_w is not None:
+        limit = min(limit, max_w * SCALE)
     stroke = (2 if h >= 28 else 1) * SCALE if outline else 0
     size = H
     while size > 6:
         font = ImageFont.truetype(FONT_PATH, size)
-        box = font.getbbox(text, stroke_width=stroke)
+        track = size * TRACKING
+        box = text_box(text, font, track, stroke)
         if box[2] - box[0] <= limit and box[3] - box[1] <= H - SCALE:
             break
         size -= 1
@@ -51,8 +76,8 @@ def render(text, w, h, fill, outline, bg):
     d = ImageDraw.Draw(im)
     x = (W - (box[2] - box[0])) // 2 - box[0]
     y = (H - (box[3] - box[1])) // 2 - box[1]
-    d.text((x, y), text, font=font, fill=(*fill, 255), stroke_width=stroke, stroke_fill=(*(outline or fill), 255))
-    return im.resize((w, h), Image.LANCZOS)
+    draw_tracked(d, (x, y), text, font, track, fill=(*fill, 255), stroke_width=stroke, stroke_fill=(*(outline or fill), 255))
+    return im
 
 
 def write_gim(data, im):
@@ -91,9 +116,86 @@ def write_gim(data, im):
 
 
 def translate_label(data, text):
+    return write_gim(data, label_hi(data, text).resize(gim_size(data), Image.LANCZOS))
+
+
+def gim_size(data):
+    w, h, _, _ = to_rgba(data)
+    return w, h
+
+
+def label_hi(data, text, max_w=None):
     w, h, rgba, _ = to_rgba(data)
     fill, outline, bg = analyse(w, h, rgba)
-    return write_gim(data, render(text, w, h, fill, outline, bg))
+    return render_hi(text, w, h, fill, outline, bg, max_w)
+
+
+def rgba_array(data):
+    w, h, rgba, _ = to_rgba(data)
+    return np.frombuffer(bytes(rgba), np.uint8).reshape(h, w, 4)
+
+
+def dilate(mask, r):
+    return np.array(Image.fromarray(mask.astype(np.uint8) * 255).filter(ImageFilter.MaxFilter(2 * r + 1))) > 0
+
+
+def place(mask, shape, dx, dy):
+    """Copia mask para um quadro do tamanho shape, deslocada de (dx, dy)."""
+    out = np.zeros(shape, bool)
+    ys, xs = np.nonzero(mask)
+    ys, xs = ys + dy, xs + dx
+    ok = (ys >= 0) & (ys < shape[0]) & (xs >= 0) & (xs < shape[1])
+    out[ys[ok], xs[ok]] = True
+    return out
+
+
+def fit_base(text_alpha, base_alpha):
+    """Quanto o fundo listrado engorda o texto (r) e onde fica em relacao a ele (dx, dy), medido no original."""
+    best = (-1, 0, 0, 0)
+    for r in (2, 3, 4, 5):
+        grown = dilate(text_alpha, r)
+        for dy in range(-6, 12):
+            for dx in range(-6, 10):
+                m = place(grown, base_alpha.shape, dx, dy)
+                iou = (m & base_alpha).sum() / max(1, (m | base_alpha).sum())
+                best = max(best, (iou, r, dx, dy))
+    return best[1:]
+
+
+def stripes(base):
+    """As listras do fundo original, estendidas para os buracos entre as letras (copia a coluna coberta mais proxima)."""
+    covered = base[:, :, 3] > 100
+    out = base.copy()
+    for y in range(base.shape[0]):
+        xs = np.nonzero(covered[y])[0]
+        if len(xs) == 0:
+            src = np.nonzero(covered.any(axis=1))[0]
+            if len(src) == 0:
+                continue
+            yy = src[np.abs(src - y).argmin()]
+            xs, row = np.nonzero(covered[yy])[0], base[yy]
+        else:
+            row = base[y]
+        idx = xs[np.abs(np.arange(base.shape[1])[:, None] - xs[None, :]).argmin(axis=1)]
+        out[y] = row[idx]
+    return out
+
+
+def base_fit(base_data, old_label):
+    r, dx, dy = fit_base(rgba_array(old_label)[:, :, 3] > 100, rgba_array(base_data)[:, :, 3] > 100)
+    return r + 1, dx, dy  # letras latinas sao mais finas que as japonesas: mais folga, como no patch em ingles
+
+
+def translate_base(base_data, new_label_hi, fit):
+    """Refaz o fundo listrado no formato do texto novo, com a mesma folga e posicao do original."""
+    old = rgba_array(base_data)
+    r, dx, dy = fit
+    hi = np.array(new_label_hi)[:, :, 3] > 100
+    big = place(dilate(hi, r * SCALE), (old.shape[0] * SCALE, old.shape[1] * SCALE), dx * SCALE, dy * SCALE)
+    alpha = np.array(Image.fromarray(big.astype(np.uint8) * 255).resize((old.shape[1], old.shape[0]), Image.BOX))
+    out = stripes(old)
+    out[:, :, 3] = alpha
+    return write_gim(base_data, Image.fromarray(out, "RGBA"))
 
 
 def build_all(iso, bpms):
@@ -103,11 +205,23 @@ def build_all(iso, bpms):
         table = BY_PACK.get(pack, {})
         if pack.startswith(("F", "W", "E", "D", "S", "BG", "KS")) and pack not in BY_PACK and pack != "SBOARD.BPM":
             continue
-        for name, o, s in inner_files(iso, off):
-            if not name.endswith(".GIM"):
+        files = {n.split(chr(92))[-1][:-4]: (n, o, s) for n, o, s in inner_files(iso, off) if n.endswith(".GIM")}
+        for key, (name, o, s) in files.items():
+            text = table.get(key) or COMMON.get(key)
+            if not text:
                 continue
-            base = name.split(chr(92))[-1][:-4]
-            text = table.get(base) or COMMON.get(base)
-            if text:
-                out[(pack, name)] = translate_label(iso.bp(o, s), text)
+            data = iso.bp(o, s)
+            # fundo listrado dos menus (MENU_BASE1 atras de MENU1): segue o formato das letras
+            base = key.replace("MENU", "MENU_BASE", 1) if key.startswith(("MENU", "SMENU")) else None
+            if base not in files:
+                hi = label_hi(data, text)
+            else:
+                bname, bo, bs = files[base]
+                bdata = iso.bp(bo, bs)
+                fit = r, dx, _ = base_fit(bdata, data)
+                w, bw = gim_size(data)[0], gim_size(bdata)[0]
+                # o texto e centralizado: os dois lados, com a folga do fundo, tem que caber na textura do fundo
+                hi = label_hi(data, text, min(2 * (bw - dx - r - 1) - w, w + 2 * (dx - r - 1)))
+                out[(pack, bname)] = translate_base(bdata, hi, fit)
+            out[(pack, name)] = write_gim(data, hi.resize(gim_size(data), Image.LANCZOS))
     return out

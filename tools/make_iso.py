@@ -14,6 +14,7 @@ from dic import WORDS
 from dic import rebuild as rebuild_dic
 from extract_text import collect
 from fontpatch import WIDTHS_OFF, patch
+from gim import to_gim8
 from gui_render import build_all
 from iso_common import BOOT_LBA, BOOT_SIZE, Iso, bpm_files, inner_files
 from items import item_offsets, wrap_desc
@@ -21,7 +22,13 @@ from kscbuild import extract_inline, extract_pool, rebuild
 from textfmt import to_bytes, to_text
 import wrap as wrap_mod
 from wrap import text_width, wrap
+from xmb import icon0, patch_sfo, pic0, title_logo
 
+# Arquivos do menu do PSP (PSP_GAME): (lba, tamanho) na ISO original.
+PARAM_SFO = (2672, 472)
+ICON0_PNG = (2576, 24493)
+PIC0_PNG = (2688, 92891)
+TITLE_LOGO = ("TITLE.BPM", "GUI\\TITLE\\TITLE.GIM")
 CHARS = {"neko": ("KSNEKO.BPM", "NEKO.KSC"), "inu": ("KSINU.BPM", "INU.KSC"), "robo": ("KSROBO.BPM", "ROBO.KSC"),
          "kaeru": ("KSKAERU.BPM", "KAERU.KSC"), "usagi": ("KSUSAGI.BPM", "USAGI.KSC")}
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -115,7 +122,11 @@ def main(src, dst, whos):
         if dic_name in WORDS:
             ksc[bpm][dic_name] = rebuild_dic(iso.bp(*inner[dic_name]), WORDS[dic_name], amap)
     boot = patch_boot(iso.read(BOOT_LBA, BOOT_SIZE), amap)
-    print("DATA.BP ->", build(src, dst, ksc=ksc, font=font, boot=boot, inplace=build_all(iso, bpms)))
+    loose = {PARAM_SFO: patch_sfo(iso.read(*PARAM_SFO)), ICON0_PNG: icon0(), PIC0_PNG: pic0(iso.read(*PIC0_PNG))}
+    # logotipo em 256 cores: a textura original tem 16 e o arquivo cresce, entao o TITLE.BPM e realocado
+    logo = {n: (o, s) for n, o, s in inner_files(iso, bpms[TITLE_LOGO[0]][0])}[TITLE_LOGO[1]]
+    ksc.setdefault(TITLE_LOGO[0], {})[TITLE_LOGO[1]] = to_gim8(iso.bp(*logo), title_logo(352, 75))
+    print("DATA.BP ->", build(src, dst, ksc=ksc, font=font, boot=boot, inplace=build_all(iso, bpms), loose=loose))
 
 
 if __name__ == "__main__":

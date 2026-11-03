@@ -111,3 +111,35 @@ def _colors(raw, fmt, n):
             else:
                 out.append(((v & 15) * 17, (v >> 4 & 15) * 17, (v >> 8 & 15) * 17, (v >> 12) * 17))
     return out
+
+
+def to_gim8(template, im):
+    """GIM indexado de 256 cores (CLUT8, sem swizzle) com a imagem RGBA im, copiando os cabecalhos de template.
+
+    Serve para trocar uma textura de 16 cores por uma de 256: o arquivo cresce, entao vai para um BPM realocado.
+    """
+    w, h = im.size
+    q = im.quantize(256, method=2)  # FASTOCTREE: unico metodo do Pillow que aceita RGBA
+    pal = q.getpalette("RGBA") or []
+    pal = bytes(pal[:1024]) + b"\0" * (1024 - len(pal[:1024]))
+    stride = w + (-w) % 16
+    px = bytearray(stride * h)
+    src = q.tobytes()
+    for y in range(h):
+        px[y * stride:y * stride + w] = src[y * w:(y + 1) * w]
+    blocks = parse(template)
+    img = next(b for b in blocks if b[0] == 4)
+    pb = next(b for b in blocks if b[0] == 5)
+    img_info = bytearray(template[img[3]:img[3] + 0x40])
+    pal_info = bytearray(template[pb[3]:pb[3] + 0x40])
+    struct.pack_into("<HHHHH", img_info, 4, 5, 0, w, h, 8)
+    struct.pack_into("<I", img_info, 0x20, 0x40 + len(px))
+    struct.pack_into("<HHHH", pal_info, 4, 3, 0, 256, 1)
+    struct.pack_into("<I", pal_info, 0x20, 0x40 + len(pal))
+    b4 = bytes(img_info) + bytes(px)
+    b5 = bytes(pal_info) + pal
+    block4 = struct.pack("<HHIII", 4, 16, 16 + len(b4), 16 + len(b4), 16) + b4
+    block5 = struct.pack("<HHIII", 5, 16, 16 + len(b5), 16 + len(b5), 16) + b5
+    block3 = struct.pack("<HHIII", 3, 16, 16 + len(block4) + len(block5), 16, 16) + block4 + block5
+    block2 = struct.pack("<HHIII", 2, 16, 16 + len(block3), 16, 16) + block3
+    return template[:16] + block2

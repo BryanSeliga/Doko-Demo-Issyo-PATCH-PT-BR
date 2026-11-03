@@ -27,9 +27,10 @@ def set_record_size(f, rec, size):
     f.write(struct.pack("<I", size) + struct.pack(">I", size))
 
 
-def build(src, dst, ksc=None, font=None, boot=None, inplace=None):
+def build(src, dst, ksc=None, font=None, boot=None, inplace=None, loose=None):
     """ksc: {nome_bpm: {nome_arquivo: bytes}} com novos arquivos; font/boot: bytes de mesmo tamanho.
-    inplace: {(nome_bpm, nome_arquivo): bytes} de mesmo tamanho, gravados no lugar."""
+    inplace: {(nome_bpm, nome_arquivo): bytes} de mesmo tamanho, gravados no lugar.
+    loose: {(lba, tamanho): bytes} arquivos soltos do disco, que nao podem passar dos setores do original."""
     iso = Iso(src)
     shutil.copyfile(src, dst)
     bp_base = DATA_BP_LBA * SECTOR
@@ -38,18 +39,25 @@ def build(src, dst, ksc=None, font=None, boot=None, inplace=None):
         top, _ = parse_bp_table(iso.bp(0, TOP_DATA))
         top_index = {e[0]: e[3] for e in top}
         end = DATA_BP_SIZE
-        for bpm_name, files in (ksc or {}).items():
+        # imagens do mesmo tamanho num BPM que vai ser realocado entram no BPM novo, nao no lugar antigo
+        ksc = {k: dict(v) for k, v in (ksc or {}).items()}
+        inplace = dict(inplace or {})
+        for pack, name in [k for k in inplace if k[0] in ksc]:
+            ksc[pack][name] = inplace.pop((pack, name))
+        for bpm_name, files in ksc.items():
             off, size = bpms[bpm_name]
             head = iso.bp(off, 16)
             table_size = struct.unpack_from("<I", head, 12)[0]
-            blob = bytearray(iso.bp(off, size))
-            ents, _ = parse_bp_table(bytes(blob[:table_size]))
-            by_name = {e[0]: e for e in ents}
-            for name, data in files.items():
-                e = by_name[name]
+            # O BPM e remontado so com os arquivos atuais, sem copia dos antigos: o jogo carrega o pacote
+            # inteiro na memoria, entao ele fica perto do tamanho original.
+            blob = bytearray(iso.bp(off, table_size))
+            ents, _ = parse_bp_table(bytes(blob))
+            for name, old_off, old_size, i, _nxt in sorted(ents, key=lambda e: e[1]):
+                data = files.get(name, iso.bp(off + table_size + old_off, old_size))
                 blob += b"\0" * ((-len(blob)) % 16)
-                struct.pack_into("<2I", blob, 16 + e[3] * 16 + 4, len(blob) - table_size, len(data))
+                struct.pack_into("<2I", blob, 16 + i * 16 + 4, len(blob) - table_size, len(data))
                 blob += data
+            blob += b"\0" * ((-len(blob)) % 16)
             end += (-end) % SECTOR
             f.seek(bp_base + end)
             f.write(blob)
@@ -71,6 +79,13 @@ def build(src, dst, ksc=None, font=None, boot=None, inplace=None):
             assert len(data) == s, (pack, name)
             f.seek(bp_base + o)
             f.write(data)
+        for (lba, size), data in (loose or {}).items():
+            span = (size + SECTOR - 1) // SECTOR * SECTOR
+            assert len(data) <= span, (lba, len(data), span)
+            rec = find_dir_record(f, (lba, size))
+            f.seek(lba * SECTOR)
+            f.write(data + b"\0" * (span - len(data)))
+            set_record_size(f, rec, len(data))
         boot_bytes = boot if boot is not None else iso.read(BOOT_LBA, BOOT_SIZE)
         assert len(boot_bytes) == BOOT_SIZE
         f.seek(BOOT_LBA * SECTOR)

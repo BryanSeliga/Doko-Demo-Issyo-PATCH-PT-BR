@@ -15,6 +15,7 @@ WINDOW = 1 << 23
 MIN_MATCH = 12
 HEADER = b"\xd6\xc3\xc4\x00\x00"
 VCD_SOURCE = 1
+VCD_ADLER32 = 4  # extensao do xdelta3: Adler-32 de cada janela, para recusar patch corrompido ou ISO errada
 INST_ADD = 1  # ADD com tamanho explicito na tabela padrao
 INST_COPY_SELF = 19  # COPY modo 0 (VCD_SELF) com tamanho explicito
 INST_RUN = 0
@@ -92,7 +93,7 @@ def encode_window(src, tgt, tgt_start, index):
     return ops
 
 
-def write_window(out, ops, tgt, length, src_len):
+def write_window(out, ops, tgt, start, length, src_len):
     data = bytearray()
     inst = bytearray()
     addr = bytearray()
@@ -104,8 +105,10 @@ def write_window(out, ops, tgt, length, src_len):
         else:
             inst += bytes([INST_COPY_SELF]) + varint(op[2])
             addr += varint(op[1])
-    delta = varint(length) + b"\0" + varint(len(data)) + varint(len(inst)) + varint(len(addr)) + bytes(data) + bytes(inst) + bytes(addr)
-    out.write(bytes([VCD_SOURCE]) + varint(src_len) + varint(0) + varint(len(delta)) + delta)
+    check = zlib.adler32(bytes(tgt[start:start + length])).to_bytes(4, "big")
+    delta = (varint(length) + b"\0" + varint(len(data)) + varint(len(inst)) + varint(len(addr)) + check
+             + bytes(data) + bytes(inst) + bytes(addr))
+    out.write(bytes([VCD_SOURCE | VCD_ADLER32]) + varint(src_len) + varint(0) + varint(len(delta)) + delta)
 
 
 def create(src_path, tgt_path, patch_path, regions=()):
@@ -116,7 +119,7 @@ def create(src_path, tgt_path, patch_path, regions=()):
         out.write(HEADER)
         for start in range(0, len(tgt), WINDOW):
             end = min(start + WINDOW, len(tgt))
-            write_window(out, encode_window(src, tgt, (start, end), index), tgt, end - start, len(src))
+            write_window(out, encode_window(src, tgt, (start, end), index), tgt, start, end - start, len(src))
     return hashlib.sha1(tgt).hexdigest()
 
 
@@ -140,6 +143,10 @@ def apply(src_path, patch_path, out_path):
             data_len, i = read_varint(p, i)
             inst_len, i = read_varint(p, i)
             addr_len, i = read_varint(p, i)
+            check = None
+            if ind & VCD_ADLER32:
+                check = int.from_bytes(p[i:i + 4], "big")
+                i += 4
             data = p[i:i + data_len]
             inst = p[i + data_len:i + data_len + inst_len]
             addr = p[i + data_len + inst_len:i + data_len + inst_len + addr_len]
@@ -158,6 +165,8 @@ def apply(src_path, patch_path, out_path):
                     a, ai = read_varint(addr, ai)
                     win += src[seg_pos + a:seg_pos + a + n]
             assert len(win) == win_len
+            if check is not None and zlib.adler32(bytes(win)) != check:
+                sys.exit("checksum errado: o patch esta corrompido ou a ISO original nao e a certa")
             out.write(win)
 
 

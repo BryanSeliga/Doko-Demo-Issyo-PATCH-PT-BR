@@ -201,40 +201,40 @@
 {"id": 6601, "pt": "Loja de $_WORD"}
 {"id": 6602, "pt": "Loja"}
 {"id": 6603, "pt": "Loja onde deve ter $_WORD"}
-{"id": 6604, "pt": "Ir comprar $_WORD"}
+{"id": 6604, "pt": "comprar $_WORD"}
 {"id": 6605, "pt": "Tem algo que você quer comprar, pyon?"}
-{"id": 6606, "pt": "Ir fazer compras em $_WORD"}
+{"id": 6606, "pt": "fazer compras em $_WORD"}
 {"id": 6607, "pt": "Em que loja $_YOU costuma fazer compras?"}
 {"id": 6608, "pt": "Loja onde $_WORD trabalha"}
-{"id": 6609, "pt": "Ir procurar $_WORD"}
+{"id": 6609, "pt": "procurar $_WORD"}
 {"id": 6610, "pt": "De que tipo de pessoa $_YOU gosta?"}
 {"id": 6611, "pt": "Loja especializada em $_WORD"}
 {"id": 6612, "pt": "Loja para fãs, especializada em $_WORD"}
-{"id": 6613, "pt": "Ir procurar uma loja que venda $_WORD"}
+{"id": 6613, "pt": "procurar uma loja que venda $_WORD"}
 {"id": 6614, "pt": "Que tipo de produto é difícil achar nas lojas?"}
 {"id": 6615, "pt": "$_WORD Shop"}
 {"id": 6616, "pt": "Loja especializada: de $_WORD importado a $_WORD usado, tem $_WORD de tudo"}
 {"id": 6617, "pt": "Que tipos de roupa de gente existem, pyon?"}
 {"id": 6618, "pt": "Brechó de $_WORD"}
 {"id": 6619, "pt": "Loja de usados cheia de achados de $_WORD"}
-{"id": 6620, "pt": "Ir caçar achados de $_WORD"}
+{"id": 6620, "pt": "caçar achados de $_WORD"}
 {"id": 6621, "pt": "Restaurante"}
 {"id": 6622, "pt": "Restaurante com almoço de $_WORD a 100 ienes"}
-{"id": 6623, "pt": "Ir comer $_WORD"}
+{"id": 6623, "pt": "comer $_WORD"}
 {"id": 6624, "pt": "Tem algo que você quer comer agora?"}
 {"id": 6625, "pt": "Loja que $_YOU recomenda"}
-{"id": 6626, "pt": "Com fome, vou a $_WORD"}
+{"id": 6626, "pt": "comer $_WORD, que estou com fome"}
 {"id": 6627, "pt": "Pra comer fora, qual loja você recomenda?"}
 {"id": 6628, "pt": "Restaurante $_WORD"}
 {"id": 6629, "pt": "Restaurante onde $_WORD atende as mesas"}
 {"id": 6630, "pt": "Diz aí o nome de uma mulher, pyon!"}
 {"id": 6631, "pt": "Sabor de $_WORD"}
 {"id": 6632, "pt": "Restaurante caseiro que tem o sabor de $_WORD como atração"}
-{"id": 6633, "pt": "Ir ao lugar onde dizem que dá pra comer a comida caseira de $_WORD"}
+{"id": 6633, "pt": "a um lugar onde dizem que dá pra comer a comida caseira de $_WORD"}
 {"id": 6634, "pt": "Que profissão $_YOU mais gosta?"}
 {"id": 6635, "pt": "Restaurante de culinária $_WORD"}
 {"id": 6636, "pt": "Restaurante com a verdadeira culinária regional de $_WORD"}
-{"id": 6637, "pt": "Ir sentir que viajou para $_WORD"}
+{"id": 6637, "pt": "curtir a sensação de viajar a $_WORD"}
 {"id": 6638, "pt": "Se for viajar, qual lugar você recomenda?"}
 {"id": 6639, "pt": "Restaurante de pratos de $_WORD, com $_WORD em todo o cardápio"}
 {"id": 6640, "pt": "Café $_WORD"}
@@ -243,69 +243,69 @@
 {"id": 6643, "pt": "Me conta uma coisa que você gosta, pyon?"}
 {"id": 6644, "pt": "Cafeteria $_WORD"}
 {"id": 6645, "pt": "Cafeteria onde $_WORD serve o chá com muito carinho"}
-{"id": 6646, "pt": "Ir aonde os fãs de $_WORD se reúnem"}
+{"id": 6646, "pt": "a um lugar cheio de fãs de $_WORD"}
 {"id": 6647, "pt": "$_WORD Café"}
 {"id": 6648, "pt": "Refúgio onde $_WORD descansa entre um trabalho e outro"}
-{"id": 6649, "pt": "Ouvir as histórias de $_WORD"}
+{"id": 6649, "pt": "ouvir as histórias de $_WORD"}
 {"id": 6650, "pt": "Bar $_WORD"}
 {"id": 6651, "pt": "Lugar de adultos onde rola campeonato de $_WORD à noite"}
-{"id": 6652, "pt": "Fazer $_WORD para virar adulto"}
+{"id": 6652, "pt": "fazer $_WORD pra virar adulto"}
 {"id": 6653, "pt": "O que é coisa de adulto, pyon?"}
 {"id": 6654, "pt": "Cafeteria onde $_WORD às vezes faz show"}
-{"id": 6655, "pt": "Ver o show de $_WORD"}
+{"id": 6655, "pt": "ver o show de $_WORD"}
 {"id": 6656, "pt": "Me diz uma pessoa famosa de quem $_YOU gosta, pyon?"}
 {"id": 6657, "pt": "Loja de $_WORD onde dá pra provar $_WORD de todo o mundo"}
 {"id": 6658, "pt": "Empresa"}
 {"id": 6659, "pt": "Empresa onde $_YOU trabalha"}
-{"id": 6660, "pt": "Visitar $_WORD"}
+{"id": 6660, "pt": "visitar $_WORD"}
 {"id": 6661, "pt": "Que tipos de empresa existem no mundo, pyon?"}
 {"id": 6662, "pt": "Setor de $_WORD"}
 {"id": 6663, "pt": "Empresa ocupadíssima com $_WORD de manhã até a noite"}
-{"id": 6664, "pt": "Procurar emprego"}
+{"id": 6664, "pt": "procurar trabalho"}
 {"id": 6665, "pt": "O que a gente faz quando trabalha, pyon?"}
 {"id": 6666, "pt": "$_WORD S.A."}
 {"id": 6667, "pt": "Empresa que administra $_WORD pelo mundo"}
-{"id": 6668, "pt": "Pesquisar um monte sobre $_WORD"}
+{"id": 6668, "pt": "pesquisar um monte sobre $_WORD"}
 {"id": 6669, "pt": "Tem algo que faria muita falta se sumisse, pyon?"}
 {"id": 6670, "pt": "Agência de $_WORD"}
 {"id": 6671, "pt": "Agência de empregos temporários onde $_WORD ajuda quem está em apuros"}
-{"id": 6672, "pt": "Estudar o trabalho de $_WORD"}
+{"id": 6672, "pt": "estudar o trabalho de $_WORD"}
 {"id": 6673, "pt": "Que profissão ajuda o mundo?"}
 {"id": 6674, "pt": "Escritório de $_WORD"}
 {"id": 6675, "pt": "Agência de talentos a que $_WORD pertence"}
-{"id": 6676, "pt": "Ir encontrar $_WORD"}
+{"id": 6676, "pt": "encontrar $_WORD"}
 {"id": 6677, "pt": "Empresa de $_WORD"}
 {"id": 6678, "pt": "Empresa que fabrica vários artigos para $_WORD"}
-{"id": 6679, "pt": "Estudar $_WORD antes de fazer $_WORD"}
+{"id": 6679, "pt": "estudar $_WORD antes de fazer $_WORD"}
 {"id": 6680, "pt": "O que a gente faz por diversão?"}
 {"id": 6681, "pt": "Cantinho de $_WORD"}
 {"id": 6682, "pt": "Copa"}
 {"id": 6683, "pt": "Sala de descanso onde $_WORD pode beber à vontade"}
-{"id": 6684, "pt": "Fazer uma pausa com $_WORD"}
+{"id": 6684, "pt": "fazer uma pausa com $_WORD"}
 {"id": 6685, "pt": "De que bebida $_YOU gosta?"}
 {"id": 6686, "pt": "Sala de $_WORD"}
 {"id": 6687, "pt": "Lugar para relaxar, curtindo $_WORD sossegado"}
-{"id": 6688, "pt": "Relaxar fazendo $_WORD ou algo assim"}
+{"id": 6688, "pt": "relaxar fazendo $_WORD ou algo assim"}
 {"id": 6689, "pt": "O que é uma coisa gostosa que tira o cansaço?"}
 {"id": 6690, "pt": "Lugar onde quem cansou de $_WORD descansa um pouco"}
-{"id": 6691, "pt": "Ir aonde se reúne quem cansou de $_WORD"}
+{"id": 6691, "pt": "ao lugar de quem se cansou de $_WORD"}
 {"id": 6692, "pt": "O que deixa a gente cansado?"}
 {"id": 6693, "pt": "Boas-vindas a $_WORD"}
 {"id": 6694, "pt": "Lugar onde $_WORD para descansar um pouquinho"}
 {"id": 6695, "pt": "Quem é a pessoa de quem $_YOU gosta?"}
 {"id": 6696, "pt": "Sala de espera de $_WORD"}
 {"id": 6697, "pt": "Ponto de encontro de quem vai a $_WORD"}
-{"id": 6698, "pt": "Dar uma olhada em $_WORD antes"}
+{"id": 6698, "pt": "dar uma olhada em $_WORD antes"}
 {"id": 6699, "pt": "Pra passear, qual lugar você recomenda?"}
 {"id": 6700, "pt": "Sala de descanso de $_WORD"}
 {"id": 6701, "pt": "Sala onde a turma de $_WORD, exausta, respira um pouco"}
 {"id": 6702, "pt": "Águas de $_WORD"}
 {"id": 6703, "pt": "Banho público"}
 {"id": 6704, "pt": "Banho público com fonte termal que deixa $_WORD limpinho"}
-{"id": 6705, "pt": "Deixar $_WORD limpinho"}
+{"id": 6705, "pt": "deixar $_WORD limpinho"}
 {"id": 6706, "pt": "Que parte do corpo você quer deixar mais limpinha, pyon?"}
 {"id": 6707, "pt": "Banho público com água de mesma composição das termas famosas de $_WORD"}
-{"id": 6708, "pt": "Dar uma olhada antes da viagem a $_WORD"}
+{"id": 6708, "pt": "dar uma olhada antes na viagem a $_WORD"}
 {"id": 6709, "pt": "Pra viajar, qual lugar você recomenda?"}
 {"id": 6710, "pt": "Banho muito usado pela turma de $_WORD"}
 {"id": 6711, "pt": "Me conta que tipos de trabalho existem no mundo, pyon?"}

@@ -1,0 +1,747 @@
+{"pt": "$_WORD 20 anos", "placa": "$_WORD 20"}
+{"pt": "$_WORD Lovely", "placa": "♥$_WORD♥"}
+{"pt": "$_WORD a bordo", "placa": "$_WORD"}
+{"pt": "$_WORD adorável", "placa": "♥$_WORD♥"}
+{"pt": "$_WORD ao natural", "placa": "$_WORD"}
+{"pt": "$_WORD aqui dentro", "placa": "$_WORD"}
+{"pt": "$_WORD baratinho", "placa": "$_WORD!"}
+{"pt": "$_WORD baratíssimo", "placa": "$_WORD!"}
+{"pt": "$_WORD caseiro", "placa": "$_WORD"}
+{"pt": "$_WORD causa acidente", "placa": "$_WORD!"}
+{"pt": "$_WORD causa acidentes", "placa": "$_WORD!"}
+{"pt": "$_WORD com 80% de desconto", "placa": "80%$_WORD"}
+{"pt": "$_WORD com energia", "placa": "$_WORD!"}
+{"pt": "$_WORD de emergência", "placa": "$_WORD"}
+{"pt": "$_WORD de montão", "placa": "$_WORD!"}
+{"pt": "$_WORD de segunda mão", "placa": "$_WORD"}
+{"pt": "$_WORD direto da fazenda", "placa": "$_WORD"}
+{"pt": "$_WORD direto da roça", "placa": "$_WORD"}
+{"pt": "$_WORD em porção grande", "placa": "$_WORD GG"}
+{"pt": "$_WORD em tamanho máximo", "placa": "$_WORD XL"}
+{"pt": "$_WORD fofinho", "placa": "♥$_WORD♥"}
+{"pt": "$_WORD na banheira", "placa": "S/ $_WORD"}
+{"pt": "$_WORD na banheira, ", "placa": "S/ $_WORD"}
+{"pt": "$_WORD natural", "placa": "$_WORD"}
+{"pt": "$_WORD no local", "placa": "$_WORD"}
+{"pt": "$_WORD número 100", "placa": "$_WORD100"}
+{"pt": "$_WORD passageiro", "placa": "$_WORD..."}
+{"pt": "$_WORD pela centésima vez", "placa": "$_WORD100"}
+{"pt": "$_WORD perigoso", "placa": "$_WORD!!"}
+{"pt": "$_WORD porção grande", "placa": "$_WORD GG"}
+{"pt": "$_WORD superpicante", "placa": "$_WORD!!!"}
+{"pt": "$_WORD só para sócios", "placa": "VIP$_WORD"}
+{"pt": "$_WORD uma vez por dia", "placa": "Um $_WORD"}
+{"pt": "$_WORD usado", "placa": "$_WORD"}
+{"pt": "$_WORD verde e amarelo", "placa": "$_WORD"}
+{"pt": "$_WORD é causa de acidente", "placa": "$_WORD!"}
+{"pt": "$_WORD é impermanente", "placa": "$_WORD..."}
+{"pt": "$_WORD é passageiro", "placa": "$_WORD..."}
+{"pt": "$_WORD, centésima vez", "placa": "$_WORD100"}
+{"pt": "$_WORD-go", "placa": "$_WORD-go"}
+{"pt": "$_WORD10 anos", "placa": "$_WORD 10"}
+{"pt": "$_WORD: 10 anos", "placa": "$_WORD 10"}
+{"pt": "10 anos da escola", "placa": "10 anos"}
+{"pt": "10 anos da fundação", "placa": "10 anos"}
+{"pt": "10 anos de fundação", "placa": "10 anos"}
+{"pt": "20 anos da construção", "placa": "20 anos"}
+{"pt": "20 anos da fundação", "placa": "20 anos"}
+{"pt": "20 anos de $_WORD", "placa": "$_WORD 20"}
+{"pt": "20 anos de fundação", "placa": "20 anos"}
+{"pt": "3 dias para a gincana", "placa": "Faltam 3"}
+{"pt": "Aberto o ano todo", "placa": "Aberto!"}
+{"pt": "Aberto todo dia", "placa": "Aberto!"}
+{"pt": "Abre todo dia", "placa": "Aberto!"}
+{"pt": "Acupuntura Midorigaoka", "placa": "Acupunt."}
+{"pt": "Acupuntura Monte Verde", "placa": "Acupunt."}
+{"pt": "Afaste os maus espíritos", "placa": "Xô, mal!"}
+{"pt": "Agência $_WORD", "placa": "$_WORD"}
+{"pt": "Agência de $_WORD", "placa": "$_WORD"}
+{"pt": "Akiko", "placa": "Akiko"}
+{"pt": "Algodão-doce", "placa": "Algodão"}
+{"pt": "Amor de $_WORD", "placa": "♥$_WORD♥"}
+{"pt": "Apontar e conferir", "placa": "Aponte!"}
+{"pt": "Aposte no amanhã", "placa": "Amanhã!"}
+{"pt": "Aprimoramento mútuo", "placa": "Juntos!"}
+{"pt": "Aprimorar-se juntos", "placa": "Juntos!"}
+{"pt": "Arrumadinho", "placa": "Ordem!"}
+{"pt": "Arrumação", "placa": "Ordem!"}
+{"pt": "Arrumação e ordem", "placa": "Ordem!"}
+{"pt": "Arrumação geral", "placa": "Ordem!"}
+{"pt": "Artigos de $_WORD", "placa": "$_WORD"}
+{"pt": "Artigos para $_WORD", "placa": "$_WORD"}
+{"pt": "Atenção: $_WORD", "placa": "$_WORD!"}
+{"pt": "Atrapalhado", "placa": "Bobinho"}
+{"pt": "Autoescola de Duas Rodas Especial", "placa": "Moto Esc"}
+{"pt": "Autoescola de Motos Bekkaku", "placa": "Moto Esc"}
+{"pt": "Autoescola de motos Especial", "placa": "Moto Esc"}
+{"pt": "Açougue $_WORD", "placa": "$_WORD"}
+{"pt": "Açougue Maruyama", "placa": "Maruyama"}
+{"pt": "Bala Gato Preto", "placa": "Gatinhos"}
+{"pt": "Bala do Gato Preto", "placa": "Gatinhos"}
+{"pt": "Bala do gato preto", "placa": "Gatinhos"}
+{"pt": "Bar Minha Juventude", "placa": "Izakaya"}
+{"pt": "Bar das Coroas", "placa": "Coroas"}
+{"pt": "Bar das Senhoras", "placa": "Coroas"}
+{"pt": "Bar das coroas", "placa": "Coroas"}
+{"pt": "Bar das senhoras", "placa": "Coroas"}
+{"pt": "Barato! Baratíssimo!", "placa": "Barato!"}
+{"pt": "Baratíssimo! Baratíssimo!", "placa": "Barato!"}
+{"pt": "Barbearia Nagoshi", "placa": "Nagoshi"}
+{"pt": "Bebeu? Descanse", "placa": "Descanse"}
+{"pt": "Bolas saindo a mil", "placa": "Jackpot!"}
+{"pt": "Brincar bastante lá fora", "placa": "Brinque!"}
+{"pt": "Brincar lá fora com energia", "placa": "Brinque!"}
+{"pt": "Buoéé", "placa": "Buoéé"}
+{"pt": "Buééé", "placa": "Buééé"}
+{"pt": "Buóóóó", "placa": "Buóóóó"}
+{"pt": "Bééééé", "placa": "Bééééé"}
+{"pt": "CR $_WORD", "placa": "CR $_WORD"}
+{"pt": "CR$_WORD", "placa": "CR $_WORD"}
+{"pt": "Caixa de ideias descartadas", "placa": "Descarte"}
+{"pt": "Campanha Oásis", "placa": "Oásis"}
+{"pt": "Campanha do bom dia", "placa": "Bom dia!"}
+{"pt": "Campanha do oásis", "placa": "Oásis"}
+{"pt": "Campeão de $_WORD", "placa": "$_WORD #1"}
+{"pt": "Campeão do torneio de $_WORD", "placa": "$_WORD #1"}
+{"pt": "Cara de pau", "placa": "Cara pau"}
+{"pt": "Cara ou coroa", "placa": "Olha lá!"}
+{"pt": "Carne bovina com $_WORD", "placa": "$_WORD"}
+{"pt": "Carne de $_WORD de ave", "placa": "$_WORD"}
+{"pt": "Carne de $_WORD de boi", "placa": "$_WORD"}
+{"pt": "Carne de ave $_WORD", "placa": "$_WORD"}
+{"pt": "Carne de ave com $_WORD", "placa": "$_WORD"}
+{"pt": "Carne de boi $_WORD", "placa": "$_WORD"}
+{"pt": "Carne de boi com $_WORD", "placa": "$_WORD"}
+{"pt": "Carne de frango com $_WORD", "placa": "$_WORD"}
+{"pt": "Carneiro grelhado", "placa": "Carneiro"}
+{"pt": "Carta", "placa": "Carta"}
+{"pt": "Casa Lotada", "placa": "Lotado!"}
+{"pt": "Casa cheia", "placa": "Lotado!"}
+{"pt": "Casa cheia, obrigado", "placa": "Lotado!"}
+{"pt": "Casa de penhor $_WORD", "placa": "$_WORD"}
+{"pt": "Casa de penhores $_WORD", "placa": "$_WORD"}
+{"pt": "Casa de penhores Sakamoto", "placa": "Sakamoto"}
+{"pt": "Casa sempre cheia", "placa": "Cheio!"}
+{"pt": "Catnip", "placa": "Catnip"}
+{"pt": "Caçador", "placa": "Caçador"}
+{"pt": "Caçador do Amor", "placa": "Caçador♥"}
+{"pt": "Caçador do amor", "placa": "Caçador♥"}
+{"pt": "Cebolinha com pato", "placa": "Pato&Ceb"}
+{"pt": "Central $_WORD", "placa": "$_WORD"}
+{"pt": "Centro de vistoria $_WORD", "placa": "$_WORD"}
+{"pt": "Centésimo $_WORD", "placa": "$_WORD100"}
+{"pt": "Chamada celestial", "placa": "Chamada"}
+{"pt": "Chamada no céu", "placa": "Chamada"}
+{"pt": "Chegada de $_WORD", "placa": "$_WORD!"}
+{"pt": "Chegou $_WORD", "placa": "$_WORD!"}
+{"pt": "Churrasco Genghis Khan", "placa": "Genghis"}
+{"pt": "Churrasco de carneiro", "placa": "Carneiro"}
+{"pt": "Chuva de $_WORD", "placa": "$_WORD!"}
+{"pt": "Cirurgia estética $_WORD", "placa": "$_WORD"}
+{"pt": "Cirurgia plástica $_WORD", "placa": "$_WORD"}
+{"pt": "Cirurgia plástica de $_WORD", "placa": "$_WORD"}
+{"pt": "Clientes de montão", "placa": "Cheio!"}
+{"pt": "Clube $_WORD", "placa": "$_WORD"}
+{"pt": "Clube de $_WORD", "placa": "$_WORD"}
+{"pt": "Clube do $_WORD", "placa": "$_WORD"}
+{"pt": "Clínica $_WORD", "placa": "$_WORD"}
+{"pt": "Clínica Tasaka", "placa": "Tasaka"}
+{"pt": "Clínica de $_WORD", "placa": "$_WORD"}
+{"pt": "Clínica de Acupuntura Midorigaoka", "placa": "Acupunt."}
+{"pt": "Colabore com $_WORD", "placa": "$_WORD!"}
+{"pt": "Colégio $_WORD", "placa": "$_WORD"}
+{"pt": "Colégio Feminino $_WORD", "placa": "$_WORD"}
+{"pt": "Colégio Masculino Lírio Branco", "placa": "Lírio"}
+{"pt": "Com energia $_WORD", "placa": "$_WORD!"}
+{"pt": "Com pureza e retidão", "placa": "Retidão"}
+{"pt": "Com retidão", "placa": "Retidão"}
+{"pt": "Com ânimo: $_WORD", "placa": "$_WORD!"}
+{"pt": "Combo das moças", "placa": "Moças♥"}
+{"pt": "Combo de $_WORD", "placa": "$_WORD"}
+{"pt": "Combo feminino", "placa": "Moças♥"}
+{"pt": "Comercial $_WORD", "placa": "$_WORD"}
+{"pt": "Comercial Kirita", "placa": "Kirita"}
+{"pt": "Comida Quentinha", "placa": "Hot Food"}
+{"pt": "Comida quente", "placa": "Hot Food"}
+{"pt": "Comida quentinha", "placa": "Hot Food"}
+{"pt": "Comissão", "placa": "Comissão"}
+{"pt": "Composto de $_WORD", "placa": "$_WORD"}
+{"pt": "Compra de $_WORD", "placa": "$_WORD"}
+{"pt": "Compra de motos", "placa": "Moto $$$"}
+{"pt": "Compra-se $_WORD", "placa": "$_WORD"}
+{"pt": "Compra-se moto", "placa": "Moto $$$"}
+{"pt": "Comércio $_WORD", "placa": "$_WORD"}
+{"pt": "Comércio Kirita", "placa": "Kirita"}
+{"pt": "Condicionador na banheira", "placa": "Condic."}
+{"pt": "Condicionador na banheira, ", "placa": "Condic."}
+{"pt": "Conquista de $_WORD", "placa": "$_WORD"}
+{"pt": "Conto de fadas do Salão da Fama", "placa": "Contos"}
+{"pt": "Conto do Salão dos Sonhos", "placa": "Contos"}
+{"pt": "Contém $_WORD", "placa": "$_WORD"}
+{"pt": "Correio de $_WORD", "placa": "$_WORD"}
+{"pt": "Correio de Hayami", "placa": "Hayami"}
+{"pt": "Correio de Minami-Okutama", "placa": "Okutama"}
+{"pt": "Correio do Interior", "placa": "Interior"}
+{"pt": "Correio do interior", "placa": "Interior"}
+{"pt": "Correspondência", "placa": "Correio"}
+{"pt": "Cozinha Delícia", "placa": "Cozinha"}
+{"pt": "Cozinha Gostosura", "placa": "Cozinha"}
+{"pt": "Cozinha deliciosa", "placa": "Cozinha"}
+{"pt": "Cozinha do Sabor", "placa": "Cozinha"}
+{"pt": "Cozinha do bom sabor", "placa": "Cozinha"}
+{"pt": "Crescer juntos", "placa": "Juntos!"}
+{"pt": "Criador de gatos", "placa": "Gatil"}
+{"pt": "Crédito $_WORD", "placa": "$_WORD"}
+{"pt": "Cuidado com $_WORD", "placa": "$_WORD!"}
+{"pt": "Cuidado com a Yamanba", "placa": "Yamanba!"}
+{"pt": "Cuidado com a bruxa da montanha", "placa": "Bruxa!"}
+{"pt": "Cuidado com deslizamento", "placa": "Barreira"}
+{"pt": "Cuidado com fogo", "placa": "Fogo!"}
+{"pt": "Cuidado com o fogo", "placa": "Fogo!"}
+{"pt": "Cuidado com urso", "placa": "Urso!"}
+{"pt": "Cuidado com ursos", "placa": "Urso!"}
+{"pt": "Cuidado: deslizamento", "placa": "Barreira"}
+{"pt": "Cultivando $_WORD", "placa": "$_WORD"}
+{"pt": "Cultivando cordyceps", "placa": "Cultivo"}
+{"pt": "Cultivando morangos", "placa": "Morangos"}
+{"pt": "Cópias vendidas", "placa": "Cópias"}
+{"pt": "Dakgalbi", "placa": "Dakgalbi"}
+{"pt": "Dar o máximo de qualquer jeito", "placa": "Esforço!"}
+{"pt": "Delícia!", "placa": "Delícia!"}
+{"pt": "Dentista $_WORD", "placa": "$_WORD"}
+{"pt": "Dentista Kamo", "placa": "Dr. Kamo"}
+{"pt": "Dentista Pato", "placa": "Dr. Pato"}
+{"pt": "Dentista Yara", "placa": "Dr. Yara"}
+{"pt": "Dentista de $_WORD", "placa": "$_WORD"}
+{"pt": "Departamento de $_WORD", "placa": "$_WORD"}
+{"pt": "Desastrado", "placa": "Bobinho"}
+{"pt": "Doce famoso Piu-Piu", "placa": "Piu-Piu"}
+{"pt": "Doce famoso Piupiu", "placa": "Piupiu"}
+{"pt": "Doce famoso Piyo-piyo", "placa": "Piyopiyo"}
+{"pt": "Doce famoso Piyopiyo", "placa": "Piyopiyo"}
+{"pt": "Doce famoso piu-piu", "placa": "Piu-Piu"}
+{"pt": "Documento de reclamação", "placa": "Queixas"}
+{"pt": "Documentos de reclamação", "placa": "Queixas"}
+{"pt": "Dominando $_WORD", "placa": "$_WORD"}
+{"pt": "Dominar o mundo", "placa": "Dominar!"}
+{"pt": "Dono Esquisito", "placa": "Estranho"}
+{"pt": "Dono esquisito", "placa": "Estranho"}
+{"pt": "Dono maluquinho", "placa": "Maluco"}
+{"pt": "Edifício Meido", "placa": "Ed.Meido"}
+{"pt": "Eletro $_WORD", "placa": "$_WORD"}
+{"pt": "Eletro Horiguchi", "placa": "Eletro"}
+{"pt": "Eletro Oyama", "placa": "Oyama"}
+{"pt": "Eletrodomésticos $_WORD", "placa": "$_WORD"}
+{"pt": "Eletrodomésticos Horiguchi", "placa": "Eletro"}
+{"pt": "Elétrica Horiguchi", "placa": "Eletro"}
+{"pt": "Elétrica Oyama", "placa": "Oyama"}
+{"pt": "Em cartaz: $_WORD", "placa": "$_WORD"}
+{"pt": "Empresa $_WORD", "placa": "$_WORD"}
+{"pt": "Empréstimo $_WORD", "placa": "$_WORD"}
+{"pt": "Empréstimos Macaco Selvagem", "placa": "Macaco"}
+{"pt": "Empréstimos Yaen", "placa": "Yaen"}
+{"pt": "Encarregado $_WORD", "placa": "$_WORD"}
+{"pt": "Ensopado de miúdos", "placa": "Miúdos"}
+{"pt": "Ensopado de pato", "placa": "Pato"}
+{"pt": "Ensopado de pato gelado", "placa": "Pato gel"}
+{"pt": "Ensopado de tripas", "placa": "Tripas"}
+{"pt": "Ensopado secreto do chefe", "placa": "Segredo!"}
+{"pt": "Entrada proibida", "placa": "Proibido"}
+{"pt": "Entrada proibida na loja", "placa": "Proibido"}
+{"pt": "Entrega", "placa": "Entrega"}
+{"pt": "Entrega Golfinho Vermelho", "placa": "Golfinho"}
+{"pt": "Entrega Orca Vermelha", "placa": "Orca"}
+{"pt": "Entrega de $_WORD", "placa": "$_WORD"}
+{"pt": "Entrega expressa", "placa": "Entrega"}
+{"pt": "Entrega no prazo, custe o que custar", "placa": "Prazo!"}
+{"pt": "Entrega por carta", "placa": "Carta"}
+{"pt": "Entrega postal", "placa": "Postal"}
+{"pt": "Entregas Orca Vermelha", "placa": "Orca"}
+{"pt": "Eremita", "placa": "Eremita"}
+{"pt": "Erva-de-gato", "placa": "Catnip"}
+{"pt": "Erva-dos-gatos", "placa": "Catnip"}
+{"pt": "Escala", "placa": "Escala"}
+{"pt": "Escala do dia", "placa": "Escala"}
+{"pt": "Escola de $_WORD", "placa": "$_WORD"}
+{"pt": "Escola de moto Bekkaku", "placa": "Moto Esc"}
+{"pt": "Esforço acima de tudo", "placa": "Esforço!"}
+{"pt": "Especial do chef", "placa": "Do chef"}
+{"pt": "Esperto de carteirinha", "placa": "Esperto!"}
+{"pt": "Esperto demais", "placa": "Esperto!"}
+{"pt": "Espresso", "placa": "Espresso"}
+{"pt": "Espíritos, fora daqui", "placa": "Xô, mal!"}
+{"pt": "Espíritos, fora!", "placa": "Xô, mal!"}
+{"pt": "Estabanado", "placa": "Bobinho"}
+{"pt": "Este lado para cima", "placa": "P/ cima!"}
+{"pt": "Estilo menininha", "placa": "Menina♥"}
+{"pt": "Estilo romântico", "placa": "Romance♥"}
+{"pt": "Estética $_WORD", "placa": "$_WORD"}
+{"pt": "Estética de $_WORD", "placa": "$_WORD"}
+{"pt": "Evoluir juntos", "placa": "Juntos!"}
+{"pt": "Exibição de $_WORD", "placa": "$_WORD"}
+{"pt": "Expo $_WORD", "placa": "$_WORD"}
+{"pt": "Expo Garotas Gato do Mundo", "placa": "Gatinhas"}
+{"pt": "Expo Tesouros da Princesa", "placa": "Princesa"}
+{"pt": "Expo Tribo do Broto de Bambu", "placa": "Bambu"}
+{"pt": "Expo da tribo do broto de bambu", "placa": "Bambu"}
+{"pt": "Expo das garotas-gato do mundo", "placa": "Gatinhas"}
+{"pt": "Expo de $_WORD", "placa": "$_WORD"}
+{"pt": "Expo de brotos de bambu", "placa": "Bambu"}
+{"pt": "Expo de garotas-gato do mundo", "placa": "Gatinhas"}
+{"pt": "Expo do tesouro da princesa", "placa": "Princesa"}
+{"pt": "Exposição Mundo das Garotas-Gato", "placa": "Gatinhas"}
+{"pt": "Exposição Tesouros da Princesa", "placa": "Princesa"}
+{"pt": "Exposição Tribo do Broto de Bambu", "placa": "Bambu"}
+{"pt": "Exposição da Tribo do Broto de Bambu", "placa": "Bambu"}
+{"pt": "Exposição de $_WORD", "placa": "$_WORD"}
+{"pt": "Exposição de Garotas-Gato do Mundo", "placa": "Gatinhas"}
+{"pt": "Exposição dos Tesouros da Princesa", "placa": "Princesa"}
+{"pt": "Expresso $_WORD", "placa": "$_WORD"}
+{"pt": "Faltam 3 dias para a gincana", "placa": "Faltam 3"}
+{"pt": "Fechado", "placa": "Fechado"}
+{"pt": "Feira de $_WORD", "placa": "$_WORD"}
+{"pt": "Feira do Refeitório", "placa": "Bandejão"}
+{"pt": "Feira do Susto", "placa": "Susto!"}
+{"pt": "Feira do bandejão", "placa": "Bandejão"}
+{"pt": "Feira do refeitório", "placa": "Bandejão"}
+{"pt": "Feira do susto", "placa": "Susto!"}
+{"pt": "Feito em casa: $_WORD", "placa": "$_WORD"}
+{"pt": "Feito à mão: $_WORD", "placa": "$_WORD"}
+{"pt": "Festa de $_WORD", "placa": "$_WORD"}
+{"pt": "Festa de fundação em andamento", "placa": "Festão!"}
+{"pt": "Festa do $_WORD", "placa": "$_WORD!"}
+{"pt": "Festival de $_WORD", "placa": "$_WORD"}
+{"pt": "Festival de Grifes", "placa": "Grifes!"}
+{"pt": "Festival de fundação em andamento", "placa": "Festão!"}
+{"pt": "Festival de grifes", "placa": "Grifes!"}
+{"pt": "Fora, $_WORD", "placa": "Xô $_WORD"}
+{"pt": "Fora, $_WORD!", "placa": "Xô $_WORD"}
+{"pt": "Fora, maus espíritos", "placa": "Xô, mal!"}
+{"pt": "Frango apimentado", "placa": "Dakgalbi"}
+{"pt": "Frango-d'água de Yanbaru", "placa": "Yanbaru"}
+{"pt": "Fuchikami", "placa": "Fuchi"}
+{"pt": "Furão", "placa": "Furão"}
+{"pt": "Fábula do Salão da Fama", "placa": "Fábula"}
+{"pt": "Fã de $_WORD", "placa": "$_WORD"}
+{"pt": "Fígado de peixe ao ponzu", "placa": "Ankimo"}
+{"pt": "Fígado de tamboril ao ponzu", "placa": "Ankimo"}
+{"pt": "Fígado de tamboril com ponzu", "placa": "Ankimo"}
+{"pt": "Gaivota Heisei Yuri", "placa": "Gaivota"}
+{"pt": "Gaivota Lírio Heisei", "placa": "Gaivota"}
+{"pt": "Gaivota-lírio Heisei", "placa": "Gaivota"}
+{"pt": "Gaivota-lírio da Era Heisei", "placa": "Gaivota"}
+{"pt": "Galeirão-de-okinawa", "placa": "Okinawa"}
+{"pt": "Galinha de Okinawa", "placa": "Okinawa"}
+{"pt": "Galinha-d'água de Okinawa", "placa": "Okinawa"}
+{"pt": "Gestão de $_WORD", "placa": "$_WORD"}
+{"pt": "Gestão de clientes", "placa": "Clientes"}
+{"pt": "Golpe do Baú", "placa": "Baú $$"}
+{"pt": "Goya chample", "placa": "Champuru"}
+{"pt": "Goya champuru", "placa": "Champuru"}
+{"pt": "Goya chanpuru", "placa": "Champuru"}
+{"pt": "Grande aniversário", "placa": "Festão!"}
+{"pt": "Grande aniversário da loja", "placa": "Festão!"}
+{"pt": "Grande festa de $_WORD", "placa": "$_WORD!"}
+{"pt": "Grande festa de aniversário", "placa": "Festão!"}
+{"pt": "Grande festa de aniversário em andamento", "placa": "Festão!"}
+{"pt": "Grande festa de fundação", "placa": "Festão!"}
+{"pt": "Grande inauguração", "placa": "Abrimos!"}
+{"pt": "Grande palácio dos sonhos", "placa": "Palácio"}
+{"pt": "Grande rei do universo", "placa": "Rei Univ"}
+{"pt": "Grande salão dos sonhos", "placa": "Palácio"}
+{"pt": "Hambúrguer $_WORD", "placa": "$_WORD"}
+{"pt": "Hambúrguer de $_WORD", "placa": "$_WORD"}
+{"pt": "Hambúrguer engole-tudo", "placa": "Engole!"}
+{"pt": "Hambúrguer engolido inteiro", "placa": "Engole!"}
+{"pt": "Hambúrguer engolidor", "placa": "Engole!"}
+{"pt": "Hoje não tem aula", "placa": "Sem aula"}
+{"pt": "Honesto e correto", "placa": "Retidão"}
+{"pt": "Hospital Barriga Tripla", "placa": "Barrigão"}
+{"pt": "Hospital Barrigão", "placa": "Barrigão"}
+{"pt": "Hospital Geral Paraíso", "placa": "Hospital"}
+{"pt": "Hospital Paraíso Pleno", "placa": "Hospital"}
+{"pt": "Hotel Aoyama Centrão", "placa": "H.Aoyama"}
+{"pt": "Hotel Aoyama Ponto Nobre", "placa": "H.Aoyama"}
+{"pt": "Hotel Aoyama Zona Nobre", "placa": "H.Aoyama"}
+{"pt": "Ideias descartadas", "placa": "Descarte"}
+{"pt": "Imobiliária $_WORD", "placa": "$_WORD"}
+{"pt": "Imperador do Universo", "placa": "Rei Univ"}
+{"pt": "Impermanência de $_WORD", "placa": "$_WORD..."}
+{"pt": "Indo para a escola", "placa": "Escola!"}
+{"pt": "Indo para a escola com muito orgulho", "placa": "Escola!"}
+{"pt": "Indo pra escola com gosto", "placa": "Escola!"}
+{"pt": "Indo à escola com gosto", "placa": "Escola!"}
+{"pt": "Inspeção veicular $_WORD", "placa": "$_WORD"}
+{"pt": "Izakaya Minha Juventude", "placa": "Izakaya"}
+{"pt": "Jardim das Cerejeiras", "placa": "Sakura"}
+{"pt": "Jardim das cerejeiras", "placa": "Sakura"}
+{"pt": "Jardim de cerejeiras", "placa": "Sakura"}
+{"pt": "Jingisukan", "placa": "Genghis"}
+{"pt": "Jogo $_WORD", "placa": "CR $_WORD"}
+{"pt": "Já à venda!", "placa": "À venda!"}
+{"pt": "Já à venda: livro Chuva Forte!", "placa": "Já saiu!"}
+{"pt": "Kirita Comércio", "placa": "Kirita"}
+{"pt": "Lambada", "placa": "Lambada"}
+{"pt": "Lamen de $_WORD", "placa": "$_WORD"}
+{"pt": "Lamen tonkotsu", "placa": "Tonkotsu"}
+{"pt": "Lançamento adiado?", "placa": "Adiado?"}
+{"pt": "Lar seguro", "placa": "Lar"}
+{"pt": "Legumes sem agrotóxico", "placa": "Orgânico"}
+{"pt": "Lei da selva", "placa": "Selva!"}
+{"pt": "Lei do Trabalho Total", "placa": "Trabalho"}
+{"pt": "Lei do mais forte", "placa": "Selva!"}
+{"pt": "Limpos e corretos", "placa": "Retidão"}
+{"pt": "Liquidação", "placa": "Saldão!"}
+{"pt": "Liquidação final", "placa": "Queima!"}
+{"pt": "Liquidação imperdível", "placa": "Saldão!"}
+{"pt": "Liquidação relâmpago", "placa": "Saldão!"}
+{"pt": "Livro Chuva Forte, já à venda!", "placa": "Já saiu!"}
+{"pt": "Loans Yaen", "placa": "Yaen"}
+{"pt": "Loja $_WORD", "placa": "$_WORD"}
+{"pt": "Loja Minamiji", "placa": "Minamiji"}
+{"pt": "Loja Nanji", "placa": "Nanji"}
+{"pt": "Loja de $_WORD", "placa": "$_WORD"}
+{"pt": "Look econômico", "placa": "Eco look"}
+{"pt": "Lotado de $_WORD", "placa": "$_WORD!"}
+{"pt": "Lovely $_WORD", "placa": "♥$_WORD♥"}
+{"pt": "Lámen Uóóó", "placa": "Uóóó"}
+{"pt": "Lámen de $_WORD", "placa": "$_WORD"}
+{"pt": "Lámen tonkotsu", "placa": "Tonkotsu"}
+{"pt": "Macarrão de pato", "placa": "Mac.Pato"}
+{"pt": "Macarrão supremo do universo", "placa": "Supremo!"}
+{"pt": "Macarrão supremo máximo", "placa": "Supremo!"}
+{"pt": "Macarrão supremo sem igual", "placa": "Supremo!"}
+{"pt": "Macarrão supremo ultra definitivo", "placa": "Supremo!"}
+{"pt": "Maior $_WORD", "placa": "$_WORD XL"}
+{"pt": "Mais rápido da vila", "placa": "Vila #1"}
+{"pt": "Mais veloz da vila", "placa": "Vila #1"}
+{"pt": "Marca Raio", "placa": "Raio"}
+{"pt": "Marca Trovão", "placa": "Trovão"}
+{"pt": "Marmita caseira", "placa": "Marmita"}
+{"pt": "Marumaya", "placa": "Marumaya"}
+{"pt": "Maruyama", "placa": "Maruyama"}
+{"pt": "Material de escritório", "placa": "Escrit."}
+{"pt": "Menu das moças", "placa": "Moças♥"}
+{"pt": "Menu do chef", "placa": "Do chef"}
+{"pt": "Meta de $_WORD", "placa": "$_WORD"}
+{"pt": "Meta de $_WORD zero", "placa": "0 $_WORD"}
+{"pt": "Meta de zero $_WORD", "placa": "0 $_WORD"}
+{"pt": "Meta de zero acidentes", "placa": "0 acid."}
+{"pt": "Meta: zero $_WORD", "placa": "0 $_WORD"}
+{"pt": "Meta: zero acidentes", "placa": "0 acid."}
+{"pt": "Mire o amanhã", "placa": "Amanhã!"}
+{"pt": "Mire o primeiro lugar!", "placa": "Rumo #1!"}
+{"pt": "Moto Escola Especial", "placa": "Moto Esc"}
+{"pt": "Muito $_WORD", "placa": "$_WORD!"}
+{"pt": "Máximo de 2 flautas", "placa": "Só 2 fl."}
+{"pt": "Nada de $_WORD!", "placa": "$_WORD!"}
+{"pt": "Naoshi", "placa": "Naoshi"}
+{"pt": "Neitan", "placa": "Neitan"}
+{"pt": "Nishi", "placa": "Nishi"}
+{"pt": "No ar: $_WORD", "placa": "$_WORD"}
+{"pt": "No máximo 2 flautas", "placa": "Só 2 fl."}
+{"pt": "Novidade: Chuva Forte!", "placa": "Já saiu!"}
+{"pt": "Novo lançamento de ameaçador!", "placa": "Já saiu!"}
+{"pt": "Novo lançamento! Chuva forte", "placa": "Já saiu!"}
+{"pt": "Numero $_WORD", "placa": "N. $_WORD"}
+{"pt": "Não $_WORD!", "placa": "$_WORD!"}
+{"pt": "Não coloque $_WORD", "placa": "S/ $_WORD"}
+{"pt": "Não coloque condicionador", "placa": "S/condic"}
+{"pt": "Não coloque sais de banho", "placa": "S/ sais"}
+{"pt": "Não coloque toalha", "placa": "S/toalha"}
+{"pt": "Não dê comida", "placa": "Não dê!"}
+{"pt": "Não faz sentido", "placa": "Sem nexo"}
+{"pt": "Não misturar, perigo", "placa": "Perigo!"}
+{"pt": "Não misture, perigo", "placa": "Perigo!"}
+{"pt": "Não misture: perigo", "placa": "Perigo!"}
+{"pt": "Não suba aqui!", "placa": "Não suba"}
+{"pt": "Não suba aí!", "placa": "Não suba"}
+{"pt": "Não suba!", "placa": "Não suba"}
+{"pt": "Não vire de cabeça para baixo", "placa": "Não vire"}
+{"pt": "Não vire de cabeça pra baixo", "placa": "Não vire"}
+{"pt": "Não vire de ponta-cabeça", "placa": "Não vire"}
+{"pt": "Não é permitido", "placa": "Proibido"}
+{"pt": "O dono esquisito", "placa": "Estranho"}
+{"pt": "O grande palácio dos sonhos", "placa": "Palácio"}
+{"pt": "O maior de $_WORD", "placa": "$_WORD XL"}
+{"pt": "O mais veloz da vila", "placa": "Vila #1"}
+{"pt": "O sabor de $_WORD", "placa": "$_WORD"}
+{"pt": "O tio do zelador", "placa": "Zelador"}
+{"pt": "O viajante errante", "placa": "Viajante"}
+{"pt": "Oftalmo Idachi Masamune", "placa": "Oftalmo"}
+{"pt": "Oftalmologia Idachi Masamune", "placa": "Oftalmo"}
+{"pt": "Olha pra lá", "placa": "Olha lá!"}
+{"pt": "Olha pra lá!", "placa": "Olha lá!"}
+{"pt": "Ordem e arrumação", "placa": "Ordem!"}
+{"pt": "Ordem e limpeza", "placa": "Ordem!"}
+{"pt": "Ortopedia $_WORD", "placa": "$_WORD"}
+{"pt": "Ortopedia Hone", "placa": "Hone"}
+{"pt": "Ortopedia Ogasawara", "placa": "Ortoped."}
+{"pt": "Ortopedia Osso", "placa": "Ossos"}
+{"pt": "Ortopedia Ossos", "placa": "Ossos"}
+{"pt": "Ortopedia de $_WORD", "placa": "$_WORD"}
+{"pt": "Ortopedia do Osso", "placa": "Ossos"}
+{"pt": "Oráculo", "placa": "Oráculo"}
+{"pt": "Oráculo da sorte", "placa": "Oráculo"}
+{"pt": "Pachinko $_WORD", "placa": "$_WORD"}
+{"pt": "Pachinko Lucky", "placa": "Lucky"}
+{"pt": "Pachinko Sorte", "placa": "Sorte"}
+{"pt": "Pachinko Sortudo", "placa": "Sortudo"}
+{"pt": "Pachinko a todo vapor", "placa": "Jackpot!"}
+{"pt": "Palácio dos Sonhos", "placa": "Palácio"}
+{"pt": "Palácio dos sonhos", "placa": "Palácio"}
+{"pt": "Panela de miúdos", "placa": "Miúdos"}
+{"pt": "Panela de pato", "placa": "Pato"}
+{"pt": "Panela fria de pato", "placa": "Pato gel"}
+{"pt": "Panela secreta do chefe", "placa": "Segredo!"}
+{"pt": "Panela secreta do dono", "placa": "Segredo!"}
+{"pt": "Panela secreta do gerente", "placa": "Segredo!"}
+{"pt": "Papéis de reclamação", "placa": "Queixas"}
+{"pt": "Parabéns, Taro Yamada", "placa": "Parabéns"}
+{"pt": "Parabéns, clube de $_WORD", "placa": "$_WORD!"}
+{"pt": "Parabéns, clube de taekwondo", "placa": "Parabéns"}
+{"pt": "Parabéns, time de $_WORD", "placa": "$_WORD!"}
+{"pt": "Parabéns, time de taekwondo", "placa": "Parabéns"}
+{"pt": "Parfait de pato", "placa": "Parfait"}
+{"pt": "Parfait gigante de campeão", "placa": "Yokozuna"}
+{"pt": "Parfait gigante yokozuna", "placa": "Yokozuna"}
+{"pt": "Parfait yokozuna gigante", "placa": "Yokozuna"}
+{"pt": "Parque $_WORD", "placa": "$_WORD"}
+{"pt": "Parque Marinho de Odaiba", "placa": "Odaiba"}
+{"pt": "Parque Marítimo de Odaiba", "placa": "Odaiba"}
+{"pt": "Parque Odaiba", "placa": "Odaiba"}
+{"pt": "Parque da Praia de Odaiba", "placa": "Odaiba"}
+{"pt": "Parto tranquilo", "placa": "Parto♥"}
+{"pt": "Passar na prova", "placa": "Aprovado"}
+{"pt": "Pato com cebolinha", "placa": "Pato&Ceb"}
+{"pt": "Paz no lar", "placa": "Paz"}
+{"pt": "Pechincha de $_WORD", "placa": "$_WORD!"}
+{"pt": "Pedido de $_WORD", "placa": "$_WORD"}
+{"pt": "Pedido de aprovação", "placa": "Aprovado"}
+{"pt": "Pedido de parto tranquilo", "placa": "Parto♥"}
+{"pt": "Penhores $_WORD", "placa": "$_WORD"}
+{"pt": "Penhores Sakamoto", "placa": "Sakamoto"}
+{"pt": "Penhores de $_WORD", "placa": "$_WORD"}
+{"pt": "Perigo: $_WORD", "placa": "$_WORD!!"}
+{"pt": "Perseguidor de sonhos", "placa": "Sonhador"}
+{"pt": "Peças de sucata", "placa": "Sucata"}
+{"pt": "Peças usadas", "placa": "Usadas"}
+{"pt": "Piadas descartadas", "placa": "Descarte"}
+{"pt": "Plantão", "placa": "Plantão"}
+{"pt": "Plantão do dia", "placa": "Plantão"}
+{"pt": "Plástica $_WORD", "placa": "$_WORD"}
+{"pt": "Por favor, não coloque", "placa": "Proibido"}
+{"pt": "Porção grande de $_WORD", "placa": "$_WORD GG"}
+{"pt": "Por♥ fa♥ vor♥", "placa": "Por♥fa♥"}
+{"pt": "Por♥ fa♥vor♥", "placa": "Por♥fa♥"}
+{"pt": "Por♥ fa♥vo♥r♥", "placa": "Por♥fa♥"}
+{"pt": "Por♥fa♥vor♥", "placa": "Por♥fa♥"}
+{"pt": "Posto de $_WORD", "placa": "$_WORD"}
+{"pt": "Prato feito de $_WORD", "placa": "$_WORD"}
+{"pt": "Prazo sagrado", "placa": "Prazo!"}
+{"pt": "Prazo é prazo", "placa": "Prazo!"}
+{"pt": "Prazo é sagrado", "placa": "Prazo!"}
+{"pt": "Prece de $_WORD", "placa": "$_WORD"}
+{"pt": "Prece para passar na prova", "placa": "Aprovado"}
+{"pt": "Prece por $_WORD", "placa": "$_WORD"}
+{"pt": "Preço baixo! Preço baixo!", "placa": "Barato!"}
+{"pt": "Proibida a entrada", "placa": "Proibido"}
+{"pt": "Proibido $_WORD", "placa": "$_WORD!"}
+{"pt": "Proibido $_WORD!", "placa": "$_WORD!"}
+{"pt": "Proibido entrar", "placa": "Proibido"}
+{"pt": "Proibido entrar na loja", "placa": "Proibido"}
+{"pt": "Proteção da família", "placa": "Família"}
+{"pt": "Prédio Além-Vida", "placa": "Ed. Além"}
+{"pt": "Prédio Meido", "placa": "Ed.Meido"}
+{"pt": "Prédio do Além", "placa": "Ed. Além"}
+{"pt": "Prêmios a todo vapor", "placa": "Jackpot!"}
+{"pt": "Prêmios saindo a rodo", "placa": "Jackpot!"}
+{"pt": "Pub de coroas", "placa": "Coroas"}
+{"pt": "Que delícia!", "placa": "Delícia!"}
+{"pt": "Rakumu Raijin", "placa": "Rakumu"}
+{"pt": "Ramen Tonkotsu", "placa": "Tonkotsu"}
+{"pt": "Ramen Uóu", "placa": "Uóu"}
+{"pt": "Ramen de $_WORD", "placa": "$_WORD"}
+{"pt": "Raposa velha", "placa": "Raposa"}
+{"pt": "Realização de $_WORD", "placa": "$_WORD"}
+{"pt": "Reciclagem Kaji", "placa": "Recicla"}
+{"pt": "Refeição de $_WORD", "placa": "$_WORD"}
+{"pt": "Refogado de melão-amargo", "placa": "Champuru"}
+{"pt": "Rei do Universo", "placa": "Rei Univ"}
+{"pt": "Rei do universo", "placa": "Rei Univ"}
+{"pt": "Relojoaria Oikawa", "placa": "Relógios"}
+{"pt": "Relógio de $_WORD", "placa": "$_WORD"}
+{"pt": "Relógios $_WORD", "placa": "$_WORD"}
+{"pt": "Relógios Oikawa", "placa": "Relógios"}
+{"pt": "Representante", "placa": "Repres."}
+{"pt": "Responsável por $_WORD", "placa": "$_WORD"}
+{"pt": "Restaurante Kunegi", "placa": "Kunegi"}
+{"pt": "Restaurante Uoo", "placa": "Uoo"}
+{"pt": "Restrição de água", "placa": "Sem água"}
+{"pt": "Rivalidade saudável", "placa": "Juntos!"}
+{"pt": "Rumo ao amanhã", "placa": "Amanhã!"}
+{"pt": "Rumo ao milhão!", "placa": "Milhão!"}
+{"pt": "Rumo ao primeiro lugar!", "placa": "Rumo #1!"}
+{"pt": "Sabano Babicchi", "placa": "Babicchi"}
+{"pt": "Sabano Babitchi", "placa": "Babitchi"}
+{"pt": "Sabanobabicchi", "placa": "Babicchi"}
+{"pt": "Sabanobabichi", "placa": "Babichi"}
+{"pt": "Sabor de $_WORD", "placa": "$_WORD"}
+{"pt": "Sabá no Sabão", "placa": "Sabão"}
+{"pt": "Sais de banho na banheira", "placa": "Sais"}
+{"pt": "Sais de banho na banheira, ", "placa": "Sais"}
+{"pt": "Se esforçar de qualquer jeito", "placa": "Esforço!"}
+{"pt": "Segredo da empresa", "placa": "Sigilo!"}
+{"pt": "Segurança no trânsito: $_WORD", "placa": "$_WORD"}
+{"pt": "Seino", "placa": "Seino"}
+{"pt": "Sem ligar pra ninguém", "placa": "Cara pau"}
+{"pt": "Sem noção", "placa": "Cara pau"}
+{"pt": "Sem se importar com ninguém", "placa": "Cara pau"}
+{"pt": "Sem sentido", "placa": "Sem nexo"}
+{"pt": "Semana da leitura", "placa": "Leitura"}
+{"pt": "Semana da segurança no trânsito", "placa": "Trânsito"}
+{"pt": "Semana do trânsito seguro", "placa": "Trânsito"}
+{"pt": "Sempre cheio de $_WORD", "placa": "$_WORD!"}
+{"pt": "Sempre cheio de clientes", "placa": "Cheio!"}
+{"pt": "Sempre cheio de fregueses", "placa": "Cheio!"}
+{"pt": "Senhor das Trevas", "placa": "Trevas"}
+{"pt": "Senhor das trevas", "placa": "Trevas"}
+{"pt": "Separe $_WORD!", "placa": "$_WORD!"}
+{"pt": "Separe bem o lixo", "placa": "Separe!"}
+{"pt": "Separe o $_WORD!", "placa": "$_WORD!"}
+{"pt": "Separe o lixo", "placa": "Separe!"}
+{"pt": "Separe o lixo direitinho", "placa": "Separe!"}
+{"pt": "Separe: $_WORD!", "placa": "$_WORD!"}
+{"pt": "Setor de $_WORD", "placa": "$_WORD"}
+{"pt": "Seu zelador", "placa": "Zelador"}
+{"pt": "Soba de Bonito", "placa": "Soba"}
+{"pt": "Soba de bonito", "placa": "Soba"}
+{"pt": "Soberano das trevas", "placa": "Trevas"}
+{"pt": "Sobra de bolinhas", "placa": "Sobras"}
+{"pt": "Sol com nuvens", "placa": "Sol/nuv."}
+{"pt": "Sonhador", "placa": "Sonhador"}
+{"pt": "Sonhos Bem-vindos", "placa": "Sonhos"}
+{"pt": "Sopa de pato", "placa": "Sopa"}
+{"pt": "Sorte do dia", "placa": "Sorte"}
+{"pt": "Sorvete barato", "placa": "Sorvete"}
+{"pt": "Sorvete de $_WORD", "placa": "$_WORD"}
+{"pt": "Sorvete de leite", "placa": "Sorvete"}
+{"pt": "Sorvete de pato", "placa": "Pato ice"}
+{"pt": "Sorvete leve", "placa": "Sorvete"}
+{"pt": "Sorvete simples", "placa": "Sorvete"}
+{"pt": "Sucesso absoluto!", "placa": "Sucesso!"}
+{"pt": "Sucesso em $_WORD", "placa": "$_WORD"}
+{"pt": "Sucesso nos estudos", "placa": "Estudos"}
+{"pt": "Sucesso total!", "placa": "Sucesso!"}
+{"pt": "Sukiyaki", "placa": "Sukiyaki"}
+{"pt": "Super doceria", "placa": "Doceria"}
+{"pt": "Super guloseimas", "placa": "Doces!"}
+{"pt": "Super oferta de $_WORD", "placa": "$_WORD!"}
+{"pt": "Super promoção de $_WORD", "placa": "$_WORD!"}
+{"pt": "Superdoces baratos", "placa": "Doces!"}
+{"pt": "Superliquidação", "placa": "Saldão!"}
+{"pt": "Superpicante: $_WORD", "placa": "$_WORD!!!"}
+{"pt": "Superpromoção!", "placa": "Barato!"}
+{"pt": "Surpresa do chef", "placa": "Do chef"}
+{"pt": "Só 2 flautas", "placa": "Só 2 fl."}
+{"pt": "Só 3 mil ienes", "placa": "Só 3 mil"}
+{"pt": "Só 3.000 ienes", "placa": "Só 3 mil"}
+{"pt": "Tamagawa", "placa": "Tamagawa"}
+{"pt": "Tamagawa-go", "placa": "Tamagawa"}
+{"pt": "Tamanokoshi", "placa": "Baú $$"}
+{"pt": "Tampinha de garrafa", "placa": "Tampinha"}
+{"pt": "Tasaka", "placa": "Tasaka"}
+{"pt": "Teimosia pura", "placa": "Teimosia"}
+{"pt": "Teimosia total", "placa": "Teimosia"}
+{"pt": "Teimoso até o fim", "placa": "Teimoso"}
+{"pt": "Teimoso de carteirinha", "placa": "Teimoso"}
+{"pt": "Tem Rigron", "placa": "Rigron!"}
+{"pt": "Tem ligroína", "placa": "Ligroína"}
+{"pt": "Temos Ligron", "placa": "Ligron!"}
+{"pt": "Temos Riguron", "placa": "Riguron!"}
+{"pt": "Temos ligron", "placa": "Ligron!"}
+{"pt": "Tigela de veado grande", "placa": "Veado GG"}
+{"pt": "Tigela de veado grandona", "placa": "Veado GG"}
+{"pt": "Tigela grande de veado", "placa": "Veado GG"}
+{"pt": "Tigre Vermelho Ardente", "placa": "Tigre"}
+{"pt": "Tio do serviço geral", "placa": "Zelador"}
+{"pt": "Toalha na banheira", "placa": "Toalha"}
+{"pt": "Toalha na banheira, ", "placa": "Toalha"}
+{"pt": "Torcendo por $_WORD", "placa": "$_WORD!"}
+{"pt": "Torcida de $_WORD", "placa": "$_WORD!"}
+{"pt": "Torcida por $_WORD", "placa": "$_WORD!"}
+{"pt": "Total de vendas", "placa": "Total"}
+{"pt": "Trabalho e lei demais", "placa": "Trabalho"}
+{"pt": "Trabalho, lei e sorte", "placa": "Trabalho"}
+{"pt": "Trabalho, lei, tudo e mais", "placa": "Trabalho"}
+{"pt": "Trabalho, saúde e sorte", "placa": "Trabalho"}
+{"pt": "Transporte de cães e gatos", "placa": "Pet táxi"}
+{"pt": "Treino da mente", "placa": "Mente!"}
+{"pt": "Treino de $_WORD", "placa": "$_WORD"}
+{"pt": "Treino mental", "placa": "Mente!"}
+{"pt": "Trem $_WORD", "placa": "$_WORD"}
+{"pt": "Trem Tamagawa", "placa": "Tamagawa"}
+{"pt": "Trem Tigre Vermelho Flamejante", "placa": "Tigre"}
+{"pt": "Trânsito seguro com $_WORD", "placa": "$_WORD"}
+{"pt": "Trânsito seguro de $_WORD", "placa": "$_WORD"}
+{"pt": "Trânsito seguro: $_WORD", "placa": "$_WORD"}
+{"pt": "Tudo é impermanente", "placa": "Efêmero"}
+{"pt": "Tudo é passageiro", "placa": "Efêmero"}
+{"pt": "Turma de $_WORD", "placa": "$_WORD"}
+{"pt": "Turno", "placa": "Turno"}
+{"pt": "Táxi Shibata", "placa": "Táxi"}
+{"pt": "Udon Sanuki", "placa": "Sanuki"}
+{"pt": "Udon de $_WORD", "placa": "$_WORD"}
+{"pt": "Udon de Sanuki", "placa": "Sanuki"}
+{"pt": "Um $_WORD por dia", "placa": "Um $_WORD"}
+{"pt": "Um segundo de atenção evita dor", "placa": "Atenção!"}
+{"pt": "Um segundo de atenção, uma vida", "placa": "Atenção!"}
+{"pt": "Um segundo de atenção, uma vida sem dor", "placa": "Atenção!"}
+{"pt": "Um segundo de atenção, uma vida sem machucados", "placa": "Atenção!"}
+{"pt": "Um segundo de descuido, uma vida de dor", "placa": "Atenção!"}
+{"pt": "Uma delícia!", "placa": "Delícia!"}
+{"pt": "Uma refeição por dia", "placa": "Uma/dia"}
+{"pt": "Unidades vendidas", "placa": "Vendidas"}
+{"pt": "Uso particular", "placa": "Privado"}
+{"pt": "Uso próprio", "placa": "Privado"}
+{"pt": "Utilidades de $_WORD", "placa": "$_WORD"}
+{"pt": "Utilidades para $_WORD", "placa": "$_WORD"}
+{"pt": "Uó-ken", "placa": "Uó-ken"}
+{"pt": "Uóken", "placa": "Uóken"}
+{"pt": "Vaga nas Olimpíadas", "placa": "Olímpico"}
+{"pt": "Vaga no campeonato de $_WORD", "placa": "$_WORD!"}
+{"pt": "Vaga no campeonato nacional", "placa": "Nacional"}
+{"pt": "Vaga no nacional", "placa": "Nacional"}
+{"pt": "Vaga no torneio de $_WORD", "placa": "$_WORD!"}
+{"pt": "Vai ao campeonato de $_WORD", "placa": "$_WORD!"}
+{"pt": "Vai ao campeonato nacional", "placa": "Nacional"}
+{"pt": "Vai ao torneio de $_WORD", "placa": "$_WORD!"}
+{"pt": "Vai embora, $_WORD", "placa": "Xô $_WORD"}
+{"pt": "Vai às Olimpíadas", "placa": "Olímpico"}
+{"pt": "Vendas", "placa": "Vendas"}
+{"pt": "Vende-se legumes", "placa": "Verduras"}
+{"pt": "Vende-se verdura", "placa": "Verduras"}
+{"pt": "Vendemos verduras", "placa": "Verduras"}
+{"pt": "Venha Sonhar", "placa": "Sonhar!"}
+{"pt": "Venha, Sonho, Venha", "placa": "Venha!"}
+{"pt": "Venha, sonhador", "placa": "Sonhador"}
+{"pt": "Verde e amarelo: $_WORD", "placa": "$_WORD"}
+{"pt": "Verduras 100% sem agrotóxico", "placa": "Orgânico"}
+{"pt": "Verduras sem agrotóxico", "placa": "Orgânico"}
+{"pt": "Verduras sem agrotóxicos", "placa": "Orgânico"}
+{"pt": "Veterano matreiro", "placa": "Matreiro"}
+{"pt": "Viajante errante", "placa": "Viajante"}
+{"pt": "Vistoria $_WORD", "placa": "$_WORD"}
+{"pt": "Visual econômico", "placa": "Eco look"}
+{"pt": "Yambaru kuina", "placa": "Yambaru"}
+{"pt": "Zelador", "placa": "Zelador"}
+{"pt": "na banheira.", "placa": "Banheira"}
+{"pt": "não pode, por favor", "placa": "Proibido"}
+{"pt": "À venda agora!", "placa": "À venda!"}
+{"pt": "Água mineral natural", "placa": "Natural"}
+{"pt": "Água natural", "placa": "Natural"}
+{"pt": "Água racionada", "placa": "Sem água"}
+{"pt": "É gostoso!", "placa": "Gostoso!"}
+{"pt": "Óculos $_WORD", "placa": "$_WORD"}
+{"pt": "Óculos de $_WORD", "placa": "$_WORD"}
+{"pt": "Óticas $_WORD", "placa": "$_WORD"}

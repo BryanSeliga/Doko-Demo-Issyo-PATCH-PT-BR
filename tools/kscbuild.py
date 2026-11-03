@@ -50,6 +50,52 @@ def extract_pool(d):
     return out
 
 
+def pool_uses(d):
+    """Mapa offset->conjunto de usos de cada string do pool referenciada no codigo.
+    "opcao": argumento do menu de opcoes (chamada 8b 21 NN, NN = numero de opcoes);
+    "var": guardada numa variavel (op 84), que depois entra no meio de uma fala;
+    "destino": campo de um destino do passeio (vai para as falas); "placa": texto de placa do cenario;
+    "tabela": outro valor da tabela (itens, diario...); "outro": o resto."""
+    ins, _ = decode(d)
+    uses = {}
+    for n, x in enumerate(ins):
+        if x[1] != STRING_REF_OP:
+            continue
+        k = n + 1
+        # as outras opcoes podem vir antes, como string embutida
+        while k < len(ins) and ins[k][1] in (STRING_REF_OP, 0x49, 0x4A, 0x8E):
+            k += 1
+        o, op = ins[k][0], ins[k][1]
+        use = "opcao" if op == 0x8B and d[o + 1] == 0x21 else "var" if op == 0x84 else "outro"
+        uses.setdefault(u24(d, x[0] + 1), set()).add(use)
+    lay = layout(d)
+    n = (len(d) - lay["table"]) // 4
+    t = struct.unpack_from(f"<{n}I", d, lay["table"])
+    # destinos do passeio: lista de 9 valores (2, b, 0 ou b, lugar, ponto, descricao, 1, acao, pergunta)
+    dest = set()
+    for k in range(n - 10):
+        if t[k] == (9 << 28) | 9 and (t[k + 1] >> 28, t[k + 2] >> 28) == (2, 0xB) and (t[k + 3] == 0 or t[k + 3] >> 28 == 0xB):
+            dest.update(k + 1 + j for j in range(9))
+    # placas, faixas e dirigiveis do cenario: registro que termina em (2:0, 2:6, 2:20, 2:3, 2:5, 2:N),
+    # seguido das listas com os textos possiveis, ate o proximo registro (9:N, 2:0)
+    sign = set()
+    pairs = [(v >> 28, v & 0xFFFFFFF) for v in t]
+    k = 0
+    while k < n - 6:
+        if pairs[k:k + 5] != [(2, 0), (2, 6), (2, 0x20), (2, 3), (2, 5)]:
+            k += 1
+            continue
+        k += 6
+        while k < n and not (pairs[k][0] == 9 and k + 1 < n and pairs[k + 1] == (2, 0)):
+            sign.add(k)
+            k += 1
+    for k, v in enumerate(t):
+        if v >> 28 == 5:
+            use = "destino" if k in dest else "placa" if k in sign else "tabela"
+            uses.setdefault(v & 0xFFFFFFF, set()).add(use)
+    return uses
+
+
 def rebuild(d, inline=None, pool=None):
     """inline: {indice_instrucao: bytes}; pool: {offset: bytes}. Sem trocas devolve o arquivo identico."""
     inline = inline or {}

@@ -7,6 +7,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 
 from boot_text import patch_boot
 from build_iso import build
@@ -18,10 +19,10 @@ from gim import to_gim8
 from gui_render import build_all
 from iso_common import BOOT_LBA, BOOT_SIZE, Iso, bpm_files, inner_files
 from items import item_offsets, wrap_desc
-from kscbuild import extract_inline, extract_pool, rebuild
+from kscbuild import extract_inline, extract_pool, pool_uses, rebuild
 from textfmt import to_bytes, to_text
 import wrap as wrap_mod
-from wrap import text_width, wrap
+from wrap import BALLOON_WIDTH, POOL_WORD_WIDTH, text_width, wrap
 from xmb import icon0, patch_sfo, pic0, title_logo
 
 # Arquivos do menu do PSP (PSP_GAME): (lba, tamanho) na ISO original.
@@ -33,6 +34,8 @@ CHARS = {"neko": ("KSNEKO.BPM", "NEKO.KSC"), "inu": ("KSINU.BPM", "INU.KSC"), "r
          "kaeru": ("KSKAERU.BPM", "KAERU.KSC"), "usagi": ("KSUSAGI.BPM", "USAGI.KSC")}
 HERE = os.path.dirname(os.path.abspath(__file__))
 PT_DIR = os.path.join(HERE, "..", "traducao")
+# Versao curta de cada texto de placa: as placas do cenario so mostram 8 caracteres.
+SIGNS_PATH = os.path.join(PT_DIR, "placas.jsonl")
 # O tique verbal e inserido no fim das frases: "Que legal" + ", " + "miau" + "!".
 TIC = {"neko": {"ニャ": "miau"}, "inu": {"わン": "au", "わ～ン": "auu"},
        "usagi": {"ピョン": "pyon", "ウサ": "usa"}, "robo": {"ロボ": "robô"},
@@ -86,6 +89,24 @@ def tilde(text):
     return "".join(out) + text[pos:]
 
 
+def load_signs():
+    if not os.path.exists(SIGNS_PATH):
+        return {}
+    rows = (json.loads(line) for line in open(SIGNS_PATH, encoding="utf-8") if line.strip())
+    return {r["pt"]: r["placa"] for r in rows}
+
+
+def sign_text(pt, short):
+    """Texto da placa: versao curta, sem acento (as placas mostram um ponto no lugar da letra acentuada)."""
+    pt = short.get(pt, pt)
+    return "".join(c for c in unicodedata.normalize("NFD", pt) if not unicodedata.combining(c))
+
+
+def fits_balloon(uses, is_item_name):
+    """Texto do pool que so aparece em falas e no menu de opcoes."""
+    return bool(uses) and uses <= {"opcao", "var", "destino"} and not is_item_name
+
+
 def load_translations(who, d):
     """Mapa texto japones -> (portugues, tipo)."""
     src = collect(d)
@@ -131,7 +152,9 @@ def apply_ksc(who, d, widths, amap):
             if pt != jp:
                 inline[n] = to_bytes(wrap(pt, widths, amap), amap)
     pool = {}
-    _, descs = item_offsets(d)
+    names, descs = item_offsets(d)
+    uses = pool_uses(d)
+    signs = load_signs()
     for off, raw in extract_pool(d).items():
         try:
             jp = to_text(raw)
@@ -143,6 +166,14 @@ def apply_ksc(who, d, widths, amap):
             pt = tr[jp][0]
             if off in descs:
                 pt = wrap_desc(pt, widths, amap)
+            elif "placa" in uses.get(off, ()):
+                # texto que tambem aparece nas falas fica inteiro, so sem acento
+                pt = sign_text(pt, signs if uses[off] == {"placa"} else {})
+            elif fits_balloon(uses.get(off), off in names) and \
+                    text_width(pt, widths, amap, POOL_WORD_WIDTH) > BALLOON_WIDTH:
+                # O jogo corta por letra o texto que encaixa na fala (e a opcao escolhida, que o Pokepi
+                # repete no balao): quebra por palavra, ou com hifen, na largura do balao.
+                pt = wrap(pt, widths, amap, var_width=POOL_WORD_WIDTH)
             pool[off] = to_bytes(pt, amap)
     print(f"{who}: {len(tr)}/{total} textos traduzidos; {len(inline)} no codigo, {len(pool)} no pool")
     return rebuild(d, inline, pool)

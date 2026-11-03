@@ -59,7 +59,7 @@
 {"id": 543, "pt": "Me conta o nome do lugar em que {W}{14:0002}{W} mora?"}
 {"id": 544, "pt": "Cheguei{17:001a}~\n"}
 {"id": 545, "pt": "É aqui que fica\n\"{14:0000}\"{17:0019}~?\n"}
-{"id": 546, "pt": "{W}{14:0000}{W}, é aqui{17:001a}~♪\n"}
+{"id": 546, "pt": "{W}{14:0000}{W}{17:001a}~♪\n"}
 {"id": 547, "pt": "{W}{14:0000}{W} é bem do tipo {W}{14:0001}{W}{17:001a}~♪\n"}
 {"id": 548, "pt": "Ah, é verdade!\n"}
 {"id": 549, "pt": "Já que vim pra {W}{14:0000}{W}, tenho que estudar {W}{14:0001}{W}{17:0019}!\n"}
@@ -96,7 +96,7 @@
 {"id": 580, "pt": "Pensando bem, é a mesma palavra{17:0019}...\n"}
 {"id": 581, "pt": "Então, vamos lá~\n"}
 {"id": 582, "pt": "É meio de repente{17:0019}, mas~\n"}
-{"id": 583, "pt": "Vou até {W}{14:0001}{W}{17:001a}~\n"}
+{"id": 583, "pt": "Vou {W}{14:0001}{W}{17:001a}~\n"}
 {"id": 584, "pt": "Vou dar uma saída{17:001a}~\n"}
 {"id": 585, "pt": "Ah, me ensina mais uma coisa, sô!\n"}
 {"id": 586, "pt": "Pensando bem...\n"}
@@ -114,7 +114,7 @@
 {"id": 598, "pt": "Num posso sair pra passear{17:001a}~\n"}
 {"id": 599, "pt": "Foi mal{17:0019}...\n"}
 {"id": 600, "pt": "Aonde vai, sô?"}
-{"id": 601, "pt": "Vou {14:0001} em {W}{14:0000}{W}{17:001a}~\n"}
+{"id": 601, "pt": "Lá vou eu: {W}{14:0000}{W}{17:001a}~\n"}
 {"id": 602, "pt": "Já sei!\nVou conhecer {W}{14:0000}{W}, sô!\n"}
 {"id": 603, "pt": "Empresa de {W}{14:000c}{W}"}
 {"id": 604, "pt": "Escola de {W}{14:000c}{W}"}

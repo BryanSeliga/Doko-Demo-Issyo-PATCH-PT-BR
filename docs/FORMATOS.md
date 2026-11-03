@@ -61,6 +61,12 @@ Largura útil de cerca de 119 unidades da tabela de larguras, com 4 linhas visí
 
 O código `0x8540` não existe no Shift-JIS padrão: na fonte do jogo é um coração. As ferramentas o representam como `♥`.
 
+Strings do pool também vão parar no balão: as guardadas em variável (op `84`) entram no meio das falas, e a opção escolhida no menu de opções (chamada `8b 21 NN`, com `NN` opções) é repetida pelo Pokepi. A caixa de opções aceita `\n` e mostra a opção em duas linhas. `kscbuild.pool_uses` classifica cada string, e `make_iso` quebra na largura do balão as que só aparecem nesses lugares.
+
+## Placas do cenário
+
+Os textos de placas, faixas e dirigíveis ficam na tabela de valores, em listas logo depois de um registro que termina em `2:0 2:6 2:20 2:3 2:5 2:N`. As placas mostram um ponto no lugar das letras acentuadas e só os 8 primeiros caracteres, então esses textos entram na ISO sem acento e na versão curta de `traducao/placas.jsonl` (até 8 caracteres; com `$_WORD`, no máximo 3 fixos).
+
 ## Itens
 
 Nome e descrição de cada item ficam na tabela de valores do KSC, logo depois de um marcador de array `9:0xa`: o primeiro valor de tag 5 é o nome, e o segundo é a descrição. A tela de itens mostra o nome numa linha e a descrição em até duas linhas, de cerca de 222 unidades cada. `tools/items.py` lista o que não cabe.

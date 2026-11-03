@@ -6,6 +6,8 @@ from textfmt import TOKEN, WAVE_CODE, glyph_index
 BALLOON_WIDTH = 112
 # Palavras inseridas pelo jogo (vocabulario, palavras ensinadas): a maioria cabe em 90 unidades.
 VAR_WIDTH = 90
+# $_WORD dentro de um texto do pool (palavra ensinada, nome): estimativa de uma palavra curta.
+POOL_WORD_WIDTH = 40
 # Largura do tique verbal ({17:...}); make_iso troca pela largura real do texto ("miau"; a ", " fica no texto).
 TIC_WIDTH = 48
 PIECE = re.compile(r"\{W\}|\{[0-9a-f]{2}:[0-9a-f]{4}\}|\$_[A-Z0-9]+|.", re.S)

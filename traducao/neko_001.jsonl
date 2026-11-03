@@ -194,7 +194,7 @@
 {"id": 499, "pt": "Me diz o nome do lugar onde {W}{14:0002}{W} mora?"}
 {"id": 500, "pt": "Cheguei{17:0017}\n"}
 {"id": 501, "pt": "Então aqui é \"{14:0000}\"{17:0017}~?\n"}
-{"id": 502, "pt": "É {W}{14:0000}{W}{17:0017}!\n"}
+{"id": 502, "pt": "{W}{14:0000}{W}{17:0017}!\n"}
 {"id": 503, "pt": "{W}{14:0000}{W} é tão {W}{14:0001}{W}{17:0017}~\n"}
 {"id": 504, "pt": "Já que estou em {W}{14:0000}{W}~\npreciso estudar {W}{14:0001}{W}{17:0017}!\n"}
 {"id": 505, "pt": "Me ensina palavras que tenham a ver com {W}{14:0001}{W}~\n"}
@@ -230,7 +230,7 @@
 {"id": 535, "pt": "O que tem a ver com {W}{14:0000}{W} é {W}{14:0001}{W}?\n"}
 {"id": 536, "pt": "Pensando bem, é a mesma palavra{17:0017}...\n"}
 {"id": 537, "pt": "Então é isso~\n"}
-{"id": 538, "pt": "Vou até {W}{14:0001}{W}{17:0017}~\n"}
+{"id": 538, "pt": "Vou {W}{14:0001}{W}{17:0017}~\n"}
 {"id": 539, "pt": "Vou dar uma saidinha{17:0017}~\n"}
 {"id": 540, "pt": "Hmm, então...\n"}
 {"id": 541, "pt": "Ah, falando nisso...\n"}
@@ -248,7 +248,7 @@
 {"id": 553, "pt": "Preciso estudar mais um pouco, senão...\n"}
 {"id": 554, "pt": "não dá pra sair{17:0017}~\n"}
 {"id": 555, "pt": "Pra onde vou{17:0017}?"}
-{"id": 556, "pt": "Vou até {W}{14:0000}{W} para {14:0001}{17:0017}~\n"}
+{"id": 556, "pt": "Lá vou eu: {W}{14:0000}{W}{17:0017}~\n"}
 {"id": 557, "pt": "É isso{17:0017}!\n"}
 {"id": 558, "pt": "Vou dar uma olhada em {W}{14:0000}{W}{17:0017}!\n"}
 {"id": 559, "pt": "Empresa de {W}{14:000c}{W}"}

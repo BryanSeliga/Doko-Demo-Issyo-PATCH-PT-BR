@@ -355,7 +355,7 @@
 {"id": 8869, "pt": "Por que isso de repente?"}
 {"id": 8870, "pt": "Adeus"}
 {"id": 8871, "pt": "Venha"}
-{"id": 8872, "pt": "Segredo?"}
+{"id": 8872, "pt": "Segredo"}
 {"id": 8873, "pt": "Visita?"}
 {"id": 8874, "pt": "Quem será?"}
 {"id": 8875, "pt": "Uma carta?"}
@@ -475,5 +475,5 @@
 {"id": 8989, "pt": "Quero ver{17:0018}♥"}
 {"id": 8990, "pt": "Será que um dia vão levar {W}{14:0001}{W} também?♥\n"}
 {"id": 8991, "pt": "Cheguei~♥\n"}
-{"id": 8992, "pt": "É {W}{14:0000}{W}{17:0018}♥\n"}
+{"id": 8992, "pt": "{W}{14:0000}{W}{17:0018}♥\n"}
 {"id": 8993, "pt": "Que {W}{14:0000}{W} tão {W}{14:0001}{W}{17:0018}♥\n"}

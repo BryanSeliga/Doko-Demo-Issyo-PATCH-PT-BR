@@ -10,8 +10,11 @@ public class W32 {
   [DllImport("user32.dll")] public static extern bool PrintWindow(IntPtr h, IntPtr dc, uint f);
   [DllImport("user32.dll")] public static extern bool IsIconic(IntPtr h);
   [DllImport("user32.dll")] public static extern bool ShowWindow(IntPtr h, int cmd);
+  [DllImport("user32.dll")] public static extern bool SetProcessDPIAware();
 }
 "@
+# Sem isso, com escala do Windows acima de 100%, o retangulo vem em pixels logicos e o print sai cortado.
+[void][W32]::SetProcessDPIAware()
 $p = Get-Process PPSSPPWindows64 | Select-Object -First 1
 # Janela minimizada tem area zero: restaura sem roubar o foco.
 if ([W32]::IsIconic($p.MainWindowHandle)) { [void][W32]::ShowWindow($p.MainWindowHandle, 4); Start-Sleep -Milliseconds 500 }

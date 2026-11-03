@@ -255,40 +255,40 @@
 {"id": 6941, "pt": "Loja de $_WORD"}
 {"id": 6942, "pt": "Loja"}
 {"id": 6943, "pt": "Loja que deve vender $_WORD"}
-{"id": 6944, "pt": "Para comprar $_WORD"}
+{"id": 6944, "pt": "comprar $_WORD"}
 {"id": 6945, "pt": "Tem algo que você queira comprar, meu bem?"}
-{"id": 6946, "pt": "Para fazer compras em $_WORD"}
+{"id": 6946, "pt": "fazer compras em $_WORD"}
 {"id": 6947, "pt": "Qual é a loja onde $_YOU sempre faz compras, meu bem?"}
 {"id": 6948, "pt": "Loja onde $_WORD trabalha"}
-{"id": 6949, "pt": "Para procurar $_WORD"}
+{"id": 6949, "pt": "procurar $_WORD"}
 {"id": 6950, "pt": "Que tipo de pessoa $_YOU curte, meu bem?"}
 {"id": 6951, "pt": "Loja especializada em $_WORD"}
 {"id": 6952, "pt": "Loja para fãs, especializada em $_WORD"}
-{"id": 6953, "pt": "Para procurar uma loja que venda $_WORD"}
+{"id": 6953, "pt": "procurar uma loja que venda $_WORD"}
 {"id": 6954, "pt": "Que tipo de produto é difícil de achar em lojas, meu bem?"}
 {"id": 6955, "pt": "$_WORD Shop"}
 {"id": 6956, "pt": "Loja especializada em $_WORD: de $_WORD importado a $_WORD usado"}
 {"id": 6957, "pt": "O que seria uma roupa chique, meu bem?"}
 {"id": 6958, "pt": "Brechó de $_WORD"}
 {"id": 6959, "pt": "Brechó com $_WORD usado, cheio de pechinchas"}
-{"id": 6960, "pt": "Para caçar pechinchas de $_WORD"}
+{"id": 6960, "pt": "caçar achados de $_WORD"}
 {"id": 6961, "pt": "Restaurante"}
 {"id": 6962, "pt": "Restaurante com almoço de $_WORD por 100 ienes"}
-{"id": 6963, "pt": "Para comer $_WORD"}
+{"id": 6963, "pt": "comer $_WORD"}
 {"id": 6964, "pt": "O que será que dá vontade de comer agora mesmo, meu bem?"}
 {"id": 6965, "pt": "Restaurante que $_YOU recomenda"}
-{"id": 6966, "pt": "Estou com fome, então vou a $_WORD"}
+{"id": 6966, "pt": "comer em $_WORD, que estou com fome"}
 {"id": 6967, "pt": "Para comer fora, qual restaurante você recomenda?"}
 {"id": 6968, "pt": "Restaurante $_WORD"}
 {"id": 6969, "pt": "Restaurante onde $_WORD atende as mesas"}
 {"id": 6970, "pt": "Quero saber o nome de alguma mulher, au~"}
 {"id": 6971, "pt": "Sabor de $_WORD"}
 {"id": 6972, "pt": "Casa de comida caseira cujo forte é o sabor de $_WORD"}
-{"id": 6973, "pt": "Para o lugar onde dizem que se come a comida feita por $_WORD"}
+{"id": 6973, "pt": "a um lugar onde dizem que dá pra comer a comida caseira de $_WORD"}
 {"id": 6974, "pt": "Qual profissão $_YOU mais gosta, meu bem?"}
 {"id": 6975, "pt": "Restaurante de culinária $_WORD"}
 {"id": 6976, "pt": "Restaurante com comida regional autêntica de $_WORD"}
-{"id": 6977, "pt": "Para sentir que viajou para $_WORD"}
+{"id": 6977, "pt": "curtir a sensação de viajar a $_WORD"}
 {"id": 6978, "pt": "Para onde você recomenda viajar?"}
 {"id": 6979, "pt": "Restaurante especializado em culinária $_WORD, com $_WORD em todos os pratos"}
 {"id": 6980, "pt": "Café $_WORD"}
@@ -297,10 +297,10 @@
 {"id": 6983, "pt": "Me conte algo de que você goste, qualquer coisa?"}
 {"id": 6984, "pt": "Cafeteria $_WORD"}
 {"id": 6985, "pt": "Cafeteria onde $_WORD serve o chá com muito carinho"}
-{"id": 6986, "pt": "Para onde se reúnem muitos fãs de $_WORD"}
+{"id": 6986, "pt": "a um lugar cheio de fãs de $_WORD"}
 {"id": 6987, "pt": "$_WORD Café"}
 {"id": 6988, "pt": "Cantinho secreto onde $_WORD descansa entre um trabalho e outro"}
-{"id": 6989, "pt": "Para ouvir a história de $_WORD"}
+{"id": 6989, "pt": "ouvir as histórias de $_WORD"}
 {"id": 6990, "pt": "Bar $_WORD"}
 {"id": 6991, "pt": "Lugar de gente grande, com torneio de $_WORD à noite"}
-{"id": 6992, "pt": "Para fazer $_WORD e virar adulto"}
+{"id": 6992, "pt": "fazer $_WORD pra virar adulto"}

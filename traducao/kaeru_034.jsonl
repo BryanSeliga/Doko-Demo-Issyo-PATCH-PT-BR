@@ -262,40 +262,40 @@
 {"id": 8083, "pt": "Loja de $_WORD"}
 {"id": 8084, "pt": "Loja"}
 {"id": 8085, "pt": "Loja que deve vender $_WORD"}
-{"id": 8086, "pt": "Para comprar $_WORD"}
+{"id": 8086, "pt": "comprar $_WORD"}
 {"id": 8087, "pt": "Tem algo que você quer comprar, croac?"}
-{"id": 8088, "pt": "Para fazer compras em $_WORD"}
+{"id": 8088, "pt": "fazer compras em $_WORD"}
 {"id": 8089, "pt": "Qual é a loja onde $_YOU costuma fazer compras, croac?"}
 {"id": 8090, "pt": "Loja onde $_WORD trabalha"}
-{"id": 8091, "pt": "Para procurar $_WORD"}
+{"id": 8091, "pt": "procurar $_WORD"}
 {"id": 8092, "pt": "Como é o tipo de pessoa de que $_YOU gosta, sô?"}
 {"id": 8093, "pt": "Loja especializada em $_WORD"}
 {"id": 8094, "pt": "Loja especializada em $_WORD, para quem é fã de verdade"}
-{"id": 8095, "pt": "Para procurar uma loja que venda $_WORD"}
+{"id": 8095, "pt": "procurar uma loja que venda $_WORD"}
 {"id": 8096, "pt": "Que produto é difícil de achar em loja, croac?"}
 {"id": 8097, "pt": "Shop de $_WORD"}
 {"id": 8098, "pt": "Loja especializada em $_WORD, que vende de $_WORD importado a $_WORD usado"}
 {"id": 8099, "pt": "Que tipos de roupa de humano existem, sô?"}
 {"id": 8100, "pt": "Brechó de $_WORD"}
 {"id": 8101, "pt": "Loja cheia de achados, que vende $_WORD usado"}
-{"id": 8102, "pt": "Para procurar achados de $_WORD"}
+{"id": 8102, "pt": "procurar achados de $_WORD"}
 {"id": 8103, "pt": "Restaurante"}
 {"id": 8104, "pt": "Lugar com almoço de $_WORD por 100 ienes"}
-{"id": 8105, "pt": "Para comer $_WORD"}
+{"id": 8105, "pt": "comer $_WORD"}
 {"id": 8106, "pt": "Tem algo que você quer comer agora, croac?"}
 {"id": 8107, "pt": "Lugar que $_YOU recomenda"}
-{"id": 8108, "pt": "Estou com fome, então vou em $_WORD"}
+{"id": 8108, "pt": "matar a fome com $_WORD"}
 {"id": 8109, "pt": "Para comer fora, qual loja você recomenda, croac?"}
 {"id": 8110, "pt": "Restaurante $_WORD"}
 {"id": 8111, "pt": "Lugar onde $_WORD trabalha de garçonete"}
 {"id": 8112, "pt": "Me diz o nome de alguma mulher, croac~"}
 {"id": 8113, "pt": "Sabor de $_WORD"}
 {"id": 8114, "pt": "Restaurante caseiro que tem como atração o sabor de $_WORD"}
-{"id": 8115, "pt": "Para o lugar onde dizem que dá para comer a comida feita por $_WORD"}
+{"id": 8115, "pt": "a um lugar onde dizem que dá pra comer a comida caseira de $_WORD"}
 {"id": 8116, "pt": "Qual é a profissão de que $_YOU gosta, sô?"}
 {"id": 8117, "pt": "Restaurante de comida $_WORD"}
 {"id": 8118, "pt": "Restaurante onde se come comida típica de $_WORD de verdade"}
-{"id": 8119, "pt": "Para sentir que viajou para $_WORD"}
+{"id": 8119, "pt": "curtir a sensação de viajar a $_WORD"}
 {"id": 8120, "pt": "Para onde você recomenda viajar, croac?"}
 {"id": 8121, "pt": "Restaurante especializado em $_WORD, com $_WORD em todos os pratos"}
 {"id": 8122, "pt": "Café $_WORD"}

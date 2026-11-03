@@ -48,7 +48,7 @@
 {"id": 542, "pt": "Diga o nome do lugar onde {W}{14:0002}{W} mora"}
 {"id": 543, "pt": "Cheguei, pois é~\n"}
 {"id": 544, "pt": "Então aqui é\n\"{14:0000}\"~?\n"}
-{"id": 545, "pt": "É {W}{14:0000}{W}, sim~\n"}
+{"id": 545, "pt": "{W}{14:0000}{W}!\n"}
 {"id": 546, "pt": "Que lugar {W}{14:0001}{W} é {W}{14:0000}{W}~\n"}
 {"id": 547, "pt": "Já que estou em {W}{14:0000}{W}, preciso estudar {W}{14:0001}{W}~!\n"}
 {"id": 548, "pt": "Qual palavra tem relação com {W}{14:0001}{W}?\n"}
@@ -85,7 +85,7 @@
 {"id": 579, "pt": "Aliás, mesmo sem pensar muito, é a mesma palavra...\n"}
 {"id": 580, "pt": "Por isso...\n"}
 {"id": 581, "pt": "É de repente, mas~\n"}
-{"id": 582, "pt": "Vou até {W}{14:0001}{W}{17:0017}~\n"}
+{"id": 582, "pt": "Vou {W}{14:0001}{W}{17:0017}~\n"}
 {"id": 583, "pt": "Vou dar uma saída{17:0017}~\n"}
 {"id": 584, "pt": "Então, já que estou aqui, mais um...\n"}
 {"id": 585, "pt": "Dá vontade de ter uma lembrança nova, mas...\n"}
@@ -103,7 +103,7 @@
 {"id": 597, "pt": "É isso, pois é~\n"}
 {"id": 598, "pt": "Para onde devo ir?"}
 {"id": 599, "pt": "Então vamos!\n"}
-{"id": 600, "pt": "Vou {14:0001} em {W}{14:0000}{W}{17:0017}~\n"}
+{"id": 600, "pt": "Lá vou eu: {W}{14:0000}{W}{17:0017}~\n"}
 {"id": 601, "pt": "Hum, hum!\nEntão vou dar uma passada em {W}{14:0000}{W}{17:0017}♪\n"}
 {"id": 602, "pt": "Empresa de {W}{14:000c}{W}"}
 {"id": 603, "pt": "Escola de {W}{14:000c}{W}"}

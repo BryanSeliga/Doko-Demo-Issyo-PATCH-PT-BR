@@ -57,10 +57,13 @@ def render(text, w, h, fill, outline, bg):
     return render_hi(text, w, h, fill, outline, bg).resize((w, h), Image.LANCZOS)
 
 
-def render_hi(text, w, h, fill, outline, bg, max_w=None):
-    """Como render, mas devolve a imagem em SCALE vezes o tamanho final. max_w limita a largura do texto."""
+def render_hi(text, w, h, fill, outline, bg, max_w=None, area=None):
+    """Como render, mas devolve a imagem em SCALE vezes o tamanho final. max_w limita a largura do texto;
+    area (x0, x1) e a faixa da textura que o jogo mostra, onde o texto e centralizado."""
     W, H = w * SCALE, h * SCALE
     limit = W * 9 // 10 if w > 120 else W - SCALE
+    x0, x1 = (0, W) if area is None else (area[0] * SCALE, area[1] * SCALE)
+    limit = min(limit, x1 - x0)
     if max_w is not None:
         limit = min(limit, max_w * SCALE)
     stroke = (2 if h >= 28 else 1) * SCALE if outline else 0
@@ -74,7 +77,7 @@ def render_hi(text, w, h, fill, outline, bg, max_w=None):
         size -= 1
     im = Image.new("RGBA", (W, H), (*(bg or (0, 0, 0)), 255 if bg else 0))
     d = ImageDraw.Draw(im)
-    x = (W - (box[2] - box[0])) // 2 - box[0]
+    x = x0 + (x1 - x0 - (box[2] - box[0])) // 2 - box[0]
     y = (H - (box[3] - box[1])) // 2 - box[1]
     draw_tracked(d, (x, y), text, font, track, fill=(*fill, 255), stroke_width=stroke, stroke_fill=(*(outline or fill), 255))
     return im
@@ -127,7 +130,20 @@ def gim_size(data):
 def label_hi(data, text, max_w=None):
     w, h, rgba, _ = to_rgba(data)
     fill, outline, bg = analyse(w, h, rgba)
-    return render_hi(text, w, h, fill, outline, bg, max_w)
+    return render_hi(text, w, h, fill, outline, bg, max_w, ink_area(data, bg))
+
+
+def ink_area(data, bg):
+    """Faixa horizontal ocupada pelo texto original. Muitas texturas sao maiores que a parte visivel no jogo
+    (a aba vizinha ou um icone cobre o resto), e o texto japones fica so na parte visivel."""
+    px = rgba_array(data)
+    ink = px[:, :, 3] > 60
+    if bg is not None:
+        ink &= np.any(px[:, :, :3] != np.array(bg, np.uint8), axis=2)
+    cols = np.nonzero(ink.any(axis=0))[0]
+    if len(cols) == 0:
+        return None
+    return max(0, int(cols[0]) - 1), min(px.shape[1], int(cols[-1]) + 2)
 
 
 def rgba_array(data):

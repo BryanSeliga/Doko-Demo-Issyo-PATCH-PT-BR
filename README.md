@@ -38,10 +38,10 @@ Still in Japanese: the letters on the kana page of the keyboard (use the Latin p
 </p>
 
 <p align="center">
-  <img src="docs/img/menu_labels.png" width="400" alt="Main menu and submenu labels">
+  <img src="docs/img/shot_menu.png" width="400" alt="Room menu">
   <img src="docs/img/psp_menu.png" width="400" alt="Mock-up of the game on the PSP home menu">
 </p>
-<p align="center"><sub>Left: the room menu labels as they are stored in the game. Right: a mock-up of the new icon and description over the game's PSP home menu background.</sub></p>
+<p align="center"><sub>Right: mock-up of the new icon and description over the game's PSP home menu background.</sub></p>
 
 ## What you need
 
@@ -100,7 +100,6 @@ python make_patch.py "<original iso>" "<translated iso>" "Doko Demo Issyo PT-BR.
 ## Credits
 
 - Translation, tools and art: [BryanSeliga](https://github.com/BryanSeliga).
-- Menu font: [M PLUS Rounded 1c](https://fonts.google.com/specimen/M+PLUS+Rounded+1c) by the M+ Fonts Project, under the SIL Open Font License (`tools/fonts/OFL.txt`). It was picked to match the look of the [English fan translation](https://github.com/pumpkinhasapatch/dokodemo-psp-english).
 
 ## Disclaimer
 

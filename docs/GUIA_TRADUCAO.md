@@ -52,6 +52,7 @@ Fale com quem joga usando **você**, sem gíria datada ou palavrão. Prefira fra
 **5. Só estes caracteres existem na fonte:** ASCII comum e `á à â ã é ê í ó ô õ ú ü ç` (e maiúsculas), mais `♪` e `♥`.
 
 - Use `...` em vez de `…`, `!` em vez de `！`, `?` em vez de `？`, `~` em vez de `～`.
+- O `~` continua sendo escrito na tradução, onde o japonês tem `～`. Na montagem (`make_iso.tilde`) ele vira a fala arrastada em português: depois de palavra, a última vogal é esticada ("bom~" → "boom", "né~" → "néé"); depois do tique, vira `!` (ou some, se a fala tiver reticências ou já terminar em `!`, `?`, `♪` ou `♥`); nos outros casos, some.
 - Use aspas retas `"` em vez de `「」`. Nunca use barra invertida, travessão longo ou emoji.
 - Não deixe nenhum japonês na tradução, exceto se for mesmo necessário manter um nome como 
   está. Nesse caso, escreva em letras latinas.

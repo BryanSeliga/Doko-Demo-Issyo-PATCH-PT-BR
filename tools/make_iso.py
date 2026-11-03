@@ -34,9 +34,9 @@ CHARS = {"neko": ("KSNEKO.BPM", "NEKO.KSC"), "inu": ("KSINU.BPM", "INU.KSC"), "r
 HERE = os.path.dirname(os.path.abspath(__file__))
 PT_DIR = os.path.join(HERE, "..", "traducao")
 # O tique verbal e inserido no fim das frases: "Que legal" + ", " + "miau" + "!".
-TIC = {"neko": {"ニャ": "miau"}, "inu": {"わン": "au", "わ～ン": "au~"},
+TIC = {"neko": {"ニャ": "miau"}, "inu": {"わン": "au", "わ～ン": "auu"},
        "usagi": {"ピョン": "pyon", "ウサ": "usa"}, "robo": {"ロボ": "robô"},
-       "kaeru": {"オラ": "Eu", "ケロ": "croac", "ダス": "sô", "ハァ～": "ah~"}}
+       "kaeru": {"オラ": "Eu", "ケロ": "croac", "ダス": "sô", "ハァ～": "aah"}}
 # Marcadores de tique que vem depois de virgula. A ", " fica no texto, e nao no tique, para o balao
 # poder quebrar a linha antes dele: palavra + tique colados nao cabem numa linha ("lugares, mia|u~").
 TIC_COMMA = {"neko": ("0017",), "inu": ("0017", "0018"), "usagi": ("0017", "0018"), "robo": ("0017",),
@@ -48,6 +48,42 @@ def comma_tics(who, text):
     if not codes:
         return text
     return re.sub(r"(?<=[^\s])\{17:(%s)\}" % codes, r", {17:\1}", text)
+
+
+VOWEL = "aeiouáàâãéêíóôõúüAEIOUÁÀÂÃÉÊÍÓÔÕÚÜ"
+
+
+def stretch(word):
+    """Estica a ultima vogal da palavra ("bom" -> "boom", "Tchau" -> "Tchauu"); sem vogal, a ultima letra."""
+    for i in range(len(word) - 1, -1, -1):
+        if word[i] in VOWEL:
+            return word[:i + 1] + word[i].lower() + word[i + 1:]
+    return word + word[-1]
+
+
+def tilde(text):
+    """O "~" japones (fala arrastada) vira algo que soa natural em portugues:
+    palavra~ -> ultima vogal esticada; tique~ -> "!" (ou nada, se a fala for hesitante: "..."); resto -> some."""
+    hesitant = "..." in text or "…" in text
+
+    def sub(m):
+        before, after = text[:m.start()], text[m.end():m.end() + 1]
+        if re.search(r"\{17:[0-9a-f]{4}\}$", before):
+            return "" if hesitant or (after and after in "!?♪♥") else "!"
+        return ""
+
+    out, pos = [], 0
+    for m in re.finditer(r"~+", text):
+        before = text[pos:m.start()]
+        word = re.search(r"[^\W\d_]+$", before)
+        if word and not re.search(r"\{[0-9a-f]{2}:[0-9a-f]{4}\}$|\{W\}$", before):
+            before = before[:word.start()] + stretch(word.group())
+            rep = ""
+        else:
+            rep = sub(m)
+        out.append(before + rep)
+        pos = m.end()
+    return "".join(out) + text[pos:]
 
 
 def load_translations(who, d):
@@ -62,7 +98,7 @@ def load_translations(who, d):
     out = {}
     for it in src:
         if it["id"] in pt:
-            text = comma_tics(who, pt[it["id"]])
+            text = tilde(comma_tics(who, pt[it["id"]]))
             # Codigo de controle \x04 no fim (telas de comunicacao) precisa continuar no texto.
             if it["jp"].endswith("\x04") and not text.endswith("\x04"):
                 if it["jp"].endswith("\n\x04") and not text.endswith("\n"):
@@ -89,9 +125,9 @@ def apply_ksc(who, d, widths, amap):
             if op == 0x48 or not (pt.startswith(" ") or pt.endswith(" ")):
                 pt = wrap(pt, widths, amap)
             inline[n] = to_bytes(pt, amap)
-        elif "{17:" in jp or "、" in jp:
+        elif "{17:" in jp or "、" in jp or "～" in jp:
             # Linha so de codigos (palavra + tique), fora da traducao: "Tchau" + "miau" vira "Tchau, miau".
-            pt = comma_tics(who, jp.replace(" {17:", "{17:").replace("、", ", "))
+            pt = tilde(comma_tics(who, jp.replace(" {17:", "{17:").replace("、", ", ").replace("～", "~")))
             if pt != jp:
                 inline[n] = to_bytes(wrap(pt, widths, amap), amap)
     pool = {}

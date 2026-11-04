@@ -7,7 +7,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 from gim import image_info, parse, to_rgba
-from gui_text import BY_PACK, COMMON, VERTICAL
+from gui_text import BY_PACK, COMMON, PIECE_PX, PIECES, VERTICAL
 from iso_common import inner_files
 
 # M PLUS Rounded 1c (SIL OFL, ver fonts/OFL.txt): o mesmo desenho arredondado do patch em ingles.
@@ -81,6 +81,21 @@ def render_hi(text, w, h, fill, outline, bg, max_w=None, area=None):
     y = (H - (box[3] - box[1])) // 2 - box[1]
     draw_tracked(d, (x, y), text, font, track, fill=(*fill, 255), stroke_width=stroke, stroke_fill=(*(outline or fill), 255))
     return im
+
+
+def render_piece(data, text):
+    """Uma silaba de titulo dividido em pedacos: letra de PIECE_PX, com a base e o centro da silaba original."""
+    w, h, rgba, _ = to_rgba(data)
+    fill, _, _ = analyse(w, h, rgba)
+    ys, xs = np.nonzero(np.frombuffer(rgba, np.uint8).reshape(h, w, 4)[:, :, 3] > 100)
+    cx, base = (xs.min() + xs.max() + 1) / 2 * SCALE, (ys.max() + 1) * SCALE
+    font = ImageFont.truetype(FONT_PATH, PIECE_PX * SCALE)
+    im = Image.new("RGBA", (w * SCALE, h * SCALE), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+    x0, _, x1, _ = d.textbbox((cx, base), text, font=font, anchor="ms")
+    cx -= min(0, x0) + max(0, x1 - w * SCALE)  # dentro da imagem
+    d.text((cx, base), text, font=font, fill=(*fill, 255), anchor="ms")
+    return write_gim(data, im.resize((w, h), Image.LANCZOS))
 
 
 def render_vertical(data, text):
@@ -244,6 +259,9 @@ def build_all(iso, bpms):
         for key, text in VERTICAL.get(pack, {}).items():
             name, o, s = files[key]
             out[(pack, name)] = render_vertical(iso.bp(o, s), text)
+        for key, text in PIECES.get(pack, {}).items():
+            name, o, s = files[key]
+            out[(pack, name)] = render_piece(iso.bp(o, s), text)
         for key, (name, o, s) in files.items():
             text = table.get(key) or COMMON.get(key)
             if not text:

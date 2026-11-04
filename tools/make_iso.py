@@ -19,6 +19,7 @@ from fontpatch import WIDTHS_OFF, patch
 from gim import to_gim8
 from gui_render import build_all
 from iso_common import BOOT_LBA, BOOT_SIZE, Iso, bpm_files, inner_files
+from icon1 import SAVE as SAVE_VIDEO
 from icon1 import build as icon1
 from items import item_offsets, wrap_desc
 from kscbuild import extract_inline, extract_pool, pool_uses, rebuild
@@ -33,6 +34,9 @@ ICON0_PNG = (2576, 24493)
 PIC0_PNG = (2688, 92891)
 # Video do icone no menu do PSP: refeito em portugues (icon1.py); sem ffmpeg, e renomeado e o menu mostra o ICON0.
 ICON1_PMF = (2592, 147456)
+# Icone e video que o jogo grava em cada save (DATA.BPM): tambem com o logotipo japones.
+SAVE_ICON0 = "ICON\\ICON0.PNG"
+SAVE_ICON1 = "ICON\\ICON1.PMF"
 TITLE_LOGO = ("TITLE.BPM", "GUI\\TITLE\\TITLE.GIM")
 # Logotipo da tela rapida (ao voltar do "Suspender"), na mesma proporcao do da tela titulo.
 QUICK_LOGO = ("QUICK.BPM", "GUI\\QUICK\\Q_TITLE.GIM")
@@ -221,15 +225,21 @@ def main(src, dst, whos):
     for (pack, name), size in ((TITLE_LOGO, (352, 75)), (QUICK_LOGO, (192, 41))):
         logo = {n: (o, s) for n, o, s in inner_files(iso, bpms[pack][0])}[name]
         ksc.setdefault(pack, {})[name] = to_gim8(iso.bp(*logo), title_logo(*size))
+    inplace = build_all(iso, bpms)
+    # icone do save: o mesmo ICON0 traduzido, no espaco do original (o PNG termina antes dos zeros)
+    save = {n: (o, s) for n, o, s in inner_files(iso, bpms["DATA.BPM"][0])}
+    icon = icon0()
+    assert len(icon) <= save[SAVE_ICON0][1], (len(icon), save[SAVE_ICON0][1])
+    inplace[("DATA.BPM", SAVE_ICON0)] = icon + b"\0" * (save[SAVE_ICON0][1] - len(icon))
     pmf = icon1(iso.read(*ICON1_PMF))
     if pmf is not None:
         loose[ICON1_PMF] = pmf
+        inplace[("DATA.BPM", SAVE_ICON1)] = icon1(iso.bp(*save[SAVE_ICON1]), SAVE_VIDEO, exact=True)
         rename = {}
     else:
-        print("ffmpeg (imageio-ffmpeg) nao encontrado: o video do icone fica desligado")
+        print("ffmpeg (imageio-ffmpeg) nao encontrado: os videos dos icones ficam em japones (o do disco, desligado)")
         rename = {ICON1_PMF: (b"ICON1.PMF", b"ICON1.PMX")}
-    print("DATA.BP ->", build(src, dst, ksc=ksc, font=font, boot=boot, inplace=build_all(iso, bpms), loose=loose,
-                               rename=rename))
+    print("DATA.BP ->", build(src, dst, ksc=ksc, font=font, boot=boot, inplace=inplace, loose=loose, rename=rename))
 
 
 if __name__ == "__main__":

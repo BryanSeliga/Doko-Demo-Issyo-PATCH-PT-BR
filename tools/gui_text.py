@@ -141,5 +141,10 @@ BY_PACK = {
     },
 }
 
+# Titulos divididos em pedacos, uma silaba por imagem ("こ と ば" e "よ み" nas colunas da lista de palavras):
+# todas com o mesmo tamanho de letra, na base e no centro de cada silaba original.
+PIECES = {"MKOTOBA.BPM": {"SMENU1_1": "Pa", "SMENU1_2": "la", "SMENU1_3": "vra", "SMENU2_1": "Lei", "SMENU2_2": "tura"}}
+PIECE_PX = 13
+
 # Selo vertical da lista de itens ("展示中", em exposicao): texto girado, lido de baixo para cima.
 VERTICAL = {"MOCHI.BPM": {"TENJI": "EM USO"}}

@@ -67,6 +67,12 @@ Strings do pool também vão parar no balão: as guardadas em variável (op `84`
 
 Os textos de placas, faixas e dirigíveis ficam na tabela de valores, em listas logo depois de um registro que termina em `2:0 2:6 2:20 2:3 2:5 2:N`. As placas mostram um ponto no lugar das letras acentuadas e só os 8 primeiros caracteres, então esses textos entram na ISO sem acento e na versão curta de `traducao/placas.jsonl` (até 8 caracteres; com `$_WORD`, no máximo 3 fixos).
 
+## Texturas 3D com japonês
+
+- As texturas de cenário e de objetos (`BG_*.BPM`, `BG_ROOM.BPM`) são GIM de 4 bits, lineares, com paleta de 16 cores. A paleta costuma ser RGBA de 32 bits, mas algumas usam 16 bits (RGB565 ou RGBA5551); `gui_render.write_gim` grava os dois. As variantes `_N` e `_S` dos cenários repetem as mesmas texturas, e vários objetos do quarto reaproveitam texturas dos cenários.
+- `tools/textures.py` apaga a escrita (recompondo o fundo com os pixels vizinhos) e desenha o português na mesma cor, gravando no mesmo arquivo. Toda cópia idêntica em outro pacote é trocada junto. As entradas ficam em `textures.py` (enfeites de estação do quarto) e em `textures_*.py` (cenários e objetos).
+- Algumas texturas vão giradas no modelo: os kanji aparecem deitados dentro da textura. Nesses casos, a entrada usa `turned`.
+
 ## Vídeo do ícone (PSP_GAME/ICON1.PMF)
 
 - PSMF: cabeçalho de `0x800` bytes (tamanho dos dados em `0x0C`, sem mapa de pontos de entrada) e MPEG-PS em pacotes de 2048 bytes.
@@ -82,6 +88,12 @@ Os textos de placas, faixas e dirigíveis ficam na tabela de valores, em listas 
 - No leiaute com título, as duas primeiras linhas vão para um espaço de 40 caracteres (`+0x100`; rotina em `0x14D2C`).
 - O texto só é desenhado se o byte de estado do registro (`+0x168`) não for 0.
 - A página mostra 8 linhas. `boot_text.CODE` corta o texto em 90 bytes antes da cópia, nas telas Diário e Memórias, e as traduções ficam em até 88 bytes (`diary_batches.py conferir`).
+
+## Teclado (GUI\SOFTKEY)
+
+- O teclado é do próprio jogo (não usa o do sistema). A rotina `0x1FD80` abre o teclado com o tipo do campo: 0 = palavras (com conversão para kanji e lista de sugestões), 1 = nomes, 2 = outro campo restrito, 3 = telefone. O ponteiro do objeto fica no global de dados `0x2924C`; os endereços de dados são relativos ao segmento 1 do BOOT (VA `0xE3B80`).
+- Cada tecla abre uma janelinha com as letras dela (uma linha por variante: maiúsculas e minúsculas, kana com e sem acento); o direcional escolhe e ○ confirma. Passar o cursor da borda troca de página: kana ⇄ ABC/abc.
+- Nos tipos 1 a 3 o byte `+0x21` desliga a conversão e prendia o teclado na página de kana, então os nomes não aceitavam letras latinas. `boot_text.CODE` faz a troca de página, o desenho das setas e a tecla Núm olharem `+0x23` (só o telefone), e o limite do nome (`+0x11C`, em caracteres) passa de 4 para 7. A página inicial (`+0x44`) passa a ser a ABC nos nomes e nas palavras (tipos 0 e 1); o código trata a página 1 como a de letras (espaço, maiúsculas), por isso a troca é na página inicial e não na ordem das tabelas. Os nomes ficam em blocos de 16 bytes (`0x2A900` Pokepi, `0x2A910` jogador), e 7 caracteres cabem até em kana.
 
 ## Itens
 

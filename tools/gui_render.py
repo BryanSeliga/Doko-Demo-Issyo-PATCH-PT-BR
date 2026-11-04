@@ -117,6 +117,16 @@ def render_vertical(data, text):
     return write_gim(data, im.rotate(90, expand=True).resize((w, h), Image.LANCZOS))
 
 
+def pack16(c, fmt):
+    """Cor RGBA em paleta de 16 bits do GIM: 0 = RGB565, 1 = RGBA5551, 2 = RGBA4444."""
+    r, g, b, a = c
+    if fmt == 0:
+        return round(r * 31 / 255) | round(g * 63 / 255) << 5 | round(b * 31 / 255) << 11
+    if fmt == 1:
+        return round(r * 31 / 255) | round(g * 31 / 255) << 5 | round(b * 31 / 255) << 10 | (a >= 128) << 15
+    return round(r * 15 / 255) | round(g * 15 / 255) << 4 | round(b * 15 / 255) << 8 | round(a * 15 / 255) << 12
+
+
 def write_gim(data, im):
     """Grava a imagem no GIM original, mantendo formato, paleta de tamanho igual e tamanho do arquivo."""
     data = bytearray(data)
@@ -125,7 +135,7 @@ def write_gim(data, im):
     pal = next(b for b in blocks if b[0] == 5)
     inf = image_info(bytes(data), img[1])
     pinf = image_info(bytes(data), pal[1])
-    assert inf["fmt"] in (4, 5) and inf["order"] == 0 and pinf["fmt"] == 3, inf
+    assert inf["fmt"] in (4, 5) and inf["order"] == 0 and pinf["fmt"] in (0, 1, 2, 3), inf
     w, h = inf["w"], inf["h"]
     ncol = 16 if inf["fmt"] == 4 else 256
     q = im.quantize(colors=min(ncol, pinf["w"]), method=Image.FASTOCTREE, dither=Image.NONE)
@@ -134,7 +144,10 @@ def write_gim(data, im):
     # A paleta pode vir com cor quase transparente: garante indice 0 transparente sem mudar a imagem.
     for i in range(pinf["w"]):
         c = colors[i] if i < len(colors) else (0, 0, 0, 0)
-        struct.pack_into("<4B", data, pinf["pix"] + i * 4, *c)
+        if pinf["fmt"] == 3:
+            struct.pack_into("<4B", data, pinf["pix"] + i * 4, *c)
+        else:
+            struct.pack_into("<H", data, pinf["pix"] + i * 2, pack16(c, pinf["fmt"]))
     stride = (w * inf["bpp"] + 7) // 8
     stride += (-stride) % 16
     px = q.load()

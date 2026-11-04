@@ -24,6 +24,7 @@ from icon1 import build as icon1
 from items import item_offsets, wrap_desc
 from kscbuild import extract_inline, extract_pool, pool_uses, rebuild
 from textfmt import to_bytes, to_text
+from textures import build_all as translate_textures
 import wrap as wrap_mod
 from wrap import BALLOON_WIDTH, POOL_WORD_WIDTH, text_width, wrap
 from xmb import icon0, patch_sfo, pic0, title_logo
@@ -226,6 +227,7 @@ def main(src, dst, whos):
         logo = {n: (o, s) for n, o, s in inner_files(iso, bpms[pack][0])}[name]
         ksc.setdefault(pack, {})[name] = to_gim8(iso.bp(*logo), title_logo(*size))
     inplace = build_all(iso, bpms)
+    inplace.update(translate_textures(iso, bpms))
     # icone do save: o mesmo ICON0 traduzido, no espaco do original (o PNG termina antes dos zeros)
     save = {n: (o, s) for n, o, s in inner_files(iso, bpms["DATA.BPM"][0])}
     icon = icon0()

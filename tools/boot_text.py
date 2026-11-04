@@ -71,6 +71,8 @@ UTF8 = {
 # no byte 90 do texto (pagina com ate 90 caracteres + quebras inseridas, que tem no maximo 1 por 13 letras).
 # Endereco virtual -> (instrucao original, nova). Nenhuma delas tem relocacao.
 DIARY_TEXT_MAX = 90
+NAME_MAX = 7
+
 CODE = {
     # Diario, pagina comum: v0 = registro da pagina, texto em +0x170.
     0x39A24: (0x24420170, 0x24460170),  # addiu v0, v0, 0x170 -> addiu a2, v0, 0x170
@@ -82,6 +84,23 @@ CODE = {
     0x3E19C: (0x14600002, 0x24120001),  # bnez v1, +2 -> addiu s2, zero, 1
     0x3E1A0: (0x00609021, 0x0063900B),  # move s2, v1 -> movn s2, v1, v1
     0x3E1A4: (0x24120001, 0xA60001E8 + DIARY_TEXT_MAX),  # addiu s2, zero, 1 -> sh zero, 0x1E8+90(s0)
+    # Teclado (aberto em 0x1FD80 com o tipo do campo: 0 palavras, 1 nome, 2 e 3 telefone). Nos tipos 1 a 3 o
+    # byte +0x21 tira a conversao para kanji e prende o teclado na primeira pagina, entao os nomes so aceitavam
+    # hiragana. A troca de pagina (cursor alem da borda) e o desenho das teclas passam a olhar +0x23, que so vale
+    # no telefone: os nomes ganham a pagina ABC/abc e continuam sem conversao.
+    0x2133C: (0x92220021, 0x92220023),  # lbu v0, 0x21(s1) -> 0x23(s1): pagina, cursor para a direita
+    0x2144C: (0x92220021, 0x92220023),  # o mesmo para a esquerda
+    0x218C0: (0x92020021, 0x92020023),  # lbu v0, 0x21(s0) -> 0x23(s0): faces das teclas da pagina
+    0x1FF2C: (0x92250021, 0x92250023),  # setas laterais e tecla Num acesas (antes so no tipo 0)
+    # Tecla Num: no modo restrito so era aceita no tipo 2 (+0x22); passa a ser recusada so no telefone
+    0x21614: (0x92220022, 0x92220023),  # lbu v0, 0x22(s1) -> 0x23(s1)
+    0x217FC: (0x1440FF87, 0x1040FF87),  # bnez v0 -> beqz v0 (aceita quando nao e telefone)
+    # Pagina inicial (+0x44): 1 = ABC/abc nos tipos 0 e 1 (palavras e nomes), 0 = kana/numeros nos outros.
+    # O "sw zero, 0x110" do delay slot sobra: o memset(+0x48, 0, 0xd4) logo depois ja zera +0x110.
+    0x1FE20: (0xAE200044, 0x2E430002),  # sw zero, 0x44(s1) -> sltiu v1, s2, 2
+    0x1FE2C: (0xAE200110, 0xAE230044),  # sw zero, 0x110(s1) -> sw v1, 0x44(s1)
+    # Limite do nome em caracteres. O nome vai para blocos de 16 bytes: 7 cabem mesmo em kana (14 + NUL).
+    0x200B4: (0x24020004, 0x24020000 + NAME_MAX),  # addiu v0, zero, 4 -> NAME_MAX
 }
 # o segmento de codigo comeca no byte 0x80 do arquivo, no endereco virtual 0
 CODE_FILE_OFFSET = 0x80

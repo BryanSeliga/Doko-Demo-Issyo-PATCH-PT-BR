@@ -45,7 +45,8 @@ Fale com quem joga usando **você**, sem gíria datada ou palavrão. Prefira fra
 
 - Se o japonês termina com `\n`, o português também termina com `\n`. Se não termina, também não termina.
 - Espaço no início ou no fim do japonês indica que o texto é um pedaço de frase que será colado a outro. Mantenha esse espaço.
-- Quebras de linha **no meio** de `fala` e `pergunta` podem ser removidas, pois a ferramenta quebra as linhas sozinha. Em textos do tipo `pool` com várias linhas, como páginas de diário, mantenha as quebras e linhas com até 26 caracteres.
+- Quebras de linha **no meio** de `fala` e `pergunta` podem ser removidas, pois a ferramenta quebra as linhas sozinha. Em textos do tipo `pool` com várias linhas, mantenha as quebras e linhas com até 26 caracteres.
+- **Páginas de diário** têm limite rígido: texto maior desliga o PSP (ver a seção 8).
 - Textos seguidos no arquivo costumam ser a mesma conversa, e um pensamento pode continuar no próximo. Leia os vizinhos antes de traduzir.
 - Textos do tipo `pool` curtos são opções de resposta, palavras ou nomes de itens: traduza de forma enxuta.
 
@@ -66,6 +67,13 @@ Fale com quem joga usando **você**, sem gíria datada ou palavrão. Prefira fra
 - Mantenha honoríficos em letras latinas quando forem parte do nome (-san, -chan). Sem nome, adapte: 先生 = "Prof."
 - Número variável pode ser 1 ou mais: use uma forma que sirva aos dois, como "palavra(s) nova(s)".
 - `{14:0000}` dentro de datas e períodos pode ser estação do ano ou mês. Escreva de um jeito que sirva aos dois: "na época de {14:0000}".
+
+**8. Páginas de diário.** O Pokepi escreve uma página por dia, e o jogo guarda o texto no save. A página tem 8 linhas de uns 18 caracteres, mas o limite que vale é o do espaço onde o jogo copia o texto: **88 bytes**, já com os nomes e as palavras no lugar das variáveis. Letra comum, espaço e quebra de linha contam 1 byte; letra acentuada e `♥` contam 2.
+
+- Resuma: diga o essencial do dia, no jeito de falar do Pokepi, com frases curtas. O japonês também é curto, cerca de 60 caracteres.
+- Escreva em parágrafos separados por `\n` só onde quiser uma quebra; a ferramenta quebra as linhas na largura da página. Linha em branco gasta espaço.
+- As duas primeiras linhas, juntas, ficam com até 36 letras: em algumas páginas elas viram o título.
+- `tools/diary_batches.py conferir` mede cada página (os nomes contam como 6 letras, e `$_W1`/`$_W2` como a palavra do registro).
 
 ## Exemplos
 

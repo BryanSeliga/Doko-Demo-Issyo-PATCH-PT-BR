@@ -81,7 +81,7 @@ def wrap(text, widths, amap, limit=BALLOON_WIDTH, var_width=None):
     lines, cur = [], ""
     space = widths[0]
     for w in words:
-        if "{" not in w and text_width(w, widths, amap, var_width) > limit:
+        if "{" not in w and "$_" not in w and text_width(w, widths, amap, var_width) > limit:
             # palavra maior que o balao: o jogo cortaria em qualquer letra; aqui vai com hifen
             if cur:
                 lines.append(cur)

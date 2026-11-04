@@ -103,101 +103,101 @@
 {"id": 6063, "pt": "Hmm?"}
 {"id": 6064, "pt": "Robô"}
 {"id": 6065, "pt": "Física"}
-{"id": 6066, "pt": "Feliz Ano Novo!\nE um haicai:\n\"Neste ano, o Prêmio\nNobel de $_W1\nserá meu!\"\n\n...Passou da conta de\nsílabas."}
+{"id": 6066, "pt": "Feliz Ano Novo!\nHaicai: \"Este ano o\nNobel de $_W1 é meu!\"\n...Sobrou sílaba."}
 {"id": 6067, "pt": "Ela"}
-{"id": 6068, "pt": "O milagre do Dia dos\nNamorados\n\nQuem diria...\nEu, $_ME, ganhando\nchocolate!?\nQueria saber o que $_W1\nsente de verdade."}
+{"id": 6068, "pt": "Milagre dos Namorados!\n$_ME ganhou chocolate!?\nO que $_W1 sente de verdade?"}
 {"id": 6069, "pt": "Olho"}
 {"id": 6070, "pt": "Nariz"}
-{"id": 6071, "pt": " \"Festa das Bonecas\"\nDizem os antigos\nque o mais importante\nna boneca é \"$_W1\"!\n\n...Hã,\n\"$_W2\"\n...era isso mesmo?"}
-{"id": 6072, "pt": "É o \"Dia das Crianças\".\nDo preto e do vermelho\nnasce o azul.\n...Mutação?\nNão, talvez seja\nadotado.\nDe qualquer modo,\nquero que cresça bem."}
-{"id": 6073, "pt": " \"Festival das Estrelas\"\n\nA distância entre as duas\nestrelas é de uns 16\nanos-luz.\nPara se verem uma vez por\nano, teriam que passar a\nvelocidade da luz...\n\nMuito interessante."}
+{"id": 6071, "pt": " \"Festa das Bonecas\"\nBoneca vive de \"$_W1\"!\nOu era \"$_W2\"?"}
+{"id": 6072, "pt": "Dia das Crianças.\nPreto e vermelho geram azul.\nMutação? Adoção?\nQue cresça forte."}
+{"id": 6073, "pt": " \"Tanabata\"\n16 anos-luz entre elas.\nTeriam de superar a luz.\nInteressante."}
 {"id": 6074, "pt": "Os homens do mundo"}
 {"id": 6075, "pt": "Mulher"}
-{"id": 6076, "pt": " \"Natal\"\nO dia em que $_W1 e\n$_W2\nse divertem juntos... é um\nfato inabalável.\nComo $_ME é apolítico,\nnão\nme importo, mas..."}
-{"id": 6077, "pt": "$_YOU,\nfeliz aniversário.\n\nÉ incrível como\nde uma partícula tão\npequena\nse chega a ficar tão\ngrande.\n\nA vida é misteriosa."}
-{"id": 6078, "pt": "Quem diria que meu irmão\nvirou um\nrevolucionário.\nDisse que seu sonho\né criar um país de robôs.\n\nUma ideia brilhante,\nque mexe um pouquinho\ncomigo..."}
-{"id": 6079, "pt": "Vou me despedir de $_YOU\ne\ndeste quarto, mas não é um\nadeus eterno.\nQuando achar meu irmão,\ncom certeza volto.\nSe $_YOU não se esquecer\nde $_ME..."}
-{"id": 6080, "pt": "Pensando com lógica,\nencontros e despedidas\nsão inseparáveis.\n\n...Mesmo assim,\nqueria ter dito\nadeus direito."}
+{"id": 6076, "pt": " \"Natal\"\n$_W1\ne $_W2 juntos: fato!\n$_ME é apolítico."}
+{"id": 6077, "pt": "$_YOU,\nfeliz aniversário.\nDe tão pequeno a tão grande.\nA vida é misteriosa."}
+{"id": 6078, "pt": "Meu irmão virou revolucionário!\nQuer criar um país de robôs.\nMexeu comigo..."}
+{"id": 6079, "pt": "Adeus, $_YOU e quarto. Volto!\nAchando meu irmão.\nSe $_YOU lembrar de $_ME..."}
+{"id": 6080, "pt": "Lógico: encontro e despedida são um só.\n...Queria ter dito adeus."}
 {"id": 6081, "pt": "Antártida"}
-{"id": 6082, "pt": "Meu irmão pretende fundar\numa nação de robôs em\n\"$_W1\".\nMas e a vida das pessoas\nque moram lá?\nEle está apressado\ndemais...\n$_ME preciso dar um\njeito..."}
-{"id": 6083, "pt": "Queria contar a verdade só\npara $_YOU...\nMas, pela gravidade do\ncaso,\nnão posso.\n\nEu, $_ME, acredito que\num dia vamos rir disso."}
-{"id": 6084, "pt": "O dia 1 acabou bem.\n$_ME ainda estou\nmuito verde...\nPreciso aprender\nmuito mais coisas.\nQue estudos me esperam\nde agora em diante?\nEstou animadíssimo."}
+{"id": 6082, "pt": "Irmão quer fundar nação de robôs: \"$_W1\".\nE o povo?\n$_ME preciso agir."}
+{"id": 6083, "pt": "Só a $_YOU queria contar tudo...\nMas é grave.\nUm dia riremos, $_ME acredita."}
+{"id": 6084, "pt": "Dia 1 terminou bem.\nAinda sou novato, $_ME.\nQuero aprender mais.\nQue venham estudos!"}
 {"id": 6085, "pt": "Clavícula"}
 {"id": 6086, "pt": "Células cerebrais"}
-{"id": 6087, "pt": "Vou ao banho público com\n$_FME, que mora com\n$_FYOU.\n\nO $_W1 branco de $_FME\nfica mais branco.\nO $_W2 cinza de $_ME\nfica\nmais cinza."}
-{"id": 6088, "pt": "Fui ao banho público com\n$_FME, que mora com\n$_FYOU.\n\nAliás, uma dúvida\nme ocorreu...\n$_FME é homem?\nOu mulher?"}
+{"id": 6087, "pt": "Banho: $_FME ($_FYOU)\n$_FME: $_W1 brilha\n$_ME: $_W2"}
+{"id": 6088, "pt": "Banho com $_FME, de $_FYOU.\nDúvida: $_FME é homem ou mulher?"}
 {"id": 6089, "pt": "Monte Fuji"}
-{"id": 6090, "pt": "Banho público com $_FME,\nque mora com $_FYOU.\nA pintura de $_W1 na\nparede era igualzinha a\numa paisagem saudosa,\nparece.\nFicou coaxando, um barulho\nsem fim."}
-{"id": 6091, "pt": "O dispositivo à prova\nd'água de $_FME, que mora\ncom $_FYOU, quebrou?\nComo não queria ir ao\nbanho público, emprestei o\nreserva de $_ME.\n\nAmigo é para essas horas."}
+{"id": 6090, "pt": "Banho com $_FME, de $_FYOU.\nA pintura de $_W1 lembrou casa.\nCoaxou sem parar."}
+{"id": 6091, "pt": "Impermeável de $_FME ($_FYOU) pifou?\nEmprestei o reserva de $_ME.\nAmigo é pra isso."}
 {"id": 6092, "pt": "Orelha"}
-{"id": 6093, "pt": "Banho público com $_FME,\nque mora com $_FYOU.\nO $_W1 rosado de $_FME\nfica mais rosado.\nO $_W2 cinza de $_ME\nfica\nmais cinza."}
+{"id": 6093, "pt": "Banho: $_FME ($_FYOU)\n$_FME: $_W1 rosa\n$_ME: $_W2"}
 {"id": 6094, "pt": "Esta cidade"}
-{"id": 6095, "pt": "Vou jantar com $_FME, que\nmora com $_FYOU.\n\nNão é à toa que é o melhor\nde $_W1.\nCom o vinho delicioso, até\nas bochechas de $_FME\nficaram vermelhas."}
+{"id": 6095, "pt": "Jantar com $_FME, de $_FYOU.\nMelhor de $_W1! Com vinho, $_FME corou."}
 {"id": 6096, "pt": "Fígado"}
-{"id": 6097, "pt": "Jantar com $_FME, que\nmora\ncom $_FYOU.\n\n$_FME pediu todos os\nvinhos da casa, um atrás\ndo outro.\nTomara que o excesso não\nfaça mal a $_W1..."}
+{"id": 6097, "pt": "Jantar com $_FME, de $_FYOU.\n$_FME pediu todos os vinhos!\nTomara que $_W1 aguente."}
 {"id": 6098, "pt": "Culinária"}
-{"id": 6099, "pt": "Jantar com $_FME, que\nmora\ncom $_FYOU.\nComemos $_W2 debatendo\nsobre $_W1.\nConcordamos que \"o debate\né o melhor molho\"."}
+{"id": 6099, "pt": "Jantar com $_FME, de $_FYOU.\nPapo de $_W1 com $_W2.\nDebate é o melhor molho!"}
 {"id": 6100, "pt": "Amor"}
-{"id": 6101, "pt": "Jantar com $_FME, que\nmora\ncom $_FYOU.\n$_FME pediu conselhos\nsobre $_W1.\n$_ME não entendo de\nassuntos assim... Fui\nconcordando por educação,\nsó para disfarçar."}
+{"id": 6101, "pt": "Jantar com $_FME, de $_FYOU.\n$_FME pediu dica de $_W1.\n$_ME só concordei."}
 {"id": 6102, "pt": "Maquiagem"}
 {"id": 6103, "pt": "Soba"}
-{"id": 6104, "pt": "Viagem de trem parador com\n$_FME, que mora com\n$_FYOU.\n\"O $_W1 do interior é de\nverdade, coá, que\ndelícia~♪\"\nComer 50 tigelas foi um\ncomportamento imprevisto.\nQuase perdemos o trem."}
-{"id": 6105, "pt": "Viagem de trem parador com\n$_FME, que mora com\n$_FYOU.\n\nLogo eu, $_ME, calculei\nerrado o tempo de parada.\n$_FME também errou, então\na culpa é dividida."}
+{"id": 6104, "pt": "Trem com $_FME, de $_FYOU.\n\"$_W1 é ótimo, croac!\"\n50 tigelas! Quase perdemos o trem."}
+{"id": 6105, "pt": "Trem com $_FME, de $_FYOU.\nErro meu, $_ME: calculei mal.\n$_FME errou também."}
 {"id": 6106, "pt": "Novela da manhã"}
-{"id": 6107, "pt": "Viagem de trem com $_FME,\nque mora com $_FYOU.\n\"Foi aqui que gravaram\n$_W1, pyon~♪\"\n$_FME me conta\ninformações\nque $_ME não conheço.\nNão servem para nada,\nmas..."}
+{"id": 6107, "pt": "$_FME ($_FYOU)\n\"$_W1, pyon!\"\n$_FME sabe, $_ME não."}
 {"id": 6108, "pt": "Luta livre"}
-{"id": 6109, "pt": "Descansando na comporta\ncom $_FME, que mora com\n$_FYOU.\n\"$_FME, vamos atrás da\nestrela de $_W1, coá!\"\n$_ME não consegui\nidentificar essa estrela.\n...Será Vênus?"}
+{"id": 6109, "pt": "Comporta com $_FME, de $_FYOU.\n\"$_FME, rumo à estrela de $_W1!\"\n$_ME: Vênus?"}
 {"id": 6110, "pt": "Sala de aula"}
-{"id": 6111, "pt": "Descansando na comporta\ncom $_FME, que mora com\n$_FYOU.\n\n\"Vermelho~ o pôr do sol~♪\nE $_W1 também é\nvermelho~♪\"\nUma música estranhamente\nsaudosa...\nVou guardar na memória."}
-{"id": 6112, "pt": "Diante da estátua da\nestação com $_FME, que\nmora com $_FYOU.\n\n\"Isso dá uma ótima pedra\npara pôr em conserva,\nsabia?\"\n\n$_FME tem ótimas ideias."}
-{"id": 6113, "pt": "Diante da estátua com\n$_FME, que mora com\n$_FYOU.\n\nQuem vai virar estátua\nprimeiro, $_FME ou\n$_ME?"}
-{"id": 6114, "pt": "Encontro diante da estátua\ncom $_FME, que mora com\n$_FYOU.\n\n\"$_FME também vai ser um\ngrande cantor e virar\nestátua, pyon~♪\"\nQuanto maior o sonho,\nmelhor."}
+{"id": 6111, "pt": "Comporta com $_FME, de $_FYOU.\n\"Sol vermelho~ $_W1 também♪\""}
+{"id": 6112, "pt": "Estátua com $_FME, de $_FYOU.\n\"Boa pedra de conserva, sô!\"\n$_FME tem ideias!"}
+{"id": 6113, "pt": "Estátua com $_FME, de $_FYOU.\nQuem vira estátua antes: $_FME ou $_ME?"}
+{"id": 6114, "pt": "Estátua com $_FME, de $_FYOU.\n\"$_FME vai virar estátua, pyon!\"\nSonho grande é bom."}
 {"id": 6115, "pt": "Mangá"}
-{"id": 6116, "pt": "$_FME, que mora com\n$_FYOU, me recomendou\n$_W1.\n\nEra tão interessante que\nacabei ficando demais.\nSerá que incomodei?"}
+{"id": 6116, "pt": "$_FME, de $_FYOU, indicou $_W1.\nEra tão bom que fiquei demais. Incomodei?"}
 {"id": 6117, "pt": "Curry"}
 {"id": 6118, "pt": "Repolho"}
-{"id": 6119, "pt": "Conversa sobre lavoura com\n$_FME, que mora com\n$_FYOU.\n\n\"O $_W1 da minha horta\ntambém está enorme, coá~♪\"\nColheita farta para todos,\né motivo de alegria."}
+{"id": 6119, "pt": "Lavoura com $_FME, de $_FYOU.\n\"Na horta, $_W1 tá enorme, croac♪\"\nColheita farta!"}
 {"id": 6120, "pt": "Rabanete"}
 {"id": 6121, "pt": "Acelga"}
 {"id": 6122, "pt": "Alface"}
-{"id": 6123, "pt": "Conversa sobre lavoura com\n$_FME, que mora com\n$_FYOU.\n\n\"$_FME começou a melhorar\na variedade de $_W1,\nrobô\"\nEu pretendo rebater com\n$_W2."}
+{"id": 6123, "pt": "Lavoura com $_FME, de $_FYOU.\n\"$_FME melhora $_W1, robô\"\nRebato com $_W2."}
 {"id": 6124, "pt": "Vinho"}
 {"id": 6125, "pt": "Primeiro amor"}
-{"id": 6126, "pt": "No bar favorito de $_FME,\nque mora com $_FYOU.\nO assunto: $_W1.\nMobilizo todo o meu pouco\nconhecimento\npara manter a conversa.\nO consumo de energia é\nalto."}
-{"id": 6127, "pt": "No local de treinamento de\n$_FME, que mora com\n$_FYOU.\n\nTentei melhorar a\npaisagem, e ouvi: \"O que\nvocê está fazendo com a\nnatureza?!\"\n...Até esta trilha\njá é de concreto."}
+{"id": 6126, "pt": "Bar de $_FME, de $_FYOU.\nAssunto: $_W1.\nUso meu pouco saber."}
+{"id": 6127, "pt": "Treino de $_FME, de $_FYOU.\nMexi na paisagem. \"Natureza, sô!\"\nTrilha já é concreto."}
 {"id": 6128, "pt": "Grécia"}
 {"id": 6129, "pt": "Alguém"}
-{"id": 6130, "pt": " \"Primavera\"\n\nÉ o dia de \"$_YOU\", de\n\"$_ME\" e de \"$_W1\".\nO velho cérebro eletrônico\ndentro de $_ME diz que é\nassim."}
-{"id": 6131, "pt": " \"Estação das chuvas\"\n\nTenho a impressão de já\nter escrito isso, mas\ngosto de hortênsias.\nO motivo continua um\nmistério.\nMesmo sem motivo,\nnão tenho inquietação."}
+{"id": 6130, "pt": " \"Primavera\"\nDia de \"$_YOU\", \"$_ME\" e \"$_W1\".\nO cérebro de $_ME diz que sim."}
+{"id": 6131, "pt": " \"Estação das chuvas\"\nGosto de hortênsias, já disse.\nSem motivo, sem receio."}
 {"id": 6132, "pt": "Tachikawa"}
-{"id": 6133, "pt": "No festival de fogos de\n$_W1.\n\n\"Fogos de artifício\" e\n\"armas\"\ntêm o mesmo princípio\nbásico.\nJá consigo pensar que\nfazer\n\"fogos\" não é\nem vão."}
-{"id": 6134, "pt": " \"Contemplar as folhas de\noutono\"\n\nEncontrei um velho\nestranho.\nSabe-se lá como, caímos\nnuma conversa sobre\ncosmologia.\nNão tinha lógica nenhuma,\nmas era estranhamente\nconvincente.\nFalava como se tivesse\nvisto tudo."}
+{"id": 6133, "pt": "Fogos em $_W1.\n\"Fogos\" e \"armas\" têm a mesma base.\nFazer fogos não é em vão."}
+{"id": 6134, "pt": " \"Folhas de outono\"\nVelho estranho falou de cosmos.\nSem lógica, mas convincente."}
 {"id": 6135, "pt": "Dinheiro"}
-{"id": 6136, "pt": " \"Espantalho\"\n\nVai bem?\nTem amigos?\nTem $_W1?\n...O velho cérebro\neletrônico de $_ME não\npara de perguntar."}
+{"id": 6136, "pt": " \"Espantalho\"\nVai bem?\nTem amigos?\nTem $_W1?\n...O cérebro de $_ME não para."}
 {"id": 6137, "pt": "Geladeira"}
-{"id": 6138, "pt": " \"Dia de inverno\"\n\nNuma esquina qualquer,\nachei algo desconhecido.\nIsto é um lampião a gás?\nDizem que antigamente\nexistia até $_W1 a gás."}
+{"id": 6138, "pt": " \"Dia de inverno\"\nAchei um lampião a gás.\nJá houve $_W1 a gás?"}
 {"id": 6139, "pt": "Enoki"}
 {"id": 6140, "pt": "Pimentão"}
-{"id": 6141, "pt": " \"Bulgogi\"\n\n$_W1, $_W2, etc...\nA análise de $_ME\nrevelou\nque o equilíbrio\nnutricional é perfeito.\nNão se pode subestimar a\nCoreia."}
+{"id": 6141, "pt": " \"Bulgogi\"\n$_W1, $_W2, etc...\nNutrição perfeita, calculou $_ME."}
 {"id": 6142, "pt": "Cerveja"}
-{"id": 6143, "pt": " \"Genghis Khan\"\n\nSe a comida é boa, $_W1\ntambém é.\nNão se pode subestimar\nHokkaido.\nNão acha também, caro\namigo?\n...Sem resposta."}
-{"id": 6144, "pt": "Disse o cozinheiro:\n\"Comida japonesa\né a comida do Japão, viu?\"\n\n...Claro que é!\n\nMas, estranhamente,\nconcordei."}
-{"id": 6145, "pt": "Ei, chefe,\nreconheço sua\nhabilidade na cozinha.\n\nMas, com você me\nencarando assim...\nfica difícil comer."}
-{"id": 6146, "pt": "Pão, queijo, hambúrguer,\ntomate, alface, tomate,\nqueijo... pão?\n\nChefe!\nFaltou hambúrguer\ne alface!"}
+{"id": 6143, "pt": " \"Genghis Khan\"\nComida boa, $_W1 também.\nHokkaido é demais.\nConcorda?... Nada."}
+{"id": 6144, "pt": "Disse o chef:\n\"Comida japonesa é do Japão.\"\nÓbvio! Mas concordei."}
+{"id": 6145, "pt": "Ei, chefe,\nadmiro sua culinária.\nMas me encarar assim\ndificulta comer."}
+{"id": 6146, "pt": "Pão, queijo, carne, tomate,\nalface, queijo... pão?\nChefe! Faltou carne\ne alface!"}
 {"id": 6147, "pt": "Escavadeira"}
-{"id": 6148, "pt": "\"Pode consertar 10\nunidades de $_W1?\"\n\n\"Deixe comigo!\"\n\nHá muito não recebia\num pedido tão grande.\nVou me esforçar."}
-{"id": 6149, "pt": "Sempre tive uma dúvida.\nO Toro e o gato preto...\nem nível genético,\nquanto diferem?\n\nVou pesquisar.\nHeh heh heh..."}
+{"id": 6148, "pt": "\"Conserta 10 $_W1?\"\n\"Deixe comigo!\"\nPedido grande. Vou me\nesforçar."}
+{"id": 6149, "pt": "Quanto o Toro e o gato\npreto diferem nos genes?\nVou pesquisar. Heh heh!"}
 {"id": 6150, "pt": "Imagawayaki"}
-{"id": 6151, "pt": "Peso seco 102,45 kg\nEquipamento extra: +2,34\nkg\nTroca de peças: -0,56 kg\nH2O expelida: -0,12 kg\n$_W1 ingerido: +0,23 kg\nE então, bem..."}
-{"id": 6152, "pt": "O que $_ME expele\nnão chega a ser poluído.\n\nSegundo o senso comum,\njogar na privada\né o procedimento\nmais adequado."}
-{"id": 6153, "pt": "Provei pela primeira vez\numa cerveja holandesa.\n\nNão é que não se pareça\ncom $_W1 japonês, nem\nque\nse pareça tanto assim.\n"}
+{"id": 6151, "pt": "Peso seco 102,45 kg\nMais 2,34 de equipamento\n$_W1 engordou 0,23 kg"}
+{"id": 6152, "pt": "O que $_ME expele não é\npoluído, mas o certo é\njogar na privada."}
+{"id": 6153, "pt": "Primeira cerveja holandesa.\nParece com $_W1 do Japão,\nmais ou menos.\n"}
 {"id": 6154, "pt": "Kichijoji"}
 {"id": 6155, "pt": "Prato de peixe-espada\nfrito"}
-{"id": 6156, "pt": "Um lugar muito bom.\nValeu a pena ir até\n$_W1.\n\nSe eu pudesse pedir,\nbastava\nacrescentar $_W2 ao\nalmoço\npara ficar perfeito."}
-{"id": 6157, "pt": "Achei um lugar \"chique\"?\n\nTantas cores e formas se\ncruzando que fiquei tonto.\n\nO dono era discreto, que\nalívio.\nFiquei olhando um tempo\ne descansei por ali."}
-{"id": 6158, "pt": "O clima é bom.\nO sabor passa na prova.\n\nMas...\n3000 ienes por um copo de\n$_W1 não é um abuso? "}
-{"id": 6159, "pt": "No casamento de um amigo.\n\nO nervosismo dele ressoou\ncom o cérebro eletrônico\nde $_ME!?\nParecia que o casamento\nera meu também...\n\nA causa da ressonância\nestá sob investigação."}
+{"id": 6156, "pt": "Ótimo lugar! Valeu ir até\n$_W1. Queria $_W2\nno almoço."}
+{"id": 6157, "pt": "Achei um lugar \"chique\"?\nTantas cores que fiquei\ntonto. Descansei ali."}
+{"id": 6158, "pt": "Clima bom, sabor bom.\nMas 3000 ienes por um\ncopo de $_W1? Abuso! "}
+{"id": 6159, "pt": "No casamento de um amigo.\nO nervosismo dele ressoou\ncom o cérebro de $_ME!?"}
 {"id": 6160, "pt": "Articulação do ombro"}
-{"id": 6161, "pt": "Quiropraxia em um robô,\ncom esqueleto diferente\ndos seres vivos!\n\n...Eu zombava, mas\nfez um efeito inesperado.\nO movimento de $_W1 está\nleve.\nVale a pena pesquisar."}
-{"id": 6162, "pt": "Inédito!\nUm dentista que trata\ndentes de robô.\n$_ME sou o paciente\nnúmero\n1.\n\n...Isso não é só\num cobaia!?"}
-{"id": 6163, "pt": "\"Quanto espaço vazio\ndentro do corpo de $_ME,\nhein\"\n\nQue médico mal-educado!\nIsso é parte da\nestrutura do sistema\nde refrigeração,\nnão espaço vazio!"}
+{"id": 6161, "pt": "Quiropraxia em robô? Zombei,\nmas $_W1 ficou leve.\nVale pesquisar."}
+{"id": 6162, "pt": "Inédito! Dentista de robô,\ne $_ME sou o paciente 1.\nIsso é só cobaia!?"}
+{"id": 6163, "pt": "\"Quanto vazio no corpo\nde $_ME!\" Que médico!\nÉ o sistema de\nrefrigeração!"}

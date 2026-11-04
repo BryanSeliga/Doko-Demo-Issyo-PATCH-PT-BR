@@ -9,6 +9,7 @@ import re
 import sys
 import unicodedata
 
+import diary
 from boot_text import patch_boot
 from build_iso import build
 from dic import WORDS
@@ -18,6 +19,7 @@ from fontpatch import WIDTHS_OFF, patch
 from gim import to_gim8
 from gui_render import build_all
 from iso_common import BOOT_LBA, BOOT_SIZE, Iso, bpm_files, inner_files
+from icon1 import build as icon1
 from items import item_offsets, wrap_desc
 from kscbuild import extract_inline, extract_pool, pool_uses, rebuild
 from textfmt import to_bytes, to_text
@@ -29,7 +31,11 @@ from xmb import icon0, patch_sfo, pic0, title_logo
 PARAM_SFO = (2672, 472)
 ICON0_PNG = (2576, 24493)
 PIC0_PNG = (2688, 92891)
+# Video do icone no menu do PSP: refeito em portugues (icon1.py); sem ffmpeg, e renomeado e o menu mostra o ICON0.
+ICON1_PMF = (2592, 147456)
 TITLE_LOGO = ("TITLE.BPM", "GUI\\TITLE\\TITLE.GIM")
+# Logotipo da tela rapida (ao voltar do "Suspender"), na mesma proporcao do da tela titulo.
+QUICK_LOGO = ("QUICK.BPM", "GUI\\QUICK\\Q_TITLE.GIM")
 CHARS = {"neko": ("KSNEKO.BPM", "NEKO.KSC"), "inu": ("KSINU.BPM", "INU.KSC"), "robo": ("KSROBO.BPM", "ROBO.KSC"),
          "kaeru": ("KSKAERU.BPM", "KAERU.KSC"), "usagi": ("KSUSAGI.BPM", "USAGI.KSC")}
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -155,7 +161,16 @@ def apply_ksc(who, d, widths, amap):
     names, descs = item_offsets(d)
     uses = pool_uses(d)
     signs = load_signs()
-    for off, raw in extract_pool(d).items():
+    raw_pool = extract_pool(d)
+    # paginas de diario: {offset do texto: {"$_W1": palavra traduzida, ...}}
+    pages = {}
+    for text_off, word_offs in diary.pages(d):
+        words = pages.setdefault(text_off, {})
+        for n, w in enumerate(word_offs, 1):
+            if w is not None:
+                words[f"$_W{n}"] = tr.get(to_text(raw_pool[w]), (to_text(raw_pool[w]),))[0]
+    too_long = []
+    for off, raw in raw_pool.items():
         try:
             jp = to_text(raw)
         except UnicodeDecodeError:
@@ -164,7 +179,11 @@ def apply_ksc(who, d, widths, amap):
             pool[off] = to_bytes(TIC[who][jp], amap)
         elif jp in tr:
             pt = tr[jp][0]
-            if off in descs:
+            if off in pages:
+                pt = diary.wrap_page(pt, widths, amap, pages[off])
+                if diary.problems(pt, widths, amap, pages[off]):
+                    too_long.append(off)
+            elif off in descs:
                 pt = wrap_desc(pt, widths, amap)
             elif "placa" in uses.get(off, ()):
                 # texto que tambem aparece nas falas fica inteiro, so sem acento
@@ -176,6 +195,9 @@ def apply_ksc(who, d, widths, amap):
                 pt = wrap(pt, widths, amap, var_width=POOL_WORD_WIDTH)
             pool[off] = to_bytes(pt, amap)
     print(f"{who}: {len(tr)}/{total} textos traduzidos; {len(inline)} no codigo, {len(pool)} no pool")
+    if too_long:
+        # a trava do BOOT corta o fim dessas paginas; ver diary_batches.py conferir
+        print(f"{who}: {len(too_long)} paginas de diario passam do limite")
     return rebuild(d, inline, pool)
 
 
@@ -195,10 +217,19 @@ def main(src, dst, whos):
             ksc[bpm][dic_name] = rebuild_dic(iso.bp(*inner[dic_name]), WORDS[dic_name], amap)
     boot = patch_boot(iso.read(BOOT_LBA, BOOT_SIZE), amap)
     loose = {PARAM_SFO: patch_sfo(iso.read(*PARAM_SFO)), ICON0_PNG: icon0(), PIC0_PNG: pic0(iso.read(*PIC0_PNG))}
-    # logotipo em 256 cores: a textura original tem 16 e o arquivo cresce, entao o TITLE.BPM e realocado
-    logo = {n: (o, s) for n, o, s in inner_files(iso, bpms[TITLE_LOGO[0]][0])}[TITLE_LOGO[1]]
-    ksc.setdefault(TITLE_LOGO[0], {})[TITLE_LOGO[1]] = to_gim8(iso.bp(*logo), title_logo(352, 75))
-    print("DATA.BP ->", build(src, dst, ksc=ksc, font=font, boot=boot, inplace=build_all(iso, bpms), loose=loose))
+    # logotipo em 256 cores: a textura original tem 16 e o arquivo cresce, entao o pacote e realocado
+    for (pack, name), size in ((TITLE_LOGO, (352, 75)), (QUICK_LOGO, (192, 41))):
+        logo = {n: (o, s) for n, o, s in inner_files(iso, bpms[pack][0])}[name]
+        ksc.setdefault(pack, {})[name] = to_gim8(iso.bp(*logo), title_logo(*size))
+    pmf = icon1(iso.read(*ICON1_PMF))
+    if pmf is not None:
+        loose[ICON1_PMF] = pmf
+        rename = {}
+    else:
+        print("ffmpeg (imageio-ffmpeg) nao encontrado: o video do icone fica desligado")
+        rename = {ICON1_PMF: (b"ICON1.PMF", b"ICON1.PMX")}
+    print("DATA.BP ->", build(src, dst, ksc=ksc, font=font, boot=boot, inplace=build_all(iso, bpms), loose=loose,
+                               rename=rename))
 
 
 if __name__ == "__main__":

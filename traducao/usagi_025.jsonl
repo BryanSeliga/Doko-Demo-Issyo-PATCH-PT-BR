@@ -40,144 +40,144 @@
 {"id": 6015, "pt": "Pyon"}
 {"id": 6016, "pt": "Usa"}
 {"id": 6017, "pt": "Pessoa legal"}
-{"id": 6018, "pt": "Feliz\nAno Novo~!!\nO ano começou e a\nprimavera vai chegar!\nMas...\nA primavera chegou, e a\ncoisa boa chamada\n$_W1 não apareceu..."}
+{"id": 6018, "pt": "Feliz Ano Novo~!!\nA primavera vem, mas\n$_W1 nada de aparecer..."}
 {"id": 6019, "pt": "Lágrimas"}
 {"id": 6020, "pt": "Penteado"}
 {"id": 6021, "pt": "Bolo"}
-{"id": 6022, "pt": "Dia das Crianças.\nComi bolinho de arroz~\nComi $_W1~\nJá não aguento mais...\n\nQuem come bem cresce,\né verdade."}
+{"id": 6022, "pt": "Dia das Crianças.\nComi bolinho e $_W1.\nNão aguento mais...\nQuem come, cresce!"}
 {"id": 6023, "pt": "Gatão"}
-{"id": 6024, "pt": "Hoje é Tanabata!\nNo papelzinho escrevi:\n\"Quero conhecer\ngente incrível!\"\n\"Quero namorar\ncom $_W1!\"\n\n...Pedi demais?"}
+{"id": 6024, "pt": "Hoje é Tanabata!\nPedi no papelzinho:\ngente legal e namorar\n$_W1! Pedi demais?"}
 {"id": 6025, "pt": "Família"}
 {"id": 6026, "pt": "Papai Noel"}
-{"id": 6027, "pt": "Natal.\nGente na rua, casais,\n$_W1...\nTodo mundo parece feliz.\nMas tudo bem, pyon!\nCom certeza em casa um\npresente de $_W2\nestá me esperando!"}
+{"id": 6027, "pt": "Natal. Casais,\n$_W1: todos felizes.\nMas pyon!\nTem presente de $_W2!"}
 {"id": 6028, "pt": "Caricatura"}
-{"id": 6029, "pt": "Hoje é o\naniversário de $_YOU!\nParabéns, $_YOU!\nFicou tão feliz que\n$_ME também ficou feliz!\nO presente, $_W1,\nfez tanto sucesso assim!?"}
-{"id": 6030, "pt": "Adeus...\n$_ME vai estrear\ncomo menina bruxa...\n\nDe $_YOU...\n$_ME...\nnunca, nunca\nvou esquecer..."}
+{"id": 6029, "pt": "Aniversário de $_YOU!\nParabéns, $_YOU!\n$_ME ficou feliz!\n$_W1 fez sucesso?"}
+{"id": 6030, "pt": "Adeus...\n$_ME vai ser bruxinha...\nDe $_YOU, $_ME nunca\nvai esquecer..."}
 {"id": 6031, "pt": "Pensei bem e\nvou viajar...\n\nTalvez a gente\nnão se veja mais,\nmas se cuide...\nAdeus...\n"}
 {"id": 6032, "pt": "Costas"}
-{"id": 6033, "pt": "Fui ao banho público com\n$_FME da casa de $_FYOU.\nNa hora de esfregar\n$_W1,\n\"Faz cócegas, miau~\nFaz cócegas, miau~\"\ne ficou se debatendo...\nAssim não dá pra lavar..."}
+{"id": 6033, "pt": "Banho público com\n$_FME de $_FYOU.\nEsfregando $_W1:\n\"Faz cócegas, miau!\""}
 {"id": 6034, "pt": "Fonte termal"}
-{"id": 6035, "pt": "Fui ao banho público com\n$_FME da casa de $_FYOU.\nAprendi um montão de\ncuriosidades sobre $_W1.\nPor pouco não desmaiei\nde tanto calor."}
+{"id": 6035, "pt": "Banho público com\n$_FME de $_FYOU.\nAprendi muito sobre\n$_W1. Quase desmaiei."}
 {"id": 6036, "pt": "Cintura"}
 {"id": 6037, "pt": "Café com leite"}
-{"id": 6038, "pt": "Fui ao banho público com\n$_FME da casa de $_FYOU.\nDepois do banho,\ncom a mão em $_W1,\ntomou $_W2 de um gole!\nÉ assim que tem que ser!"}
-{"id": 6039, "pt": "Fui ao banho público com\n$_FME da casa de $_FYOU.\nDe repente saiu nadando,\nque susto!\nE super rápido!\nNossa... $_FME..."}
+{"id": 6038, "pt": "Banho com $_FME\nde $_FYOU.\nMão em $_W1,\ntomou $_W2 num gole!"}
+{"id": 6039, "pt": "Banho com $_FME\nde $_FYOU.\nSaiu nadando, que susto!\nSuper rápido! $_FME..."}
 {"id": 6040, "pt": "Peito"}
-{"id": 6041, "pt": "Fui ao banho público com\n$_FME da casa de $_FYOU.\nFazia tempo que não\níamos juntos, mas\n$_W1 e tal tinham\ncrescido bastante.\nQue susto...!"}
+{"id": 6041, "pt": "Banho com $_FME\nde $_FYOU.\nFazia tempo. $_W1 e tal\ncresceram, que susto...!"}
 {"id": 6042, "pt": "Bife"}
-{"id": 6043, "pt": "Fui a um restaurante com\n$_FME da casa de $_FYOU\ne comi $_W1.\nGostoso demais!\nNão sabia que existia\nalgo tão supremo e\ndelicioso neste mundo...!"}
+{"id": 6043, "pt": "Restaurante com\n$_FME de $_FYOU.\nComi $_W1. Delícia!\nQue coisa suprema!"}
 {"id": 6044, "pt": "Coquetel"}
-{"id": 6045, "pt": "Fui a um restaurante\nsuper caro com\n$_FME da casa de $_FYOU.\nBebi $_W1: 5000 ienes\no copo! Mas $_FME pagou,\nque alívio."}
+{"id": 6045, "pt": "Restaurante chique com\n$_FME de $_FYOU.\n$_W1: 5000 ienes!\nMas $_FME pagou, ufa."}
 {"id": 6046, "pt": "Articulação"}
-{"id": 6047, "pt": "Fui a um restaurante\nchique com $_FME\nda casa de $_FYOU.\n$_FME estava à vontade.\nChamou o garçom\ntocando $_W1.\nImpressionante."}
+{"id": 6047, "pt": "Restaurante com\n$_FME de $_FYOU.\n$_FME chamou o garçom\ntocando $_W1!"}
 {"id": 6048, "pt": "Vitela"}
-{"id": 6049, "pt": "Fui a um restaurante\nestranho com $_FME\nda casa de $_FYOU.\n$_FME comeu bife de\n$_W1 pra 10 pessoas.\nQue estômago de monstro!"}
-{"id": 6050, "pt": "Fui a um restaurante\nelegante com $_FME\nda casa de $_FYOU.\nPassamos uma hora\nmaravilhosa.\nDe vez em quando\ntem que bancar a\ncelebridade, né!"}
-{"id": 6051, "pt": "Fui à estação com\n$_FME da casa de $_FYOU.\nDisse: \"Este trem se\naposenta hoje, pyon\"\ne acreditou mesmo\ne chorou.\n$_FME é uma boa pessoa?"}
-{"id": 6052, "pt": "Andei de trem com\n$_FME da casa de $_FYOU.\nFicou olhando outros\ntrens e perdemos o nosso.\nAh, que isso!\n$_FME é fã de trem."}
-{"id": 6053, "pt": "Fui à estação com\n$_FME da casa de $_FYOU.\nSó por brincadeira,\nfizemos de conta que\nera corrida de revezamento\nna plataforma.\nO condutor riu."}
-{"id": 6054, "pt": "Andei de trem com\n$_FME da casa de $_FYOU.\nQuase perdemos o trem\ne corri.\n...Pensando bem,\nfaz tempo que não corro.\nAmanhã vou ficar com dor\nmuscular em $_W1..."}
-{"id": 6055, "pt": "Andei de trem com\n$_FME da casa de $_FYOU.\nSempre quis fazer isso:\ngritei \"Nunca vou te\nesquecer, pyon~!\" e corri\npela plataforma.\nChorei um pouquinho."}
+{"id": 6049, "pt": "Restaurante com\n$_FME de $_FYOU.\n$_FME comeu bife de\n$_W1 pra 10 pessoas!"}
+{"id": 6050, "pt": "Restaurante elegante com\n$_FME de $_FYOU.\nHora maravilhosa!\nUm luxo de vez em quando!"}
+{"id": 6051, "pt": "Estação com $_FME\nde $_FYOU. Disse: o\ntrem se aposenta, pyon!\nChorou. $_FME é fofo?"}
+{"id": 6052, "pt": "Trem com $_FME\nde $_FYOU.\nPerdemos o nosso olhando\noutros. Aff!\n$_FME ama trem."}
+{"id": 6053, "pt": "Estação com $_FME\nde $_FYOU.\nBrincamos de revezamento\nna plataforma.\nO condutor riu."}
+{"id": 6054, "pt": "Trem com $_FME\nde $_FYOU.\nCorri pra não perder.\nAmanhã $_W1 vai doer..."}
+{"id": 6055, "pt": "Trem com $_FME\nde $_FYOU.\nGritei \"Nunca te esqueço, pyon!\"\nna plataforma.\nChorei."}
 {"id": 6056, "pt": "Declaração"}
-{"id": 6057, "pt": "Conversei vendo o pôr\ndo sol com $_FME\nda casa de $_FYOU.\nAndava preocupada\ncom $_W1, mas falar\ncom $_FME me deixou\naliviada.\nValeu! $_FME!"}
-{"id": 6058, "pt": "Conversei vendo o pôr\ndo sol com $_FME\nda casa de $_FYOU.\nExplicou por que\no sol se põe.\n$_ME subiu\n2 níveis.\nTchã-tchã-tchan!!"}
+{"id": 6057, "pt": "Sol se pondo com $_FME\nde $_FYOU. Falei de\n$_W1 com $_FME.\nValeu, $_FME!"}
+{"id": 6058, "pt": "Pôr do sol com\n$_FME de $_FYOU.\nExplicou por que ele se põe.\n$_ME subiu 2 níveis!"}
 {"id": 6059, "pt": "Encontro"}
-{"id": 6060, "pt": "Conversei vendo o pôr\ndo sol com $_FME\nda casa de $_FYOU.\nQuer dizer, só eu falei\nsobre $_W1 o tempo todo.\n$_FME ouviu sem cansar."}
+{"id": 6060, "pt": "Pôr do sol com\n$_FME de $_FYOU.\nSó eu falei de $_W1.\n$_FME ouviu sem cansar."}
 {"id": 6061, "pt": "Do pôr do sol"}
 {"id": 6062, "pt": "Seu idiota!"}
-{"id": 6063, "pt": "Fiquei olhando o pôr\ndo sol com $_FME\nda casa de $_FYOU.\n$_ME gritou \"$_W1!\" e\n$_FME gritou \"$_W2!\"\nDepois apertamos as mãos\ncom firmeza."}
+{"id": 6063, "pt": "Pôr do sol com\n$_FME de $_FYOU.\n$_ME: \"$_W1!\"\n$_FME: \"$_W2!\""}
 {"id": 6064, "pt": "Triângulo amoroso"}
-{"id": 6065, "pt": "Fiquei olhando o pôr\ndo sol com $_FME\nda casa de $_FYOU.\nFalamos sobre $_W1\nos dois.\nTodo mundo tem seus\nproblemas, né..."}
-{"id": 6066, "pt": "Achei uma estátua\nesquisita com $_FME\nda casa de $_FYOU.\nDisse: \"Isso é arte,\nmiau~!\"\nMas será que entende\nmesmo?"}
+{"id": 6065, "pt": "Pôr do sol com $_FME\nde $_FYOU.\nFalamos de $_W1.\nTodos têm problemas..."}
+{"id": 6066, "pt": "Estátua esquisita com\n$_FME de $_FYOU.\nDisse \"É arte, miau!\"\nSerá que entende?"}
 {"id": 6067, "pt": "Oda Nobunaga"}
-{"id": 6068, "pt": "Achei uma estátua\nesquisita com $_FME\nda casa de $_FYOU.\nAté que ficou boa.\n$_FME me contou: \"O autor\né $_W1, robô\", mas...\nSerá que é verdade..."}
+{"id": 6068, "pt": "Estátua com $_FME\nde $_FYOU.\n$_FME disse que o autor\né $_W1, robô. Será?"}
 {"id": 6069, "pt": "Turista"}
 {"id": 6070, "pt": "Cabeça"}
-{"id": 6071, "pt": "Posei na frente da\nestátua com $_FME\nda casa de $_FYOU.\nQuem passava, $_W1, me\nconfundiu com a estátua\ne mexeu em $_W2.\nFoi assédio?"}
-{"id": 6072, "pt": "Achei uma estátua\nesquisita com $_FME\nda casa de $_FYOU.\nProcurei pela estação\ntoda uma estátua de\n$_ME também, mas\nnão tinha...\nQue pena...!"}
+{"id": 6071, "pt": "Posei na estátua com\n$_FME de $_FYOU.\n$_W1 me confundiu e\nmexeu em $_W2!"}
+{"id": 6072, "pt": "Estátua com $_FME\nde $_FYOU.\nProcurei uma de $_ME\nna estação. Não tinha..."}
 {"id": 6073, "pt": "Hachiko"}
-{"id": 6074, "pt": "Marquei na frente da\nestátua com $_FME\nda casa de $_FYOU\ne esperei 30 minutos.\nParece que confundiu com\na estátua de $_W1.\n$_FME perde 20 pontos."}
+{"id": 6074, "pt": "Esperei 30 min com\n$_FME de $_FYOU.\nConfundiu com a estátua\nde $_W1. $_FME: -20!"}
 {"id": 6075, "pt": "Mangá semanal"}
-{"id": 6076, "pt": "Fui brincar na casa de\n$_FME, da casa de\n$_FYOU.\n$_W1 estava em pilhas e\nacabei lendo sem parar...\nFiquei de boa."}
+{"id": 6076, "pt": "Casa de $_FME,\nde $_FYOU.\nLi $_W1 sem parar.\nFiquei de boa."}
 {"id": 6077, "pt": "Curry"}
-{"id": 6078, "pt": "Hoje fiz piquenique com\n$_FME da casa de $_FYOU.\nContou que o ingrediente\nde $_W1 leva rabanete.\n$_FME sabe tudo,\nque demais..."}
-{"id": 6079, "pt": "Bebi no bar de sempre com\n$_FME da casa de $_FYOU.\nTentei o coquetel especial\n$_W1. Tinha um gosto\nagridoce de $_W1."}
+{"id": 6078, "pt": "Piquenique com $_FME\nde $_FYOU.\nContou que $_W1 leva\nrabanete. $_FME sabe tudo!"}
+{"id": 6079, "pt": "Bar com $_FME\nde $_FYOU.\nCoquetel especial $_W1:\ngosto agridoce de $_W1."}
 {"id": 6080, "pt": "Europa"}
-{"id": 6081, "pt": "Bebi no bar de sempre com\n$_FME da casa de $_FYOU.\nAqui $_W1 é uma delícia!\nDizem que importam direto\nde $_W2. Que chique~!"}
+{"id": 6081, "pt": "Bar com $_FME\nde $_FYOU.\n$_W1 daqui é top!\nVem de $_W2. Chique!"}
 {"id": 6082, "pt": "Ídolo bonitão"}
 {"id": 6083, "pt": "Primeiro amor"}
-{"id": 6084, "pt": "Bebi no bar de sempre com\n$_FME da casa de $_FYOU.\nFalamos sobre $_W1\naté de manhã.\nQue bom que $_ME tem\num amigo assim..."}
-{"id": 6085, "pt": "Bebi no bar de sempre com\n$_FME da casa de $_FYOU.\nPrecisa mesmo de um oásis\nno coração.\n...Aliás, na campanha de\nboas maneiras \"Oásis\",\no que era o \"S\" mesmo?"}
-{"id": 6086, "pt": "Subi uma montanha com\n$_FME da casa de $_FYOU.\n$_FME treinou aqui\nsob a cachoeira.\nE em pleno inverno!\nNão é à toa que é forte..."}
+{"id": 6084, "pt": "Bar com $_FME\nde $_FYOU.\nFalamos de $_W1\naté de manhã.\n$_ME tem sorte!"}
+{"id": 6085, "pt": "Bar com $_FME\nde $_FYOU.\nPrecisa de um oásis no\ncoração. O \"S\" do Oásis?"}
+{"id": 6086, "pt": "Montanha com $_FME\nde $_FYOU.\n$_FME treinou sob a cachoeira,\nem pleno inverno! Forte."}
 {"id": 6087, "pt": "Corpo"}
-{"id": 6088, "pt": "$_FME da casa de $_FYOU\nme levou a lugares lindos.\nQuando vamos a lugares\nlindos, o coração e\n$_W1 também\nficam lindos."}
+{"id": 6088, "pt": "$_FME de $_FYOU me levou\na lugares lindos. O coração\ne $_W1 ficam lindos."}
 {"id": 6089, "pt": "Em frente à estação"}
 {"id": 6090, "pt": "Cruzamento"}
-{"id": 6091, "pt": "A primavera chegou~♪\nA primavera chegou~♪\nChegou aonde~♪\nNa montanha~♪\nChegou em $_W1~♪\nChegou em $_W2 também~♪"}
+{"id": 6091, "pt": "Primavera chegou~♪\nNa montanha~♪\n$_W1\nE em $_W2~♪"}
 {"id": 6092, "pt": "Perfume"}
-{"id": 6093, "pt": "Um raio de sol no meio da\nestação das chuvas...\nO cheiro da hortênsia\né tipo $_W1...\nChego o rosto pra cheirar\nmais e dou oi pro caracol!"}
+{"id": 6093, "pt": "Sol entre as chuvas...\nHortênsia cheira a $_W1.\nCheguei perto e dei oi\npro caracol!"}
 {"id": 6094, "pt": "Porto"}
 {"id": 6095, "pt": "Quem vive, um dia tem coisa boa"}
-{"id": 6096, "pt": "Outono. Folhas vermelhas.\nChá.\nO tiozinho ao lado\nme disse \"$_W1\".\nAs palavras de quem\nviveu muito têm peso."}
+{"id": 6096, "pt": "Outono, chá. O tiozinho\ndisse:\n$_W1\nPalavra de velho pesa."}
 {"id": 6097, "pt": "Corvo"}
-{"id": 6098, "pt": "Outono de colheita.\nSenhor espantalho,\nmuito obrigada mesmo.\nDepois da batalha com\n$_W1\njá está em frangalhos..."}
+{"id": 6098, "pt": "Outono da colheita.\nSeu espantalho, valeu!\nApós a luta com $_W1,\nestá em frangalhos."}
 {"id": 6099, "pt": "Jogador de beisebol"}
 {"id": 6100, "pt": "Hérnia"}
-{"id": 6101, "pt": "Cidade no inverno.\nLembro de alguém querido.\nSerá que virou $_W1...\nSerá que a doença de\nsempre, $_W2, sarou...\nNunca mais vamos\nnos ver..."}
-{"id": 6102, "pt": "Nossa, comi comi!\nComi até não poder mais!\nDe vez em quando\ntem que ter um dia assim!\nEnergia carregada\na 120%!!"}
-{"id": 6103, "pt": "Palavras que só dá pra\ndizer se estiver bêbado.\nTem muitas assim por aí.\n\nAliás, o churrasco\njingisukan e Gengis Khan\ntêm alguma relação...?"}
-{"id": 6104, "pt": "Comida japonesa faz bem\npro corpo, pelo visto.\n\nSushi, sashimi~\nTempurá~\nFujiyama~\nÉ deliciosa, desu!"}
-{"id": 6105, "pt": "\"Cliente, esta é uma\ncortesia minha\"\ne ganhei um vinho ♪\nHihi, será que $_ME fez\nde novo?\nBeleza é crime, pyon..."}
+{"id": 6101, "pt": "Inverno na cidade.\nVirou\n$_W1?\nA doença, $_W2, sarou?"}
+{"id": 6102, "pt": "Comi até não aguentar!\nEnergia a 120%!!"}
+{"id": 6103, "pt": "Palavras que só saem\nquando se bebe.\nJingisukan e Gengis Khan\ntêm relação...?"}
+{"id": 6104, "pt": "Comida japonesa faz bem\npro corpo, pelo visto.\nSushi, sashimi, tempurá!"}
+{"id": 6105, "pt": "Ganhei um vinho de\ncortesia ♪ Hihi, $_ME\narrasou de novo?\nBeleza é crime, pyon..."}
 {"id": 6106, "pt": "Mas por quê?!"}
-{"id": 6107, "pt": "O almoço de hoje:\nhambúrguer $_W1,\nespecialidade da casa.\n...Mas por que se chama\n\"$_W1\"?\nBom, tá gostoso,\nentão tanto faz."}
+{"id": 6107, "pt": "Almocei hambúrguer $_W1.\nPor que \"$_W1\"?"}
 {"id": 6108, "pt": "Preocupação"}
 {"id": 6109, "pt": "Coisas que preciso fazer"}
-{"id": 6110, "pt": "O momento de felicidade\ndepois do banho.\nSe eu sempre pudesse\nme sentir assim...\nA vida seria cor-de-rosa!\nFeliz e com sorte!!\nMas, né..."}
-{"id": 6111, "pt": "Uma vez chorei a noite\ntoda no banheiro.\nGastei 3 rolos de\npapel higiênico.\nDesculpa, nada\necológico..."}
+{"id": 6110, "pt": "Depois do banho, que\nfelicidade! Se fosse\nsempre assim, a vida\nseria cor-de-rosa..."}
+{"id": 6111, "pt": "Chorei uma noite toda\nno banheiro. Gastei 3\nrolos de papel. Nada\necológico, desculpa..."}
 {"id": 6112, "pt": "Bossa nova"}
-{"id": 6113, "pt": "Entrei por acaso num\nrestaurante bar.\nTocava $_W1 lá dentro...\nPensei em muita coisa...\nPor que $_W2 é tão cool,\nhein..."}
-{"id": 6114, "pt": "Primeira vez nesse\nrestaurante.\n$_W1 por 300 ienes,\nbarato, né!?\nE muito gostoso~!\nVou vir toda semana?"}
+{"id": 6113, "pt": "Entrei num barzinho.\nTocava $_W1...\nPor que $_W2 é tão cool?"}
+{"id": 6114, "pt": "Restaurante novo!\n$_W1 por 300 ienes,\nbarato, né? E gostoso!\nVou toda semana?"}
 {"id": 6115, "pt": "Anel"}
 {"id": 6116, "pt": "Primeiro-ministro"}
-{"id": 6117, "pt": "Bebi até de manhã.\nDe madrugada qualquer\nbobagem dá gargalhada.\nSó de dizer \"Nessas\nhoras, $_W1...\" foi\nsucesso total.\nQue estranho mesmo."}
-{"id": 6118, "pt": "Fui ao casamento de um(a)\namigo(a) do peito.\nPensei seriamente o dia\ntodo que já está na hora\nde eu ser quem recebe\no presente de casamento."}
+{"id": 6117, "pt": "Virei a noite bebendo.\nSó de falar \"$_W1...\"\nrimos horrores."}
+{"id": 6118, "pt": "Fui a um casamento\nde gente do peito.\nJá é hora de eu\nreceber presentes?"}
 {"id": 6119, "pt": "Axila"}
 {"id": 6120, "pt": "Clavícula"}
-{"id": 6121, "pt": "Fui fazer massagem.\nIsso... embaixo de\n$_W1...\nAh! Errou! Aí é $_W2!\n...Isso... aí, aí!\nAaah!! Que alívio!!"}
+{"id": 6121, "pt": "Massagem! Isso...\nembaixo de $_W1...\nAh, errou! É $_W2!\nIsso, aí! Que alívio!!"}
 {"id": 6122, "pt": "Orelha"}
 {"id": 6123, "pt": "Pé de atleta"}
-{"id": 6124, "pt": "$_W1 não vai bem,\nentão fui ao hospital.\nHã...? N-não me diga\nque é $_W2!?\nMentira, doutor(a)...!!\n...Era mentira."}
-{"id": 6125, "pt": "Gira, gira.\nGirando e girando.\nGirei mais que o normal!\n\nUrgh...\nFiquei meio tonta..."}
+{"id": 6124, "pt": "Fui ao hospital por\n$_W1. Será $_W2!?\nNão pode ser!!\n...Era mentira."}
+{"id": 6125, "pt": "Girei, girei, girei\nmais que de costume!\nUrgh... Fiquei tonta."}
 {"id": 6126, "pt": "Adultério"}
-{"id": 6127, "pt": "$_ME de amanhã.\n$_ME de depois\nde amanhã.\nO que será que\nvou estar fazendo...\n$_W1?\n$_W2?\nSeja como for,\nquero deixar uma prova\nde que vivi."}
-{"id": 6128, "pt": "Pilha de revistas na\nentrada. Ai...\nTenho que jogar\nlogo fora~\n\nA tristeza de morar\nsozinha bate forte, usa..."}
-{"id": 6129, "pt": "Um dia... quero escrever\na autobiografia de $_ME.\nA história de $_W1...\nA história de $_W2...\nTenho bastante coisa\npra escrever."}
-{"id": 6130, "pt": "De repente\nolho pro meu passado...\n\nA noite daquele dia\njá não volta.\nA eu daquele dia\njá não volta."}
-{"id": 6131, "pt": "Dizem que todos são\npor um e um é\npor todos, mas...\nnão é fácil colocar\nisso em prática."}
+{"id": 6127, "pt": "$_ME de amanhã.\n$_ME de depois.\nSerá $_W1? $_W2?\nQuero deixar uma marca."}
+{"id": 6128, "pt": "Pilha de revistas na\nentrada. Tenho que jogar\nfora logo. Morar sozinha\né triste, usa..."}
+{"id": 6129, "pt": "Um dia escrevo a\nautobiografia de $_ME.\n$_W1, $_W2... Tem\nassunto!"}
+{"id": 6130, "pt": "Olho pro meu passado.\nAquela noite e aquela\neu não voltam mais."}
+{"id": 6131, "pt": "Todos por um, um por\ntodos, dizem. Mas é\ndifícil colocar em prática."}
 {"id": 6132, "pt": "Casa de lámen"}
-{"id": 6133, "pt": "De vez em quando volto\npra casa dando uma volta.\nSe descubro algo novo,\ntipo $_W1, sinto que\nsaí ganhando.\nSerá que $_ME\né gente simples?"}
+{"id": 6133, "pt": "Volto por outro caminho.\nAchar algo, tipo $_W1,\né lucro. $_ME é simples?"}
 {"id": 6134, "pt": "Carne"}
 {"id": 6135, "pt": "Peixe"}
-{"id": 6136, "pt": "Uma carpa tão bonita...\nTão linda...\n\nAh...\n$_ME também quer\num amor bonito...\num amor lindo...!!"}
+{"id": 6136, "pt": "Que carpa linda...\nAh, $_ME também quer\num amor lindo!!"}
 {"id": 6137, "pt": "Pessoa chata"}
-{"id": 6138, "pt": "Deus...\n\nQuando vejo gente\nse gabando,\nfico com muita raiva...\nSe continuar assim,\n$_ME vai virar\n$_W1...?"}
+{"id": 6138, "pt": "Deus...\nVer gente se gabando\nme irrita. $_ME vai\nvirar $_W1...?"}
 {"id": 6139, "pt": "Preocupações"}
-{"id": 6140, "pt": "Tem horas em que não\nadianta se preocupar.\n$_W1 ou\n$_W2,\nnão adianta ficar\npensando nisso.\nPercebi isso nesta tarde."}
+{"id": 6140, "pt": "Preocupar às vezes\nnão adianta. $_W1,\n$_W2... Percebi hoje."}
 {"id": 6141, "pt": "Boliche"}
-{"id": 6142, "pt": "No caminho de volta depois\nde $_W1, achei um\nrestaurante estiloso!\nDa próxima vez vou levar\n$_YOU lá~"}
+{"id": 6142, "pt": "Depois de $_W1, achei\num restaurante estiloso!\nVou levar $_YOU lá~"}
 {"id": 6143, "pt": "Mas por quê?!"}
-{"id": 6144, "pt": "De repente pensei numa\nbobagem.\nSe eu disser do nada em\n$_W1:\n\"$_W2!\"\nSerá que todo mundo\nmorre de rir...?"}
-{"id": 6145, "pt": "$_YOU, é...?\nQue nome bonito.\nUm dia, se $_ME tiver\num filho... vou dar o\nnome de $_YOU...\n\nBrincadeira!"}
-{"id": 6146, "pt": "É só um pouquinho, mas...\n\n$_YOU lembra $_W1,\nde quem eu namorava\nantes..."}
+{"id": 6144, "pt": "Ideia boba. Gritar\n\"$_W2!\" do nada, $_W1.\nTodos riem?"}
+{"id": 6145, "pt": "$_YOU... que nome bonito.\nSe $_ME tiver filho,\nvou chamar de $_YOU!\nBrincadeira!"}
+{"id": 6146, "pt": "Só um pouquinho, mas\n$_YOU lembra $_W1,\nde quem eu namorava."}
 {"id": 6147, "pt": "O futon voou longe"}
-{"id": 6148, "pt": "$_YOU anda com cara\nde cansaço.\n\nDe repente falar\n\"$_W1!\"\nassim... não dá pra\nrir, pyon..."}
+{"id": 6148, "pt": "$_YOU está sem energia.\n\"$_W1!\" do nada\nnão tem graça, pyon..."}
 {"id": 6149, "pt": "Madame"}
-{"id": 6150, "pt": "Sol da tarde na janela.\nFelicidade banal e rotina\ncheia de tédio...\nNum dia assim, lembro\ndaquela pessoa...\n\nTentei falar no estilo\nde dama de lazer $_W1."}
+{"id": 6150, "pt": "Sol da tarde, tédio...\nLembro daquela pessoa.\nFalei em estilo $_W1."}
 {"id": 6151, "pt": "Rosa"}
 {"id": 6152, "pt": "Fatia de bolo"}
-{"id": 6153, "pt": "Amor, é lindo\ncomo $_W1...\nPaixão, é perfumada\ncomo $_W2...\n...Eita!\n$_ME virou poeta!?"}
+{"id": 6153, "pt": "Amor é lindo como\n$_W1. Paixão é\nperfumada como $_W2.\n$_ME é poeta!?"}
 {"id": 6154, "pt": "Roma"}
 {"id": 6155, "pt": "Modelo de capa"}
-{"id": 6156, "pt": "Nadando com lindo estilo,\nsaindo da água com a luz\nrefletindo, splash!\nAssim, sabe.\n\nMe sinto tipo $_W1."}
-{"id": 6157, "pt": "Era brincadeira, mas\nnão levaram na\nbrincadeira...\nBrigamos feio...\nPor que não entendem...?\nEu nunca diria isso\nde verdade..."}
-{"id": 6158, "pt": "Chorei, ri,\nfiquei brava,\nfiquei feliz,\ne mais um dia passou.\nIsso até que é\nfelicidade, né..."}
+{"id": 6156, "pt": "Nado com estilo e saio\nda água na luz, splash!\nMe sinto tipo $_W1."}
+{"id": 6157, "pt": "Era brincadeira, mas\nnão levaram assim.\nBrigamos feio... Eu\nnunca diria de verdade."}
+{"id": 6158, "pt": "Chorei e ri.\nFiquei brava e feliz.\nIsso é felicidade, né?"}

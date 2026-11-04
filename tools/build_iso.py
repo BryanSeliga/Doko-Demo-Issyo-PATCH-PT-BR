@@ -27,10 +27,20 @@ def set_record_size(f, rec, size):
     f.write(struct.pack("<I", size) + struct.pack(">I", size))
 
 
-def build(src, dst, ksc=None, font=None, boot=None, inplace=None, loose=None):
+def rename_record(f, rec, old, new):
+    """Troca o nome de um registro de diretorio por outro do mesmo tamanho."""
+    assert len(old) == len(new)
+    f.seek(rec + 33)
+    assert f.read(len(old)) == old, old
+    f.seek(rec + 33)
+    f.write(new)
+
+
+def build(src, dst, ksc=None, font=None, boot=None, inplace=None, loose=None, rename=None):
     """ksc: {nome_bpm: {nome_arquivo: bytes}} com novos arquivos; font/boot: bytes de mesmo tamanho.
     inplace: {(nome_bpm, nome_arquivo): bytes} de mesmo tamanho, gravados no lugar.
-    loose: {(lba, tamanho): bytes} arquivos soltos do disco, que nao podem passar dos setores do original."""
+    loose: {(lba, tamanho): bytes} arquivos soltos do disco, que nao podem passar dos setores do original.
+    rename: {(lba, tamanho): (nome_antigo, nome_novo)} em bytes, do mesmo tamanho e na mesma ordem alfabetica."""
     iso = Iso(src)
     shutil.copyfile(src, dst)
     bp_base = DATA_BP_LBA * SECTOR
@@ -86,6 +96,8 @@ def build(src, dst, ksc=None, font=None, boot=None, inplace=None, loose=None):
             f.seek(lba * SECTOR)
             f.write(data + b"\0" * (span - len(data)))
             set_record_size(f, rec, len(data))
+        for key, (old, new) in (rename or {}).items():
+            rename_record(f, find_dir_record(f, key), old, new)
         boot_bytes = boot if boot is not None else iso.read(BOOT_LBA, BOOT_SIZE)
         assert len(boot_bytes) == BOOT_SIZE
         f.seek(BOOT_LBA * SECTOR)

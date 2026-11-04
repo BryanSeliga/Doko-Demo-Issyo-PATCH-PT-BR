@@ -213,7 +213,7 @@
 {"id": 8989, "pt": "Miau miau!"}
 {"id": 8990, "pt": "Miau"}
 {"id": 8991, "pt": "Casamento"}
-{"id": 8992, "pt": "Feliz Ano Novo, miau.\nPrimeiro dia do ano.\nDia de decidir as metas.\nEste ano vou virar humano\ne fazer $_W1\njunto com $_YOU.\nEssa é a minha meta!"}
+{"id": 8992, "pt": "Feliz Ano Novo, miau.\nMeta: virar humano e fazer $_W1 com $_YOU!"}
 {"id": 8993, "pt": "Rolinho de natto"}
 {"id": 8994, "pt": "Pai"}
 {"id": 8995, "pt": "Mãe"}
@@ -221,46 +221,46 @@
 {"id": 8997, "pt": "Orihime"}
 {"id": 8998, "pt": "Hikoboshi"}
 {"id": 8999, "pt": "Avental"}
-{"id": 9000, "pt": "Eba!\nMeu quarto é o melhor.\nQuero virar humano logo,\nmas ficar longe de\n$_YOU é triste...\nSó mais um pouquinho...\nPosso ficar assim,\nné...?"}
-{"id": 9001, "pt": "Hoje é o adeus a este\nquarto...\nAdeus a $_YOU...\nEstou quase virando\nhumano, e mesmo assim...\n\nAinda assim fico\ntriste, miau..."}
-{"id": 9002, "pt": "Adeus...\n\nVou viajar para achar\no jeito de virar humano,\nmiau...\n\n\nEu queria ter\nconversado mais, miau..."}
-{"id": 9003, "pt": "Vou virar humano\ne voltar!\nVou voltar para\nver $_YOU!\nO sonho vai se realizar!\n\nPor isso estou bem...\nNão choro mais, miau!"}
-{"id": 9004, "pt": "Com certeza\nvou ver $_YOU de novo.\nUm dia, em algum lugar,\nserei amigo de $_YOU.\n\nAgora é a despedida...\nMas em vez de \"adeus\",\nvou dizer \"obrigado\"!"}
+{"id": 9000, "pt": "Eba! Quarto é o melhor.\nQuero ser humano, mas longe de $_YOU é triste..."}
+{"id": 9001, "pt": "Hoje é o adeus ao quarto...\nAdeus a $_YOU...\nQuase humano, mas triste, miau..."}
+{"id": 9002, "pt": "Adeus...\nVou buscar um jeito de virar humano, miau...\nQueria conversar mais, miau..."}
+{"id": 9003, "pt": "Vou virar humano e voltar para ver $_YOU!\nO sonho vai se realizar!\nNão choro mais!"}
+{"id": 9004, "pt": "Um dia serei amigo de $_YOU.\nVou ver $_YOU de novo!\nEm vez de adeus, \"obrigado\"!"}
 {"id": 9005, "pt": "Clavícula"}
 {"id": 9006, "pt": "Enka"}
 {"id": 9007, "pt": "Soneca"}
 {"id": 9008, "pt": "Sonho"}
 {"id": 9009, "pt": "Lembranças"}
 {"id": 9010, "pt": "Chá preto"}
-{"id": 9011, "pt": "Num lugar chique,\nbrindando com $_FME!\nNão estou acostumado\ncom lugares assim...\nCoração acelerado...\nVi o preço de $_W1\ne acelerou mais..."}
+{"id": 9011, "pt": "Lugar chique com $_FME!\nO preço de $_W1 acelerou o coração."}
 {"id": 9012, "pt": "Chá"}
-{"id": 9013, "pt": "Num lugar chique,\nbrindando com $_FME!\n\nDizem que é\n$_W1\nde safra antiga...\nNão entendo o sabor...\nAcho que é gostoso..."}
+{"id": 9013, "pt": "Brindando com $_FME!\n$_W1 de safra antiga, dizem.\nNão entendo o gosto. Gostoso?"}
 {"id": 9014, "pt": "Leite"}
-{"id": 9015, "pt": "Num lugar chique,\nbrindando com $_FME!\n\n$_W1 desliza\npelo balcão: zum!\n\"Este é de uma\npessoa ali.\"\nSerá falta de modos?"}
+{"id": 9015, "pt": "Brindando com $_FME!\n$_W1 deslizou no balcão: zum!\n\"É de uma pessoa ali.\""}
 {"id": 9016, "pt": "Suco verde"}
 {"id": 9017, "pt": "Natto"}
-{"id": 9018, "pt": "Num lugar chique,\nbrindando com $_FME!\n\nA mistura de\n$_W1 com $_W2\né o coquetel de que\n$_FME se orgulha!"}
+{"id": 9018, "pt": "Brindando com $_FME!\nCoquetel famoso de $_FME: $_W1 com $_W2!"}
 {"id": 9019, "pt": "Espetinho de frango"}
-{"id": 9020, "pt": "Num lugar chique,\nbrindando com $_FME!\n$_FME conhece bem\nlugares assim...\n$_ME só conhece\nloja de $_W1.\nUm pouco de ciúme."}
+{"id": 9020, "pt": "Brindando com $_FME!\n$_FME conhece isso.\n$_ME só sabe de\n$_W1"}
 {"id": 9021, "pt": "Marmita de tonkatsu"}
-{"id": 9022, "pt": "Passeio de trem\ncom $_FME.\n\nComprando $_W1\nno quiosque da estação,\nquase perdi o trem..."}
-{"id": 9023, "pt": "Fui ver trens\ncom $_FME.\nNa hora do trem passar,\nsoco direto de direita!\nO golpe de $_FME,\nSoco de Trem de $_FME,\n\nque eu aprendi."}
-{"id": 9024, "pt": "Passeio de trem\ncom $_FME.\nSerá que este trem\nvai para $_W1, miau?\nNão sei direito.\nTá vazio, vamos entrar!\nVamos no primeiro vagão!"}
+{"id": 9022, "pt": "Trem com $_FME.\nComprei $_W1 na estação e quase perdi o trem..."}
+{"id": 9023, "pt": "Fui ver trens com $_FME.\nSoco direto no trem!\nGolpe de $_FME: Soco de Trem de $_FME."}
+{"id": 9024, "pt": "Trem com $_FME.\nSerá que vai para $_W1, miau?\nTá vazio, vamos entrar!"}
 {"id": 9025, "pt": "Trabalhador de escritório"}
-{"id": 9026, "pt": "Passeio de trem\ncom $_FME.\nUm trem cheio de $_W1.\nSe o trem pesar demais\ne parar de andar,\n$_FME se une ao trem\ne puxa ele pra gente!"}
+{"id": 9026, "pt": "Trem com $_FME, cheio de $_W1\nSe pesar e parar, $_FME puxa!"}
 {"id": 9027, "pt": "Lámen"}
-{"id": 9028, "pt": "Passeio de trem\ncom $_FME.\nProvamos as lojas\nfamosas de $_W1\npor todo lado.\nMas a agenda\nestá apertada e\ntrocar de trem\né um sufoco, miau."}
+{"id": 9028, "pt": "Trem com $_FME.\nComemos $_W1 famoso por aí.\nAgenda apertada, miau."}
 {"id": 9029, "pt": "França"}
-{"id": 9030, "pt": "Descansando na beira\ndo rio com $_FME.\nDizem que do outro lado\ndeste céu imenso\ntem um país chamado\n$_W1.\nPara $_FME, com certeza,\n$_W1 se via, miau."}
+{"id": 9030, "pt": "Rio com $_FME.\nAlém do céu fica $_W1, dizem.\n$_FME viu $_W1, miau."}
 {"id": 9031, "pt": "Mar"}
 {"id": 9032, "pt": "Cueca"}
-{"id": 9033, "pt": "Olhando o céu\nna beira do rio\ncom $_FME.\nAchei uma nuvem\nem forma de $_W1.\nCom certeza $_YOU\ntambém vê aquela nuvem.\nPorque o céu\nconecta a gente."}
-{"id": 9034, "pt": "Descansando na beira\ndo rio com $_FME.\nJoguei uma pedrinha\nna água.\nÂngulo... velocidade...\n$_FME calculou\ntudo e jogou a pedra.\nMas só pulou\n3 vezes..."}
+{"id": 9033, "pt": "Céu com $_FME no rio.\nNuvem em forma de $_W1!\n$_YOU também vê, o céu conecta."}
+{"id": 9034, "pt": "Rio com $_FME.\n$_FME calculou tudo e jogou a pedra. Só pulou 3 vezes..."}
 {"id": 9035, "pt": "Hits dos anos 80"}
 {"id": 9036, "pt": "Trem"}
-{"id": 9037, "pt": "Marquei de me\nencontrar com $_FME.\n\nMas deu a hora\ne não veio...\nSerá que houve\nacidente de $_W1, miau?\nEstou meio, bem,\nmuito preocupado."}
+{"id": 9037, "pt": "Combinei com $_FME, mas não veio...\nAcidente de $_W1, miau? Muito preocupado."}
 {"id": 9038, "pt": "Filme de gato vampiro"}
-{"id": 9039, "pt": "Marquei de encontrar\n$_FME para ir ver\n\"$_W1\".\n\n\"Vamos lá, miau\"\n\"...Esqueci o ingresso.\"\nQue coisa, miau..."}
+{"id": 9039, "pt": "Combinei com $_FME de ver\n$_W1\n\"Vamos!\"\n\"...Esqueci o ingresso.\""}
 {"id": 9040, "pt": "Yakiniku"}
-{"id": 9041, "pt": "Marquei de encontrar\n$_FME. Cheguei\natrasado...\n$_FME estava bravo...\n\nSe eu pagar\n$_W1,\nserá que perdoa, miau?"}
-{"id": 9042, "pt": "Marquei de encontrar\n$_FME. Cheguei cedo\ndemais, então brinquei\nde estátua.\n\n$_FME me viu...\nFiquei com vergonha..."}
+{"id": 9041, "pt": "Encontro com $_FME. Cheguei atrasado, $_FME ficou bravo...\nPago $_W1, perdoa?"}
+{"id": 9042, "pt": "Encontro com $_FME. Cheguei cedo e brinquei de estátua.\n$_FME me viu... vergonha!"}

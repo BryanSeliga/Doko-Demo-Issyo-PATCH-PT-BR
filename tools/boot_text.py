@@ -1,4 +1,6 @@
 """Textos do BOOT.BIN: offset no arquivo -> portugues. Cada um precisa caber no espaco original."""
+import struct
+
 from textfmt import to_bytes
 
 # Textos em Shift-JIS desenhados com a fonte do jogo (acentos pelo mapa da fonte).
@@ -64,6 +66,27 @@ UTF8 = {
 }
 
 
+# Pagina do diario: o jogo copia o texto da pagina (em UTF-16, com as quebras que ele insere) para um espaco
+# de 100 caracteres, sem limite; texto maior apaga os dados do diario e o PSP desliga. Antes da copia, um zero
+# no byte 90 do texto (pagina com ate 90 caracteres + quebras inseridas, que tem no maximo 1 por 13 letras).
+# Endereco virtual -> (instrucao original, nova). Nenhuma delas tem relocacao.
+DIARY_TEXT_MAX = 90
+CODE = {
+    # Diario, pagina comum: v0 = registro da pagina, texto em +0x170.
+    0x39A24: (0x24420170, 0x24460170),  # addiu v0, v0, 0x170 -> addiu a2, v0, 0x170
+    0x39A28: (0x00403021, 0xA4400170 + DIARY_TEXT_MAX),  # move a2, v0 -> sh zero, 0x170+90(v0)
+    # Divisor das duas linhas de titulo (diario e memorias): a2 = texto. A copia de a2 em v0 so e
+    # devolvida quando pedem 0 linhas, e os dois chamadores pedem 2.
+    0x14D34: (0x00C01021, 0xA4C00000 + DIARY_TEXT_MAX),  # move v0, a2 -> sh zero, 90(a2)
+    # Memorias: s0 = registro da pagina, texto em +0x1E8. "s2 = v1 ou 1" vira movn e libera uma instrucao.
+    0x3E19C: (0x14600002, 0x24120001),  # bnez v1, +2 -> addiu s2, zero, 1
+    0x3E1A0: (0x00609021, 0x0063900B),  # move s2, v1 -> movn s2, v1, v1
+    0x3E1A4: (0x24120001, 0xA60001E8 + DIARY_TEXT_MAX),  # addiu s2, zero, 1 -> sh zero, 0x1E8+90(s0)
+}
+# o segmento de codigo comeca no byte 0x80 do arquivo, no endereco virtual 0
+CODE_FILE_OFFSET = 0x80
+
+
 def capacity(boot, off):
     end = boot.index(b"\0", off)
     while boot[end] == 0:
@@ -80,4 +103,8 @@ def patch_boot(boot, amap):
             cap = capacity(boot, off)
             assert len(raw) <= cap, (hex(off), text, len(raw), cap)
             out[off:off + cap + 1] = raw + b"\0" * (cap + 1 - len(raw))
+    for va, (old, new) in CODE.items():
+        off = va + CODE_FILE_OFFSET
+        assert struct.unpack_from("<I", boot, off)[0] == old, hex(va)
+        struct.pack_into("<I", out, off, new)
     return bytes(out)

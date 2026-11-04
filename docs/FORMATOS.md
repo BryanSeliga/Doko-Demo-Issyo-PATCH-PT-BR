@@ -67,6 +67,22 @@ Strings do pool também vão parar no balão: as guardadas em variável (op `84`
 
 Os textos de placas, faixas e dirigíveis ficam na tabela de valores, em listas logo depois de um registro que termina em `2:0 2:6 2:20 2:3 2:5 2:N`. As placas mostram um ponto no lugar das letras acentuadas e só os 8 primeiros caracteres, então esses textos entram na ISO sem acento e na versão curta de `traducao/placas.jsonl` (até 8 caracteres; com `$_WORD`, no máximo 3 fixos).
 
+## Vídeo do ícone (PSP_GAME/ICON1.PMF)
+
+- PSMF: cabeçalho de `0x800` bytes (tamanho dos dados em `0x0C`, sem mapa de pontos de entrada) e MPEG-PS em pacotes de 2048 bytes.
+- H.264 Main 2.1, 144×80, 300 quadros a 29,97, CABAC, sem quadros B, 1 referência, IDR a cada 30, AUD e SEI de tempo em todo quadro.
+- Cada grupo de 30 quadros começa num pacote novo, com o cabeçalho de sistema e um pacote `0xBF` que lista o tamanho de cada quadro do grupo. O PES que começa um quadro leva PTS e DTS (PTS = DTS + 3003).
+- `tools/icon1.py` refaz o vídeo com o ffmpeg do pacote `imageio-ffmpeg`: o logotipo vira o ICON0 traduzido e a legenda japonesa fica coberta, com o texto em português por cima.
+
+## Diário
+
+- Cada página é um registro na tabela de valores do KSC: `9:6`, `2:tipo`, `0`/`b:palavra1`, `5:palavra1`, `0`/`b:palavra2`, `5:palavra2`, `5:texto` (`tools/diary.py`).
+- Quando a página é escrita, o texto vai para o save já com as variáveis trocadas (`$_W1`, `$_YOU`...), num registro de `0xDC` bytes (28 registros; texto a partir do byte 8). Trocar a tradução não muda páginas que já estão num save.
+- Ao abrir a página, o jogo converte o texto para UTF-16 e quebra as linhas em 170 unidades (rotina em `0x14AD0`), num espaço de 100 caracteres sem limite: na tela Diário fica em `+0x38` da estrutura (global `0x896B8`), e logo depois vêm os dados da tela. Texto maior desliga o PSP.
+- No leiaute com título, as duas primeiras linhas vão para um espaço de 40 caracteres (`+0x100`; rotina em `0x14D2C`).
+- O texto só é desenhado se o byte de estado do registro (`+0x168`) não for 0.
+- A página mostra 8 linhas. `boot_text.CODE` corta o texto em 90 bytes antes da cópia, nas telas Diário e Memórias, e as traduções ficam em até 88 bytes (`diary_batches.py conferir`).
+
 ## Itens
 
 Nome e descrição de cada item ficam na tabela de valores do KSC, logo depois de um marcador de array `9:0xa`: o primeiro valor de tag 5 é o nome, e o segundo é a descrição. A tela de itens mostra o nome numa linha e a descrição em até duas linhas, de cerca de 222 unidades cada. `tools/items.py` lista o que não cabe.
